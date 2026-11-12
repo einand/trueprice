@@ -53,9 +53,17 @@ for i in range(1,len(rows)):
         cur['tv_license_trend']='dyrare relativt lön' if delta>0 else 'billigare relativt lön' if delta<0 else 'oförändrat'
         delta=cur['tv_license_share_percent_two_adults']-prev['tv_license_share_percent_two_adults']
         cur['tv_license_trend_two_adults']='dyrare relativt lön' if delta>0 else 'billigare relativt lön' if delta<0 else 'oförändrat'
-comparison_rows=[{k:v for k,v in row.items() if k not in ('average_monthly_salary_sek','average_annual_salary_sek')} for row in rows]
-result={'generated_at_utc':datetime.now(timezone.utc).isoformat(),'sources':json.loads((ROOT/'data/sources.json').read_text()),'wage_series_reference':'average_monthly_salaries.csv','data':comparison_rows,'supplementary_series':{'historical_manufacturing_hourly_wages_by_industry':historical_wages}}
-(ROOT/'static/data/series.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
+all_sources=json.loads((ROOT/'data/sources.json').read_text())
+generated_at=datetime.now(timezone.utc).isoformat()
+gasoline_data=[{'year':r['year'],'price_sek_per_liter':r['gasoline_price_sek_per_liter'],'share_percent':r['share_percent'],'share_percent_two_adults':r['share_percent_two_adults'],'trend':r['trend'],'trend_two_adults':r['trend_two_adults']} for r in rows if r['gasoline_price_sek_per_liter'] is not None or r['share_percent'] is not None]
+tv_data=[{'year':r['year'],'fee_sek':r['tv_license_fee_sek'],'fee_unit':r['tv_license_fee_unit'],'fee_regime':r['tv_license_regime'],'share_percent':r['tv_license_share_percent'],'share_percent_two_adults':r['tv_license_share_percent_two_adults'],'trend':r['tv_license_trend'],'trend_two_adults':r['tv_license_trend_two_adults'],'break_before':r['tv_license_break_before']} for r in rows if r['tv_license_fee_sek'] is not None or r['tv_license_share_percent'] is not None]
+def write_series(filename, series_id, series_data, source_ids):
+    payload={'generated_at_utc':generated_at,'series_id':series_id,'wage_series_reference':'average_monthly_salaries.csv','sources':[s for s in all_sources['series'] if s['id'] in source_ids],'data':series_data}
+    (ROOT/'static/data'/filename).write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
+write_series('gasoline_series.json','gasoline',gasoline_data,{'average_salary','gasoline_price_nominal','gasoline_price_2024_level','cpi_annual_average'})
+write_series('tv_license_series.json','tv_license',tv_data,{'average_salary','tv_license_and_public_service_fee'})
+index={'generated_at_utc':generated_at,'series':[{'id':'gasoline','file':'gasoline_series.json'},{'id':'tv_license','file':'tv_license_series.json'}],'supplementary_series':{'historical_manufacturing_hourly_wages_file':'historical_manufacturing_hourly_wages.csv'}}
+(ROOT/'static/data/series.json').write_text(json.dumps(index,ensure_ascii=False,indent=2)+'\n')
 for source_file in ['data/average_monthly_salaries.csv','data/historical_manufacturing_hourly_wages.csv','data/gasoline_prices.csv','data/gasoline_prices_2024_sek_per_liter.csv','data/cpi_annual_average.csv','data/tv_license_annual_fees.csv']:
     shutil.copyfile(ROOT/source_file, ROOT/'static/data'/Path(source_file).name)
 print(f"Validated {len(rows)} annual rows; gasoline {min(prices)}–{max(prices)}, TV fee {min(tv_fees)}–{max(tv_fees)}, salary {min(salaries)}–{max(salaries)}, historical wage-category observations {len(historical_wages)}.")

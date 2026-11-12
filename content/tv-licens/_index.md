@@ -11,5 +11,6 @@ comparison:
   period: 1991–2025
   price_basis: Årsnivå per 31 december
   data_file: data/tv_license_annual_fees.csv
+  series_json_file: data/tv_license_series.json
   price_description: Årsbeloppet som gällde den 31 december. Till och med 2018 avsåg avgiften ett hushåll med TV-mottagare; från 2019 avser värdet maximibelopp per person. Avgiftsform och betalningsenhet ändrades då.
 ---

@@ -7,6 +7,8 @@ All comparisons use `layouts/_default/comparison.html` and the same content sequ
 3. **Kostnad per år**: a yearly price chart followed by a table. Show the observed value and relative share where both input series exist. Leave missing shares empty.
 4. **Gemensamt löneunderlag och källor**: link to `/loner/` and expose provenance for the item series. Do not copy salary observations into page content.
 
+Each comparison route must load, chart, table, and link only to its own item series. Keep the shared wage source reusable; do not place unrelated comparison series on an item's page.
+
 The root route is a project presentation and navigation index. The `/loner/` page is the single human-readable directory of wage series and definitions. Raw reusable series remain in `data/` and are copied to the generated site's `data/` directory.
 
 ## Required front matter for a comparison

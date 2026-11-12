@@ -17,9 +17,9 @@
 .chart-key-multi{gap:16px}.chart-key-multi>span{display:inline-flex;align-items:center;gap:7px}
 .key-dot-blue{background:var(--blue)}.chart-line-blue{stroke:var(--blue)}.chart-point-blue{stroke:var(--blue)}.chart-point-blue.latest{fill:var(--blue)}
 .trend-blue{color:var(--blue-dark)!important}
-.comparison-data-table th:nth-child(n+5){background:var(--blue-pale);color:var(--blue-dark)}
-.comparison-data-table td:nth-child(n+5){background:#f5f9fc;color:var(--blue-dark)}
-.comparison-data-table td:nth-child(7){font-weight:700}
-.comparison-data-table td.trend-blue.trend-up,.comparison-data-table td.trend-blue.trend-down{color:var(--blue-dark)!important}
+.comparison-data-table-blue th{background:var(--blue-pale);color:var(--blue-dark)}
+.comparison-data-table-blue td{background:#f5f9fc;color:var(--blue-dark)}
+.comparison-data-table-blue td:nth-child(4){font-weight:700}
+.comparison-data-table-blue td.trend-blue.trend-up,.comparison-data-table-blue td.trend-blue.trend-down{color:var(--blue-dark)!important}
 .price-history:has(.chart-line-blue) .key-dot{background:var(--blue)}
 @media(max-width:760px){.scenario-control{margin-top:-9px;margin-bottom:30px}.scenario-explanation{flex-basis:100%}}

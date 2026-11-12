@@ -10,6 +10,7 @@ comparison:
   price_unit: kr/l
   price_basis: Årsmedel
   data_file: data/gasoline_prices.csv
+  series_json_file: data/gasoline_series.json
   period: 1980–2025
   price_description: Nationellt årsmedel, inklusive skatter och moms.
 ---
