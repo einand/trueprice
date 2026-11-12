@@ -17,7 +17,7 @@ A separate historical dataset contains manufacturing-industry hourly earnings by
 
 ## Build
 
-`npm run validate` validates inputs and generates `static/data/series.json`. The comparison JSON contains item prices and computed shares, but refers to the reusable wage source rather than repeating wage observations. `npm run build` validates, generates data, and builds the static Hugo site into `public/`. Use `npm run preview` to view it locally at `http://localhost:1313/trueprice/`.
+`npm run validate` validates inputs and generates the machine-readable series index plus separate gasoline and TV-license comparison JSON files under `static/data/`. Each comparison JSON contains only its own item series and calculated wage shares, with provenance; reusable wage observations remain in their separate CSV. `npm run build` validates, generates data, and builds the static Hugo site into `public/`. Use `npm run preview` to view it locally at `http://localhost:1313/trueprice/`.
 
 Open the site through Hugo's local server instead of double-clicking `public/index.html`. The production build uses the GitHub Pages project path (`/trueprice/`), and browsers also restrict JavaScript data requests from `file://` pages. These path and browser-security rules can make a direct-file preview lose its styling or charts; this is not a CSS cache issue.
 

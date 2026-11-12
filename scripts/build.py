@@ -62,7 +62,7 @@ def write_series(filename, series_id, series_data, source_ids):
     (ROOT/'static/data'/filename).write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
 write_series('gasoline_series.json','gasoline',gasoline_data,{'average_salary','gasoline_price_nominal','gasoline_price_2024_level','cpi_annual_average'})
 write_series('tv_license_series.json','tv_license',tv_data,{'average_salary','tv_license_and_public_service_fee'})
-index={'generated_at_utc':generated_at,'series':[{'id':'gasoline','file':'gasoline_series.json'},{'id':'tv_license','file':'tv_license_series.json'}],'supplementary_series':{'historical_manufacturing_hourly_wages_file':'historical_manufacturing_hourly_wages.csv'}}
+index={'generated_at_utc':generated_at,'sources':all_sources,'wage_series_reference':'average_monthly_salaries.csv','series':[{'id':'gasoline','file':'gasoline_series.json'},{'id':'tv_license','file':'tv_license_series.json'},{'id':'historical_manufacturing_hourly_wages_by_industry','file':'historical_manufacturing_hourly_wages.csv'}]}
 (ROOT/'static/data/series.json').write_text(json.dumps(index,ensure_ascii=False,indent=2)+'\n')
 for source_file in ['data/average_monthly_salaries.csv','data/historical_manufacturing_hourly_wages.csv','data/gasoline_prices.csv','data/gasoline_prices_2024_sek_per_liter.csv','data/cpi_annual_average.csv','data/tv_license_annual_fees.csv']:
     shutil.copyfile(ROOT/source_file, ROOT/'static/data'/Path(source_file).name)
