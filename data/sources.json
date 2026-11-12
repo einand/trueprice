@@ -1,0 +1,88 @@
+{
+  "retrieved_at": "2026-11-12",
+  "series": [
+    {
+      "id": "average_salary",
+      "file": "data/average_monthly_salaries.csv",
+      "source": "Statistics Sweden (SCB), average monthly salary after sector, all sectors, total gender.",
+      "url": "https://www.scb.se/hitta-statistik/statistik-efter-amne/arbetsmarknad/loner-och-arbetskostnader/lonestrukturstatistik-hela-ekonomin/pong/tabell-och-diagram/genomsnittlig-manadslon-efter-sektor/",
+      "retrieved_at": "2026-11-12",
+      "unit": "SEK/month; annual comparator calculated as monthly × 12",
+      "definition": "SCB average monthly salary across all sectors, both sexes (total gender), for each year 1992–2025. Salary is not disposable income or actual annual earnings.",
+      "coverage": "Sweden, all sectors",
+      "transformation": "Annual comparator is monthly average multiplied by 12; nominal values. Monthly source values retained in the separate salary file.",
+      "coverage_years": "1992–2025"
+    },
+    {
+      "id": "historical_manufacturing_hourly_wages_by_industry",
+      "file": "data/historical_manufacturing_hourly_wages.csv",
+      "source": "Sveriges Riksbank, Historical Monetary and Financial Statistics for Sweden, Volume I, Svante Prado workbook, Tables I.A10.1 and I.A10.2.",
+      "url": "https://www.riksbank.se/sv/om-riksbanken/riksbankens-uppdrag/forskning/historisk-monetar-statistik-for-sverige/volume-i-exchange-rates-prices-and-wages-1277-2008/",
+      "data_url": "https://www.riksbank.se/globalassets/media/forskning/monetar-statistik/volym1/volumeich10wages1860_.xls",
+      "retrieved_at": "2026-11-12",
+      "unit": "SEK/hour",
+      "definition": "Hourly earnings by manufacturing industry category and sex, plus a separately identified source-provided weighted average. Source table categories are represented in Swedish in the CSV.",
+      "coverage": "Sweden; manufacturing workers. Coverage varies by industry and sex. Male categories are observed from 1860 or later depending on category; female coverage starts between 1865 and 1952 by category. Male weighted average 1871–2013; female weighted average 1921–2013.",
+      "transformation": "Transcribed source observations without annualization or interpolation. Missing cells are omitted. This sectoral hourly series is not directly equivalent to all-sector monthly salary; overlap does not imply equivalent population or method."
+    },
+    {
+      "id": "gasoline_price_nominal",
+      "file": "data/gasoline_prices.csv",
+      "source": "Energimyndigheten, Energiläget i siffror 2026, Table 5.5, source note: SCB and Drivkraft Sverige; nominal values derived with SCB annual-average CPI.",
+      "url": "https://www.energimyndigheten.se/energisystem-och-analys/sveriges-energilage-just-nu/energilaget/",
+      "data_url": "https://www.energimyndigheten.se/4a076b/globalassets/statistik/energilaget/energilaget-i-siffror-2026-excel.xlsx",
+      "retrieved_at": "2026-11-12",
+      "unit": "nominal SEK/liter",
+      "definition": "Annual average Swedish pump price for gasoline 95 octane (MK1/MK2), including taxes and VAT, as reported in Energimyndigheten table 5.5 in 2024 price level and converted back to nominal SEK. National annual series; product specification and fuel blend may vary over time.",
+      "coverage": "Sweden, national annual average, 1980–2025.",
+      "transformation": "Calculated as source price in 2024 SEK × SCB annual-average CPI for observation year ÷ SCB annual-average CPI for 2024; rounded to öre. No interpolation."
+    },
+    {
+      "id": "tv_license_and_public_service_fee",
+      "file": "data/tv_license_annual_fees.csv",
+      "source": "Swedish Parliament (SOU 2005:2 table of annual TV fees for 1991–2005; parliamentary statutory changes and reports for 2006–2018; parliamentary and Swedish Tax Agency values for the public service fee 2019–2025).",
+      "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/statens-offentliga-utredningar/radio-och-tv-i-allmanhetens-tjanst-finansiering_gtb32/html/",
+      "additional_source_urls": [
+        "https://data.riksdagen.se/dokument/H901KrU3.html",
+        "https://www.riksdagen.se/sv/webb-tv/video/interpellationsdebatt/betalningsfrekvens-for-tv-avgifter_gw1012/",
+        "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/vissa-forandringar-i-tv-avgiftssystemet_gk03165/html/",
+        "https://data.riksdagen.se/fil/E07387F8-EB57-483C-ACE1-04CAC0FC6233",
+        "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/utgiftsomrade-17-kultur-medier-trossamfund-och_gw01kru1/html/",
+        "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/2016-17kru1-utskottets-overvaganden_8f16d3b8-45d2-46ea-b8bb-264ec7e77971/",
+        "https://data.riksdagen.se/fil/187AEC92-0D78-48AF-8002-0BFCDE7708A7",
+        "https://www.skatteverket.se/privat/skatter/beloppochprocent/2023.4.1997e70d1848dabbac91bc9.html",
+        "https://www.skatteverket.se/foretag/skatterochavdrag/beloppochprocent/2024.106.7da1d2e118be03f8e4f4b65.html",
+        "https://www.skatteverket.se/privat/skatter/arbeteochinkomst/askattsedelochskattetabeller/publicserviceavgift.4.22501d9e166a8cb399f31dd.html"
+      ],
+      "retrieved_at": "2026-11-12",
+      "unit": "SEK per year in force at 31 December; household (1991–2018), maximum per person (2019–2025)",
+      "definition": "Annual radio and TV fee payable by one household with a TV receiver through 2018. From 2019, maximum individual public service fee, levied through income tax at 1 percent of taxable earned income up to a yearly cap. The fee type and liable unit changed on 2019-01-01.",
+      "coverage": "Sweden, annual year-end rates, 1991–2025. First continuous annual source table located begins in 1991. Salary comparison is available for 1992–2025; the legacy household fee and individual public service fee are not population-equivalent.",
+      "transformation": "For each calendar year, records the annual rate in force on 31 December, not the sum actually charged during that calendar year. Thus 2015 records the new 2,216 SEK annual rate introduced on 1 July. 2019–2025 records the statutory annual maximum. Relative share is amount ÷ SCB average annual gross salary × 100 as a single-average-earner benchmark. Year-on-year trend is suppressed at the 2019 regime change. No values are interpolated."
+    },
+    {
+      "id": "gasoline_price_2024_level",
+      "file": "data/gasoline_prices_2024_sek_per_liter.csv",
+      "source": "Energimyndigheten, Energiläget i siffror 2026, Table 5.5; source note in workbook: SCB and Drivkraft Sverige.",
+      "url": "https://www.energimyndigheten.se/energisystem-och-analys/sveriges-energilage-just-nu/energilaget/",
+      "data_url": "https://www.energimyndigheten.se/4a076b/globalassets/statistik/energilaget/energilaget-i-siffror-2026-excel.xlsx",
+      "retrieved_at": "2026-11-12",
+      "unit": "SEK/liter, 2024 price level",
+      "definition": "Annual average pump price, gasoline 95 octane (MK1/MK2), including taxes and VAT, in 2024 price level.",
+      "coverage": "Sweden, annual 1980–2025.",
+      "transformation": "Source values copied as published; this source-level file is retained separately from the derived nominal price file."
+    },
+    {
+      "id": "cpi_annual_average",
+      "file": "data/cpi_annual_average.csv",
+      "source": "Statistics Sweden (SCB), Consumer Price Index (CPI), fixed index rebased to 2020=100, monthly observations aggregated to calendar-year arithmetic average.",
+      "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__PR__PR0101__PR0101A/KPI2020M1980/",
+      "api_url": "https://api.scb.se/OV0104/v1/doris/sv/ssd/START/PR/PR0101/PR0101A/KPI2020M1980",
+      "retrieved_at": "2026-11-12",
+      "unit": "CPI index, 2020=100",
+      "definition": "Annual arithmetic average of the 12 monthly fixed CPI index values. Rebased values preserve the year-to-year price-level ratio used for deflation/reflation.",
+      "coverage": "Sweden, annual 1980–2025.",
+      "transformation": "Arithmetic mean of monthly values; CPI is used only to convert the gasoline series between 2024 prices and nominal annual SEK."
+    }
+  ]
+}

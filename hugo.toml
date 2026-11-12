@@ -1,0 +1,12 @@
+baseURL = 'https://einand.github.io/trueprice/'
+canonifyURLs = true
+defaultContentLanguage = 'sv'
+title = 'Sakers pris i förhållande till lön'
+
+[params]
+  description = 'Hur stor del av lönen kostar saker över tid?'
+
+disableKinds = ['taxonomy', 'term', 'RSS']
+
+[markup.goldmark.renderer]
+  unsafe = true

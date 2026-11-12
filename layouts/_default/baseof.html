@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="{{ .Site.Params.description }}">
+  <title>{{ .Title }} · Trueprice</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
+</head>
+<body>
+  <header class="topbar wrap">
+    <a class="brand" href="{{ "/" | relURL }}" aria-label="Trueprice startsida"><span class="brand-mark" aria-hidden="true">T</span><span>TRUEPRICE<span class="brand-dot">.</span></span></a>
+    <nav class="site-nav" aria-label="Huvudmeny">
+      <a href="{{ "/" | relURL }}"{{ if .IsHome }} aria-current="page"{{ end }}>Översikt</a>
+      <a href="{{ "/bensin/" | relURL }}"{{ if eq .RelPermalink ("/bensin/" | relURL) }} aria-current="page"{{ end }}>Bensin</a>
+      <a href="{{ "/skatt/" | relURL }}"{{ if eq .RelPermalink ("/skatt/" | relURL) }} aria-current="page"{{ end }}>Skatt</a>
+      <a href="{{ "/tv-licens/" | relURL }}"{{ if eq .RelPermalink ("/tv-licens/" | relURL) }} aria-current="page"{{ end }}>TV-licens</a>
+      <a href="{{ "/loner/" | relURL }}"{{ if eq .RelPermalink ("/loner/" | relURL) }} aria-current="page"{{ end }}>Lönedata</a>
+    </nav>
+  </header>
+  {{ block "main" . }}{{ end }}
+  <footer class="footer wrap"><a class="brand footer-brand" href="{{ "/" | relURL }}"><span class="brand-mark" aria-hidden="true">T</span><span>TRUEPRICE<span class="brand-dot">.</span></span></a><p>Jämför priser med vad människor tjänar.</p><span class="footer-year">SVERIGE · DATA MED KÄLLOR</span></footer>
+  <script src="{{ "js/price-chart.js" | relURL }}" defer></script>
+</body>
+</html>

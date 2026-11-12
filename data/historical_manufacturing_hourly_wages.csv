@@ -1,0 +1,2310 @@
+year,sex,industry_category,wage_sek_per_hour
+1860,men,gruvarbetare,0.2004432388
+1860,men,metallindustri,0.08028259064
+1860,men,verkstadsindustri,0.1204528632
+1860,men,"massa, papper och grafisk industri",0.1109117483
+1861,men,gruvarbetare,0.2057042162
+1861,men,metallindustri,0.0948794253
+1861,men,verkstadsindustri,0.1179778044
+1861,men,"massa, papper och grafisk industri",0.1109117483
+1861,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.1575097398
+1862,men,gruvarbetare,0.2167522687
+1862,men,metallindustri,0.1295469076
+1862,men,verkstadsindustri,0.1245779612
+1862,men,"massa, papper och grafisk industri",0.1131752534
+1862,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.1575097398
+1863,men,gruvarbetare,0.2099129981
+1863,men,metallindustri,0.1222484903
+1863,men,verkstadsindustri,0.1262280005
+1863,men,"massa, papper och grafisk industri",0.118834016
+1863,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.163521562
+1864,men,gruvarbetare,0.2157000732
+1864,men,metallindustri,0.1012655405
+1864,men,verkstadsindustri,0.1196278436
+1864,men,"massa, papper och grafisk industri",0.118834016
+1864,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.1647239264
+1865,men,gruvarbetare,0.2172783664
+1865,men,metallindustri,0.1113008643
+1865,men,verkstadsindustri,0.1344781966
+1865,men,"massa, papper och grafisk industri",0.118834016
+1865,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.1671286552
+1865,men,"textil-, beklädnads- och läderindustri",0.1286314757
+1866,men,gruvarbetare,0.2214871483
+1866,men,metallindustri,0.09031791447
+1866,men,verkstadsindustri,0.1328281574
+1866,men,"massa, papper och grafisk industri",0.116570511
+1866,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.1671286552
+1866,men,"textil-, beklädnads- och läderindustri",0.1286314757
+1867,men,gruvarbetare,0.2204349529
+1867,men,metallindustri,0.1049147491
+1867,men,verkstadsindustri,0.1394283142
+1867,men,"massa, papper och grafisk industri",0.1177022635
+1867,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.1659262908
+1867,men,"textil-, beklädnads- och läderindustri",0.1298225079
+1868,men,gruvarbetare,0.2267481257
+1868,men,metallindustri,0.1331961163
+1868,men,verkstadsindustri,0.1435534123
+1868,men,stenbrott,0.1469515283
+1868,men,"massa, papper och grafisk industri",0.1210975211
+1868,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.1719381129
+1868,men,"textil-, beklädnads- och läderindustri",0.1286314757
+1869,men,gruvarbetare,0.2278003212
+1869,men,metallindustri,0.1468806488
+1869,men,verkstadsindustri,0.1625288633
+1869,men,stenbrott,0.1436157398
+1869,men,"massa, papper och grafisk industri",0.118834016
+1869,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.1695333841
+1869,men,"textil-, beklädnads- och läderindustri",0.1274404435
+1870,men,gruvarbetare,0.2314830054
+1870,men,metallindustri,0.104002447
+1870,men,verkstadsindustri,0.167478981
+1870,men,stenbrott,0.145909067
+1870,men,träindustri,0.2867238142
+1870,men,"massa, papper och grafisk industri",0.118834016
+1870,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.1731404774
+1870,men,"textil-, beklädnads- och läderindustri",0.1286314757
+1871,men,gruvarbetare,0.2362178851
+1871,men,metallindustri,0.1195115838
+1871,men,verkstadsindustri,0.1658289418
+1871,men,stenbrott,0.1578958947
+1871,men,träindustri,0.2653972495
+1871,men,"massa, papper och grafisk industri",0.1233610262
+1871,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.1731404774
+1871,men,"textil-, beklädnads- och läderindustri",0.1345866366
+1871,men,kemi- och gummiindustri,0.1641771849
+1871,men,vägt genomsnitt,0.1723447323
+1872,men,gruvarbetare,0.2672576517
+1872,men,metallindustri,0.1450560445
+1872,men,verkstadsindustri,0.1881044713
+1872,men,stenbrott,0.1730117553
+1872,men,träindustri,0.3017313968
+1872,men,"massa, papper och grafisk industri",0.1392055616
+1872,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.1887712149
+1872,men,"textil-, beklädnads- och läderindustri",0.1345866366
+1872,men,kemi- och gummiindustri,0.1900529368
+1872,men,vägt genomsnitt,0.1967779318
+1873,men,gruvarbetare,0.3330198691
+1873,men,metallindustri,0.147792951
+1873,men,verkstadsindustri,0.2013047851
+1873,men,stenbrott,0.1766488352
+1873,men,träindustri,0.3285870709
+1873,men,"massa, papper och grafisk industri",0.1595771072
+1873,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.2068066813
+1873,men,"textil-, beklädnads- och läderindustri",0.1441148941
+1873,men,kemi- och gummiindustri,0.2321671081
+1873,men,vägt genomsnitt,0.2158900394
+1874,men,gruvarbetare,0.3482767036
+1874,men,metallindustri,0.1806358289
+1874,men,verkstadsindustri,0.2103800008
+1874,men,stenbrott,0.201939975
+1874,men,träindustri,0.4375895126
+1874,men,"massa, papper och grafisk industri",0.1788169003
+1874,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.2164255967
+1874,men,"textil-, beklädnads- och läderindustri",0.1584072802
+1874,men,kemi- och gummiindustri,0.2501139444
+1874,men,vägt genomsnitt,0.2491284145
+1875,men,gruvarbetare,0.3419635307
+1875,men,metallindustri,0.1769866203
+1875,men,verkstadsindustri,0.2070799223
+1875,men,stenbrott,0.224133795
+1875,men,träindustri,0.2804048321
+1875,men,"massa, papper och grafisk industri",0.186739168
+1875,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.2152232323
+1875,men,"textil-, beklädnads- och läderindustri",0.1726996664
+1875,men,kemi- och gummiindustri,0.2660214636
+1875,men,vägt genomsnitt,0.2249957413
+1876,men,gruvarbetare,0.3246023053
+1876,men,metallindustri,0.1687759008
+1876,men,verkstadsindustri,0.2004797655
+1876,men,stenbrott,0.2200114946
+1876,men,träindustri,0.2922529236
+1876,men,"massa, papper och grafisk industri",0.1901344257
+1876,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.1983901303
+1876,men,"textil-, beklädnads- och läderindustri",0.1750817308
+1876,men,kemi- och gummiindustri,0.2725517185
+1876,men,vägt genomsnitt,0.2209749331
+1877,men,gruvarbetare,0.3203935234
+1877,men,metallindustri,0.1806358289
+1877,men,verkstadsindustri,0.1938796086
+1877,men,stenbrott,0.2245909184
+1877,men,träindustri,0.3167389794
+1877,men,"massa, papper och grafisk industri",0.1935296833
+1877,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.2332586987
+1877,men,"textil-, beklädnads- och läderindustri",0.1774637952
+1877,men,kemi- och gummiindustri,0.2685449731
+1877,men,vägt genomsnitt,0.2339226296
+1878,men,gruvarbetare,0.2988235161
+1878,men,metallindustri,0.1742497138
+1878,men,verkstadsindustri,0.1815043144
+1878,men,stenbrott,0.1954902102
+1878,men,träindustri,0.2748757227
+1878,men,"massa, papper och grafisk industri",0.1856074155
+1878,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.2164255967
+1878,men,"textil-, beklädnads- och läderindustri",0.1798458595
+1878,men,kemi- och gummiindustri,0.2531174176
+1878,men,vägt genomsnitt,0.2157489223
+1879,men,gruvarbetare,0.2798839974
+1879,men,metallindustri,0.147792951
+1879,men,verkstadsindustri,0.167478981
+1879,men,stenbrott,0.1643097546
+1879,men,träindustri,0.234987148
+1879,men,"massa, papper och grafisk industri",0.1765533952
+1879,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.22003269
+1879,men,"textil-, beklädnads- och läderindustri",0.1679355377
+1879,men,kemi- och gummiindustri,0.2361643388
+1879,men,vägt genomsnitt,0.195967982
+1880,men,gruvarbetare,0.2940886364
+1880,men,metallindustri,0.1560036705
+1880,men,verkstadsindustri,0.1872794517
+1880,men,stenbrott,0.1865523382
+1880,men,träindustri,0.1950985733
+1880,men,"massa, papper och grafisk industri",0.1788169003
+1880,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.2224374188
+1880,men,"textil-, beklädnads- och läderindustri",0.1679355377
+1880,men,kemi- och gummiindustri,0.2455500605
+1880,men,vägt genomsnitt,0.1948754455
+1881,men,gruvarbetare,0.2967191251
+1881,men,metallindustri,0.1441437423
+1881,men,verkstadsindustri,0.2095549812
+1881,men,stenbrott,0.1951175202
+1881,men,träindustri,0.216724909
+1881,men,"massa, papper och grafisk industri",0.1833439104
+1881,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.2236397833
+1881,men,"textil-, beklädnads- och läderindustri",0.1786548273
+1881,men,kemi- och gummiindustri,0.2533510564
+1881,men,vägt genomsnitt,0.2004424067
+1882,men,gruvarbetare,0.3098715686
+1882,men,metallindustri,0.1614774834
+1882,men,verkstadsindustri,0.2136800792
+1882,men,stenbrott,0.1975017624
+1882,men,träindustri,0.2254610921
+1882,men,"massa, papper och grafisk industri",0.1833439104
+1882,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.2224374188
+1882,men,"textil-, beklädnads- och läderindustri",0.1869920526
+1882,men,kemi- och gummiindustri,0.2555436658
+1882,men,vägt genomsnitt,0.207785197
+1883,men,gruvarbetare,0.3156586437
+1883,men,metallindustri,0.1733374116
+1883,men,verkstadsindustri,0.2087299616
+1883,men,stenbrott,0.1966555654
+1883,men,träindustri,0.2262097266
+1883,men,"massa, papper och grafisk industri",0.186739168
+1883,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.2140208679
+1883,men,"textil-, beklädnads- och läderindustri",0.1869920526
+1883,men,kemi- och gummiindustri,0.2582458403
+1883,men,vägt genomsnitt,0.2094505957
+1884,men,gruvarbetare,0.3224979143
+1884,men,metallindustri,0.1742497138
+1884,men,verkstadsindustri,0.2145050988
+1884,men,stenbrott,0.1986306502
+1884,men,träindustri,0.2180433104
+1884,men,"massa, papper och grafisk industri",0.1901344257
+1884,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.2224374188
+1884,men,"textil-, beklädnads- och läderindustri",0.1846099883
+1884,men,kemi- och gummiindustri,0.2582458403
+1884,men,vägt genomsnitt,0.2109712847
+1885,men,gruvarbetare,0.3146064482
+1885,men,metallindustri,0.1715128073
+1885,men,verkstadsindustri,0.2087299616
+1885,men,stenbrott,0.1960169707
+1885,men,träindustri,0.2245764433
+1885,men,"massa, papper och grafisk industri",0.1923979307
+1885,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.2224374188
+1885,men,"textil-, beklädnads- och läderindustri",0.1905651492
+1885,men,kemi- och gummiindustri,0.2585318268
+1885,men,vägt genomsnitt,0.2108561439
+1886,men,gruvarbetare,0.2935625387
+1886,men,metallindustri,0.1651266921
+1886,men,verkstadsindustri,0.1996547458
+1886,men,stenbrott,0.1998276459
+1886,men,träindustri,0.2164100272
+1886,men,"massa, papper och grafisk industri",0.1810804054
+1886,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.2224374188
+1886,men,"textil-, beklädnads- och läderindustri",0.1905651492
+1886,men,kemi- och gummiindustri,0.2576738672
+1886,men,vägt genomsnitt,0.20541859
+1887,men,gruvarbetare,0.2793578997
+1887,men,metallindustri,0.1651266921
+1887,men,verkstadsindustri,0.2013047851
+1887,men,stenbrott,0.1991770188
+1887,men,träindustri,0.2106935359
+1887,men,"massa, papper och grafisk industri",0.184475663
+1887,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.2248421477
+1887,men,"textil-, beklädnads- och läderindustri",0.1929472135
+1887,men,kemi- och gummiindustri,0.2585318268
+1887,men,vägt genomsnitt,0.2046428639
+1888,men,gruvarbetare,0.2641010652
+1888,men,metallindustri,0.1660389943
+1888,men,verkstadsindustri,0.21203004
+1888,men,stenbrott,0.2037690455
+1888,men,träindustri,0.2204932353
+1888,men,"massa, papper och grafisk industri",0.1878709206
+1888,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.2248421477
+1888,men,"textil-, beklädnads- och läderindustri",0.1941382457
+1888,men,kemi- och gummiindustri,0.2605337326
+1888,men,vägt genomsnitt,0.2062853217
+1889,men,gruvarbetare,0.2904059522
+1889,men,metallindustri,0.1642143899
+1889,men,verkstadsindustri,0.2285304322
+1889,men,stenbrott,0.2167013274
+1889,men,träindustri,0.2327428595
+1889,men,"massa, papper och grafisk industri",0.1912661782
+1889,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.228449241
+1889,men,"textil-, beklädnads- och läderindustri",0.1941382457
+1889,men,kemi- och gummiindustri,0.2764403036
+1889,men,vägt genomsnitt,0.2131464986
+1890,men,gruvarbetare,0.3125020573
+1890,men,metallindustri,0.1760743181
+1890,men,verkstadsindustri,0.2326555303
+1890,men,stenbrott,0.2204071057
+1890,men,träindustri,0.2237598017
+1890,men,"massa, papper och grafisk industri",0.2048472086
+1890,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.2452823429
+1890,men,"textil-, beklädnads- och läderindustri",0.1977113423
+1890,men,kemi- och gummiindustri,0.2978460397
+1890,men,vägt genomsnitt,0.2215588922
+1891,men,gruvarbetare,0.313028155
+1891,men,metallindustri,0.1706005051
+1891,men,verkstadsindustri,0.2400807068
+1891,men,stenbrott,0.2287610378
+1891,men,träindustri,0.2204932353
+1891,men,"massa, papper och grafisk industri",0.2172964865
+1891,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.2633178093
+1891,men,"textil-, beklädnads- och läderindustri",0.2012844388
+1891,men,kemi- och gummiindustri,0.3047268837
+1891,men,vägt genomsnitt,0.2258624617
+1892,men,gruvarbetare,0.3230240121
+1892,men,metallindustri,0.1870219441
+1892,men,verkstadsindustri,0.2285304322
+1892,men,stenbrott,0.2332141873
+1892,men,träindustri,0.2286596514
+1892,men,"massa, papper och grafisk industri",0.2218234966
+1892,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.268127267
+1892,men,"textil-, beklädnads- och läderindustri",0.2084306319
+1892,men,kemi- och gummiindustri,0.3078407284
+1892,men,vägt genomsnitt,0.2355710478
+1893,men,gruvarbetare,0.3219718166
+1893,men,metallindustri,0.1797235268
+1893,men,verkstadsindustri,0.2425557656
+1893,men,stenbrott,0.2340172685
+1893,men,träindustri,0.2286596514
+1893,men,"massa, papper och grafisk industri",0.218428239
+1893,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.2813532757
+1893,men,"textil-, beklädnads- och läderindustri",0.2060485675
+1893,men,kemi- och gummiindustri,0.3117701335
+1893,men,vägt genomsnitt,0.2403593438
+1894,men,gruvarbetare,0.3235501098
+1894,men,metallindustri,0.1806358289
+1894,men,verkstadsindustri,0.2392556872
+1894,men,stenbrott,0.2438949102
+1894,men,träindustri,0.2335595011
+1894,men,"massa, papper och grafisk industri",0.2240870017
+1894,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.2801509113
+1894,men,"textil-, beklädnads- och läderindustri",0.215576825
+1894,men,kemi- och gummiindustri,0.3125951547
+1894,men,vägt genomsnitt,0.2430875398
+1895,men,gruvarbetare,0.3224979143
+1895,men,metallindustri,0.1842850376
+1895,men,verkstadsindustri,0.2524560009
+1895,men,stenbrott,0.2424059893
+1895,men,träindustri,0.2319262179
+1895,men,"massa, papper och grafisk industri",0.2274822593
+1895,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.2825556401
+1895,men,"textil-, beklädnads- och läderindustri",0.215576825
+1895,men,kemi- och gummiindustri,0.3154038418
+1895,men,vägt genomsnitt,0.2450668749
+1896,men,gruvarbetare,0.325128403
+1896,men,metallindustri,0.1788112246
+1896,men,verkstadsindustri,0.2656563147
+1896,men,stenbrott,0.24709072
+1896,men,träindustri,0.244175842
+1896,men,"massa, papper och grafisk industri",0.2356430578
+1896,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.2945792844
+1896,men,"textil-, beklädnads- och läderindustri",0.2215319859
+1896,men,kemi- och gummiindustri,0.2977311875
+1896,men,vägt genomsnitt,0.2498315718
+1897,men,gruvarbetare,0.3503810945
+1897,men,metallindustri,0.1924957571
+1897,men,verkstadsindustri,0.2730814912
+1897,men,stenbrott,0.2471681242
+1897,men,träindustri,0.2531588998
+1897,men,"massa, papper och grafisk industri",0.2574483258
+1897,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.3150194796
+1897,men,"textil-, beklädnads- och läderindustri",0.2334423077
+1897,men,kemi- och gummiindustri,0.3188769741
+1897,men,vägt genomsnitt,0.2620706144
+1898,men,gruvarbetare,0.3682684177
+1898,men,metallindustri,0.2098294983
+1898,men,verkstadsindustri,0.2970070599
+1898,men,stenbrott,0.2621729707
+1898,men,träindustri,0.2613253159
+1898,men,"massa, papper och grafisk industri",0.2701361345
+1898,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.3258407595
+1898,men,"textil-, beklädnads- och läderindustri",0.254880887
+1898,men,kemi- och gummiindustri,0.3253158052
+1898,men,vägt genomsnitt,0.2770214876
+1899,men,gruvarbetare,0.3935211092
+1899,men,metallindustri,0.2216894264
+1899,men,verkstadsindustri,0.3126824325
+1899,men,stenbrott,0.2844611796
+1899,men,träindustri,0.2735749401
+1899,men,"massa, papper och grafisk industri",0.2780101885
+1899,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.3366620393
+1899,men,"textil-, beklädnads- och läderindustri",0.2632181123
+1899,men,kemi- och gummiindustri,0.3411710782
+1899,men,vägt genomsnitt,0.2900422485
+1900,men,gruvarbetare,0.4119345301
+1900,men,metallindustri,0.2335493546
+1900,men,verkstadsindustri,0.334957962
+1900,men,stenbrott,0.2841072049
+1900,men,träindustri,0.2825579978
+1900,men,"massa, papper och grafisk industri",0.2862750271
+1900,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.3486856836
+1900,men,"textil-, beklädnads- och läderindustri",0.2620270801
+1900,men,kemi- och gummiindustri,0.3527476
+1900,men,vägt genomsnitt,0.3004556391
+1901,men,gruvarbetare,0.4171955075
+1901,men,metallindustri,0.2417600741
+1901,men,verkstadsindustri,0.3184575698
+1901,men,stenbrott,0.2859682957
+1901,men,träindustri,0.2727582985
+1901,men,"massa, papper och grafisk industri",0.2905305181
+1901,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.3534951413
+1901,men,"textil-, beklädnads- och läderindustri",0.2763194663
+1901,men,kemi- och gummiindustri,0.3509281769
+1901,men,vägt genomsnitt,0.3008525364
+1902,men,gruvarbetare,0.4192998984
+1902,men,metallindustri,0.2499707936
+1902,men,verkstadsindustri,0.334957962
+1902,men,stenbrott,0.2833920511
+1902,men,träindustri,0.2735749401
+1902,men,"massa, papper och grafisk industri",0.2885943585
+1902,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.3643164211
+1902,men,"textil-, beklädnads- och läderindustri",0.2870387559
+1902,men,kemi- och gummiindustri,0.3565434258
+1902,men,vägt genomsnitt,0.3060587575
+1903,men,gruvarbetare,0.4050952594
+1903,men,metallindustri,0.2490584914
+1903,men,verkstadsindustri,0.3341329424
+1903,men,stenbrott,0.2874183114
+1903,men,träindustri,0.2833746394
+1903,men,"massa, papper och grafisk industri",0.2981660414
+1903,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.3655187855
+1903,men,"textil-, beklädnads- och läderindustri",0.2775104985
+1903,men,kemi- och gummiindustri,0.3614477875
+1903,men,vägt genomsnitt,0.3074850832
+1904,men,gruvarbetare,0.426139169
+1904,men,metallindustri,0.2563569088
+1904,men,verkstadsindustri,0.3630086288
+1904,men,stenbrott,0.2882994485
+1904,men,träindustri,0.2931743388
+1904,men,"massa, papper och grafisk industri",0.3055300455
+1904,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.3691258788
+1904,men,"textil-, beklädnads- och läderindustri",0.2822746272
+1904,men,kemi- och gummiindustri,0.3570150018
+1904,men,vägt genomsnitt,0.3159920491
+1905,men,gruvarbetare,0.4329784396
+1905,men,metallindustri,0.2654799304
+1905,men,verkstadsindustri,0.375383923
+1905,men,stenbrott,0.2970566181
+1905,men,träindustri,0.2956242636
+1905,men,"massa, papper och grafisk industri",0.3195729122
+1905,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.3883637096
+1905,men,"textil-, beklädnads- och läderindustri",0.2953759812
+1905,men,kemi- och gummiindustri,0.3738622202
+1905,men,vägt genomsnitt,0.3264653597
+1906,men,gruvarbetare,0.4492874696
+1906,men,metallindustri,0.2864628802
+1906,men,verkstadsindustri,0.3869341975
+1906,men,stenbrott,0.3180602042
+1906,men,träindustri,0.3013407549
+1906,men,"massa, papper och grafisk industri",0.3287461978
+1906,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.4051968116
+1906,men,"textil-, beklädnads- och läderindustri",0.3168145605
+1906,men,kemi- och gummiindustri,0.4010006117
+1906,men,vägt genomsnitt,0.3437340621
+1907,men,gruvarbetare,0.478748943
+1907,men,metallindustri,0.2946735997
+1907,men,verkstadsindustri,0.4149848643
+1907,men,stenbrott,0.3422480342
+1907,men,träindustri,0.320123512
+1907,men,"massa, papper och grafisk industri",0.3584255199
+1907,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.4244346424
+1907,men,"textil-, beklädnads- och läderindustri",0.333489011
+1907,men,kemi- och gummiindustri,0.4294058843
+1907,men,vägt genomsnitt,0.3648048167
+1908,men,gruvarbetare,0.5113670028
+1908,men,metallindustri,0.2928489954
+1908,men,verkstadsindustri,0.4174599231
+1908,men,stenbrott,0.3541155503
+1908,men,träindustri,0.3233900784
+1908,men,"massa, papper och grafisk industri",0.3173906091
+1908,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.4532913887
+1908,men,"textil-, beklädnads- och läderindustri",0.3358710754
+1908,men,kemi- och gummiindustri,0.4350716136
+1908,men,vägt genomsnitt,0.3683321685
+1909,men,gruvarbetare,0.4135128233
+1909,men,metallindustri,0.3147442474
+1909,men,verkstadsindustri,0.4290101977
+1909,men,stenbrott,0.3402633371
+1909,men,träindustri,0.3225734368
+1909,men,"massa, papper och grafisk industri",0.3788681172
+1909,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.4665173973
+1909,men,"textil-, beklädnads- och läderindustri",0.352545526
+1909,men,kemi- och gummiindustri,0.4430127481
+1909,men,vägt genomsnitt,0.3785700204
+1910,men,gruvarbetare,0.5303065215
+1910,men,metallindustri,0.3749561904
+1910,men,verkstadsindustri,0.438910433
+1910,men,stenbrott,0.3646860781
+1910,men,träindustri,0.3364563442
+1910,men,"massa, papper och grafisk industri",0.3820324567
+1910,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.4761363127
+1910,men,"textil-, beklädnads- och läderindustri",0.3549275903
+1910,men,kemi- och gummiindustri,0.4337862271
+1910,men,vägt genomsnitt,0.3991574967
+1911,men,gruvarbetare,0.5460894536
+1911,men,metallindustri,0.3749561904
+1911,men,verkstadsindustri,0.453760786
+1911,men,stenbrott,0.3671746812
+1911,men,träindustri,0.3478893268
+1911,men,"massa, papper och grafisk industri",0.391723405
+1911,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.4725292195
+1911,men,"textil-, beklädnads- och läderindustri",0.3727930731
+1911,men,kemi- och gummiindustri,0.4448795816
+1911,men,vägt genomsnitt,0.4064855422
+1912,men,gruvarbetare,0.5460894536
+1912,men,metallindustri,0.3904653272
+1912,men,verkstadsindustri,0.468611139
+1912,men,stenbrott,0.3806821198
+1912,men,träindustri,0.364222159
+1912,men,"massa, papper och grafisk industri",0.402307575
+1912,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.4869575926
+1912,men,"textil-, beklädnads- och läderindustri",0.3954226845
+1912,men,kemi- och gummiindustri,0.451337854
+1912,men,vägt genomsnitt,0.4208886358
+1913,men,gruvarbetare,0.5687116564
+1913,men,metallindustri,0.3941145359
+1913,men,verkstadsindustri,0.4636610213
+1913,men,stenbrott,0.4152147239
+1913,men,träindustri,0.3699386503
+1913,men,"massa, papper och grafisk industri",0.4279141104
+1913,men,"livsmedels-, dryckesvaru- och tobaksindustri",0.4941717791
+1913,men,"textil-, beklädnads- och läderindustri",0.4120971351
+1913,men,kemi- och gummiindustri,0.4572041492
+1913,men,vägt genomsnitt,0.4334026151
+1914,men,vägt genomsnitt,0.4531805972
+1915,men,vägt genomsnitt,0.4761777237
+1916,men,vägt genomsnitt,0.5253511983
+1917,men,vägt genomsnitt,0.6711519584
+1918,men,vägt genomsnitt,0.9645573297
+1919,men,vägt genomsnitt,1.275645428
+1920,men,vägt genomsnitt,1.578236502
+1921,men,gruvarbetare,2.06
+1921,men,metallindustri,1.418976067
+1921,men,verkstadsindustri,1.679483255
+1921,men,stenbrott,1.44
+1921,men,träindustri,1.34
+1921,men,"massa, papper och grafisk industri",1.55
+1921,men,"livsmedels-, dryckesvaru- och tobaksindustri",1.79
+1921,men,"textil-, beklädnads- och läderindustri",1.483441379
+1921,men,kemi- och gummiindustri,1.656095029
+1921,men,vägt genomsnitt,1.571748689
+1922,men,gruvarbetare,1.43
+1922,men,metallindustri,1.059237943
+1922,men,verkstadsindustri,1.25468263
+1922,men,stenbrott,0.94
+1922,men,träindustri,0.95
+1922,men,"massa, papper och grafisk industri",1.08
+1922,men,"livsmedels-, dryckesvaru- och tobaksindustri",1.39
+1922,men,"textil-, beklädnads- och läderindustri",1.103676013
+1922,men,kemi- och gummiindustri,1.158647028
+1922,men,vägt genomsnitt,1.126794886
+1923,men,gruvarbetare,1.17
+1923,men,metallindustri,1.022473197
+1923,men,verkstadsindustri,1.126579581
+1923,men,stenbrott,0.97
+1923,men,träindustri,0.98
+1923,men,"massa, papper och grafisk industri",1.08
+1923,men,"livsmedels-, dryckesvaru- och tobaksindustri",1.18
+1923,men,"textil-, beklädnads- och läderindustri",1.062735894
+1923,men,kemi- och gummiindustri,1.074888481
+1923,men,vägt genomsnitt,1.062339532
+1924,men,gruvarbetare,1.36
+1924,men,metallindustri,1.03565945
+1924,men,verkstadsindustri,1.166668121
+1924,men,stenbrott,0.99
+1924,men,träindustri,0.98
+1924,men,"massa, papper och grafisk industri",1.07
+1924,men,"livsmedels-, dryckesvaru- och tobaksindustri",1.23
+1924,men,"textil-, beklädnads- och läderindustri",1.06793045
+1924,men,kemi- och gummiindustri,1.110859895
+1924,men,vägt genomsnitt,1.087262295
+1925,men,gruvarbetare,1.41
+1925,men,metallindustri,1.065849167
+1925,men,verkstadsindustri,1.189319726
+1925,men,stenbrott,1.03
+1925,men,träindustri,0.99
+1925,men,"massa, papper och grafisk industri",1.11
+1925,men,"livsmedels-, dryckesvaru- och tobaksindustri",1.31
+1925,men,"textil-, beklädnads- och läderindustri",1.084272168
+1925,men,kemi- och gummiindustri,1.136003387
+1925,men,vägt genomsnitt,1.121752023
+1926,men,gruvarbetare,1.52
+1926,men,metallindustri,1.079737829
+1926,men,verkstadsindustri,1.201199614
+1926,men,stenbrott,1.04
+1926,men,träindustri,0.98
+1926,men,"massa, papper och grafisk industri",1.15
+1926,men,"livsmedels-, dryckesvaru- och tobaksindustri",1.37
+1926,men,"textil-, beklädnads- och läderindustri",1.061153844
+1926,men,kemi- och gummiindustri,1.131983791
+1926,men,vägt genomsnitt,1.140031929
+1927,men,gruvarbetare,1.58
+1927,men,metallindustri,1.093238828
+1927,men,verkstadsindustri,1.214211476
+1927,men,stenbrott,0.94
+1927,men,träindustri,1.01
+1927,men,"massa, papper och grafisk industri",1.15
+1927,men,"livsmedels-, dryckesvaru- och tobaksindustri",1.34
+1927,men,"textil-, beklädnads- och läderindustri",1.069469797
+1927,men,kemi- och gummiindustri,1.130534458
+1927,men,vägt genomsnitt,1.126435825
+1928,men,gruvarbetare,1.63
+1928,men,metallindustri,1.108004843
+1928,men,verkstadsindustri,1.231253343
+1928,men,stenbrott,0.95
+1928,men,träindustri,1.02
+1928,men,"massa, papper och grafisk industri",1.19
+1928,men,"livsmedels-, dryckesvaru- och tobaksindustri",1.35
+1928,men,"textil-, beklädnads- och läderindustri",1.077433094
+1928,men,kemi- och gummiindustri,1.143705499
+1928,men,vägt genomsnitt,1.15051595
+1929,men,gruvarbetare,1.65
+1929,men,metallindustri,1.13085586
+1929,men,verkstadsindustri,1.255037641
+1929,men,stenbrott,0.97
+1929,men,träindustri,1.05
+1929,men,"massa, papper och grafisk industri",1.2
+1929,men,"livsmedels-, dryckesvaru- och tobaksindustri",1.38
+1929,men,"textil-, beklädnads- och läderindustri",1.070599431
+1929,men,kemi- och gummiindustri,1.167122585
+1929,men,vägt genomsnitt,1.170772152
+1930,men,gruvarbetare,1.71
+1930,men,metallindustri,1.150728589
+1930,men,verkstadsindustri,1.274128337
+1930,men,stenbrott,0.98
+1930,men,träindustri,1.04
+1930,men,"massa, papper och grafisk industri",1.23
+1930,men,"livsmedels-, dryckesvaru- och tobaksindustri",1.38
+1930,men,"textil-, beklädnads- och läderindustri",1.090601271
+1930,men,kemi- och gummiindustri,1.20252261
+1930,men,vägt genomsnitt,1.185991424
+1931,men,gruvarbetare,1.73
+1931,men,metallindustri,1.133072203
+1931,men,verkstadsindustri,1.274128337
+1931,men,stenbrott,0.97
+1931,men,träindustri,1
+1931,men,"massa, papper och grafisk industri",1.24
+1931,men,"livsmedels-, dryckesvaru- och tobaksindustri",1.37
+1931,men,"textil-, beklädnads- och läderindustri",1.090071032
+1931,men,kemi- och gummiindustri,1.20252261
+1931,men,vägt genomsnitt,1.174476213
+1932,men,gruvarbetare,1.65
+1932,men,metallindustri,1.091221465
+1932,men,verkstadsindustri,1.233060381
+1932,men,stenbrott,0.94
+1932,men,träindustri,0.96
+1932,men,"massa, papper och grafisk industri",1.19
+1932,men,"livsmedels-, dryckesvaru- och tobaksindustri",1.37
+1932,men,"textil-, beklädnads- och läderindustri",1.064594424
+1932,men,kemi- och gummiindustri,1.204599413
+1932,men,vägt genomsnitt,1.141160963
+1933,men,gruvarbetare,1.54
+1933,men,metallindustri,1.094028827
+1933,men,verkstadsindustri,1.220857056
+1933,men,stenbrott,0.94
+1933,men,träindustri,0.95
+1933,men,"massa, papper och grafisk industri",1.16
+1933,men,"livsmedels-, dryckesvaru- och tobaksindustri",1.36
+1933,men,"textil-, beklädnads- och läderindustri",1.066608137
+1933,men,kemi- och gummiindustri,1.196823403
+1933,men,vägt genomsnitt,1.131656792
+1934,men,gruvarbetare,1.42
+1934,men,metallindustri,1.110150054
+1934,men,verkstadsindustri,1.227742605
+1934,men,stenbrott,0.97
+1934,men,träindustri,0.94
+1934,men,"massa, papper och grafisk industri",1.19
+1934,men,"livsmedels-, dryckesvaru- och tobaksindustri",1.33
+1934,men,"textil-, beklädnads- och läderindustri",1.056608922
+1934,men,kemi- och gummiindustri,1.189202643
+1934,men,vägt genomsnitt,1.13673564
+1935,men,gruvarbetare,1.44
+1935,men,metallindustri,1.143767831
+1935,men,verkstadsindustri,1.238711706
+1935,men,stenbrott,0.98
+1935,men,träindustri,0.97
+1935,men,"massa, papper och grafisk industri",1.21
+1935,men,"livsmedels-, dryckesvaru- och tobaksindustri",1.34
+1935,men,"textil-, beklädnads- och läderindustri",1.06439462
+1935,men,kemi- och gummiindustri,1.19655276
+1935,men,vägt genomsnitt,1.154983225
+1936,men,gruvarbetare,1.5
+1936,men,metallindustri,1.151287617
+1936,men,verkstadsindustri,1.268735005
+1936,men,stenbrott,1
+1936,men,träindustri,0.96
+1936,men,"massa, papper och grafisk industri",1.24
+1936,men,"livsmedels-, dryckesvaru- och tobaksindustri",1.35
+1936,men,"textil-, beklädnads- och läderindustri",1.073203801
+1936,men,kemi- och gummiindustri,1.225911375
+1936,men,vägt genomsnitt,1.172314653
+1937,men,gruvarbetare,1.63
+1937,men,metallindustri,1.189706004
+1937,men,verkstadsindustri,1.298754226
+1937,men,stenbrott,1.02
+1937,men,träindustri,1
+1937,men,"massa, papper och grafisk industri",1.3
+1937,men,"livsmedels-, dryckesvaru- och tobaksindustri",1.38
+1937,men,"textil-, beklädnads- och läderindustri",1.118203136
+1937,men,kemi- och gummiindustri,1.266126521
+1937,men,vägt genomsnitt,1.212211408
+1938,men,gruvarbetare,1.72
+1938,men,metallindustri,1.266755882
+1938,men,verkstadsindustri,1.388807928
+1938,men,stenbrott,1.09
+1938,men,träindustri,1.06
+1938,men,"massa, papper och grafisk industri",1.37
+1938,men,"livsmedels-, dryckesvaru- och tobaksindustri",1.43
+1938,men,"textil-, beklädnads- och läderindustri",1.141918233
+1938,men,kemi- och gummiindustri,1.326360966
+1938,men,vägt genomsnitt,1.284610966
+1939,men,gruvarbetare,1.79
+1939,men,metallindustri,1.315405362
+1939,men,verkstadsindustri,1.428826813
+1939,men,stenbrott,1.12
+1939,men,träindustri,1.1
+1939,men,"massa, papper och grafisk industri",1.41
+1939,men,"livsmedels-, dryckesvaru- och tobaksindustri",1.45
+1939,men,"textil-, beklädnads- och läderindustri",1.184495033
+1939,men,kemi- och gummiindustri,1.35648434
+1939,men,vägt genomsnitt,1.323959848
+1940,men,gruvarbetare,1.84
+1940,men,metallindustri,1.435808877
+1940,men,verkstadsindustri,1.569911547
+1940,men,stenbrott,1.23
+1940,men,träindustri,1.18
+1940,men,"massa, papper och grafisk industri",1.52
+1940,men,"livsmedels-, dryckesvaru- och tobaksindustri",1.55
+1940,men,"textil-, beklädnads- och läderindustri",1.306516743
+1940,men,kemi- och gummiindustri,1.49161344
+1940,men,vägt genomsnitt,1.450871693
+1941,men,gruvarbetare,1.96
+1941,men,metallindustri,1.569985601
+1941,men,verkstadsindustri,1.690983593
+1941,men,stenbrott,1.31
+1941,men,träindustri,1.27
+1941,men,"massa, papper och grafisk industri",1.63
+1941,men,"livsmedels-, dryckesvaru- och tobaksindustri",1.63
+1941,men,"textil-, beklädnads- och läderindustri",1.397741631
+1941,men,kemi- och gummiindustri,1.61107061
+1941,men,vägt genomsnitt,1.561321988
+1942,men,gruvarbetare,2.16
+1942,men,metallindustri,1.714425896
+1942,men,verkstadsindustri,1.851066225
+1942,men,stenbrott,1.46
+1942,men,träindustri,1.4
+1942,men,"massa, papper och grafisk industri",1.76
+1942,men,"livsmedels-, dryckesvaru- och tobaksindustri",1.75
+1942,men,"textil-, beklädnads- och läderindustri",1.548044444
+1942,men,kemi- och gummiindustri,1.724569152
+1942,men,vägt genomsnitt,1.700486558
+1943,men,gruvarbetare,2.26
+1943,men,metallindustri,1.794990429
+1943,men,verkstadsindustri,1.912088538
+1943,men,stenbrott,1.57
+1943,men,träindustri,1.47
+1943,men,"massa, papper och grafisk industri",1.82
+1943,men,"livsmedels-, dryckesvaru- och tobaksindustri",1.83
+1943,men,"textil-, beklädnads- och läderindustri",1.616563392
+1943,men,kemi- och gummiindustri,1.78085235
+1943,men,vägt genomsnitt,1.772125881
+1944,men,gruvarbetare,2.28
+1944,men,metallindustri,1.841436189
+1944,men,verkstadsindustri,1.960177129
+1944,men,stenbrott,1.63
+1944,men,träindustri,1.51
+1944,men,"massa, papper och grafisk industri",1.87
+1944,men,"livsmedels-, dryckesvaru- och tobaksindustri",1.85
+1944,men,"textil-, beklädnads- och läderindustri",1.696574782
+1944,men,kemi- och gummiindustri,1.826203242
+1944,men,vägt genomsnitt,1.8214006
+1945,men,gruvarbetare,2.33
+1945,men,metallindustri,1.916110389
+1945,men,verkstadsindustri,2.052258424
+1945,men,stenbrott,1.73
+1945,men,träindustri,1.63
+1945,men,"massa, papper och grafisk industri",1.95
+1945,men,"livsmedels-, dryckesvaru- och tobaksindustri",1.92
+1945,men,"textil-, beklädnads- och läderindustri",1.793970453
+1945,men,kemi- och gummiindustri,1.927827205
+1945,men,vägt genomsnitt,1.907249755
+1946,men,gruvarbetare,2.47
+1946,men,metallindustri,2.030120789
+1946,men,verkstadsindustri,2.149078736
+1946,men,stenbrott,1.88
+1946,men,träindustri,1.81
+1946,men,"massa, papper och grafisk industri",2.1
+1946,men,"livsmedels-, dryckesvaru- och tobaksindustri",2.04
+1946,men,"textil-, beklädnads- och läderindustri",1.952441383
+1946,men,kemi- och gummiindustri,2.073877898
+1946,men,vägt genomsnitt,2.039463706
+1947,men,gruvarbetare,2.85
+1947,men,metallindustri,2.336331133
+1947,men,verkstadsindustri,2.445808291
+1947,men,stenbrott,2.18
+1947,men,träindustri,2.07
+1947,men,"massa, papper och grafisk industri",2.4
+1947,men,"livsmedels-, dryckesvaru- och tobaksindustri",2.31
+1947,men,"textil-, beklädnads- och läderindustri",2.250887153
+1947,men,kemi- och gummiindustri,2.38608641
+1947,men,vägt genomsnitt,2.337114739
+1948,men,gruvarbetare,3.2
+1948,men,metallindustri,2.545891181
+1948,men,verkstadsindustri,2.650068463
+1948,men,stenbrott,2.34
+1948,men,träindustri,2.25
+1948,men,"massa, papper och grafisk industri",2.59
+1948,men,"livsmedels-, dryckesvaru- och tobaksindustri",2.5
+1948,men,"textil-, beklädnads- och läderindustri",2.463718579
+1948,men,kemi- och gummiindustri,2.590780458
+1948,men,vägt genomsnitt,2.539179923
+1949,men,gruvarbetare,3.34
+1949,men,metallindustri,2.65728126
+1949,men,verkstadsindustri,2.760071305
+1949,men,stenbrott,2.42
+1949,men,träindustri,2.31
+1949,men,"massa, papper och grafisk industri",2.62
+1949,men,"livsmedels-, dryckesvaru- och tobaksindustri",2.49
+1949,men,"textil-, beklädnads- och läderindustri",2.565174652
+1949,men,kemi- och gummiindustri,2.670103835
+1949,men,vägt genomsnitt,2.624182325
+1950,men,gruvarbetare,3.57
+1950,men,metallindustri,2.780320086
+1950,men,verkstadsindustri,2.882499635
+1950,men,stenbrott,2.51
+1950,men,träindustri,2.4
+1950,men,"massa, papper och grafisk industri",2.7
+1950,men,"livsmedels-, dryckesvaru- och tobaksindustri",2.57
+1950,men,"textil-, beklädnads- och läderindustri",2.629973762
+1950,men,kemi- och gummiindustri,2.779547897
+1950,men,vägt genomsnitt,2.729483133
+1951,men,gruvarbetare,4.18
+1951,men,metallindustri,3.366780173
+1951,men,verkstadsindustri,3.456247785
+1951,men,stenbrott,3.04
+1951,men,träindustri,2.95
+1951,men,"massa, papper och grafisk industri",3.24
+1951,men,"livsmedels-, dryckesvaru- och tobaksindustri",3.05
+1951,men,"textil-, beklädnads- och läderindustri",3.095362075
+1951,men,kemi- och gummiindustri,3.148137863
+1951,men,vägt genomsnitt,3.266767063
+1952,men,gruvarbetare,5.03
+1952,men,metallindustri,4.049467742
+1952,men,verkstadsindustri,4.14495963
+1952,men,stenbrott,3.59
+1952,men,träindustri,3.42
+1952,men,"massa, papper och grafisk industri",3.972046663
+1952,men,"livsmedels-, dryckesvaru- och tobaksindustri",3.565398876
+1952,men,"textil-, beklädnads- och läderindustri",3.594929675
+1952,men,kemi- och gummiindustri,3.832030643
+1952,men,vägt genomsnitt,3.910652706
+1953,men,gruvarbetare,5.3
+1953,men,metallindustri,4.268849398
+1953,men,verkstadsindustri,4.435679653
+1953,men,stenbrott,3.759520662
+1953,men,träindustri,3.59
+1953,men,"massa, papper och grafisk industri",4.108404133
+1953,men,"livsmedels-, dryckesvaru- och tobaksindustri",3.746145183
+1953,men,"textil-, beklädnads- och läderindustri",3.751160034
+1953,men,kemi- och gummiindustri,4.025789243
+1953,men,vägt genomsnitt,4.126406096
+1954,men,gruvarbetare,5.5
+1954,men,metallindustri,4.412905927
+1954,men,verkstadsindustri,4.602782499
+1954,men,stenbrott,4.001265612
+1954,men,träindustri,3.84
+1954,men,"massa, papper och grafisk industri",4.35632514
+1954,men,"livsmedels-, dryckesvaru- och tobaksindustri",3.85047726
+1954,men,"textil-, beklädnads- och läderindustri",3.888799805
+1954,men,kemi- och gummiindustri,4.282282715
+1954,men,vägt genomsnitt,4.307654115
+1955,men,gruvarbetare,5.92
+1955,men,metallindustri,4.772248148
+1955,men,verkstadsindustri,4.927489366
+1955,men,stenbrott,4.340937264
+1955,men,träindustri,4.17
+1955,men,"massa, papper och grafisk industri",4.786308988
+1955,men,"livsmedels-, dryckesvaru- och tobaksindustri",4.230402491
+1955,men,"textil-, beklädnads- och läderindustri",4.189982955
+1955,men,kemi- och gummiindustri,4.608785435
+1955,men,vägt genomsnitt,4.682074506
+1956,men,gruvarbetare,6.36
+1956,men,metallindustri,5.185747964
+1956,men,verkstadsindustri,5.348566725
+1956,men,stenbrott,4.661589736
+1956,men,träindustri,4.48
+1956,men,"massa, papper och grafisk industri",5.202120088
+1956,men,"livsmedels-, dryckesvaru- och tobaksindustri",4.522277563
+1956,men,"textil-, beklädnads- och läderindustri",4.550379921
+1956,men,kemi- och gummiindustri,5.006024919
+1956,men,vägt genomsnitt,5.056024443
+1957,men,gruvarbetare,6.8
+1957,men,metallindustri,5.509051463
+1957,men,verkstadsindustri,5.637444119
+1957,men,stenbrott,4.9625672
+1957,men,träindustri,4.75
+1957,men,"massa, papper och grafisk industri",5.477840448
+1957,men,"livsmedels-, dryckesvaru- och tobaksindustri",4.761579422
+1957,men,"textil-, beklädnads- och läderindustri",4.804873137
+1957,men,kemi- och gummiindustri,5.27883902
+1957,men,vägt genomsnitt,5.349934747
+1958,men,gruvarbetare,7.2
+1958,men,metallindustri,5.838424103
+1958,men,verkstadsindustri,6.010922338
+1958,men,stenbrott,5.266063493
+1958,men,träindustri,5.05
+1958,men,"massa, papper och grafisk industri",5.74546819
+1958,men,"livsmedels-, dryckesvaru- och tobaksindustri",5.051226356
+1958,men,"textil-, beklädnads- och läderindustri",5.081577149
+1958,men,kemi- och gummiindustri,5.531108282
+1958,men,vägt genomsnitt,5.677235931
+1959,men,gruvarbetare,7.55
+1959,men,metallindustri,6.116312448
+1959,men,verkstadsindustri,6.25285075
+1959,men,stenbrott,5.516317365
+1959,men,träindustri,5.32
+1959,men,"massa, papper och grafisk industri",6.001866044
+1959,men,"livsmedels-, dryckesvaru- och tobaksindustri",5.32818234
+1959,men,"textil-, beklädnads- och läderindustri",5.29962428
+1959,men,kemi- och gummiindustri,5.731493039
+1959,men,vägt genomsnitt,5.929187702
+1960,men,gruvarbetare,8.03
+1960,men,metallindustri,6.505582543
+1960,men,verkstadsindustri,6.604884923
+1960,men,stenbrott,5.98523012
+1960,men,träindustri,5.67
+1960,men,"massa, papper och grafisk industri",6.462562271
+1960,men,"livsmedels-, dryckesvaru- och tobaksindustri",5.710816479
+1960,men,"textil-, beklädnads- och läderindustri",5.638015363
+1960,men,kemi- och gummiindustri,6.104899057
+1960,men,vägt genomsnitt,6.32188422
+1961,men,gruvarbetare,8.62
+1961,men,metallindustri,7.048765372
+1961,men,verkstadsindustri,7.10455181
+1961,men,stenbrott,6.447580641
+1961,men,träindustri,6.11
+1961,men,"massa, papper och grafisk industri",6.97025469
+1961,men,"livsmedels-, dryckesvaru- och tobaksindustri",6.186130306
+1961,men,"textil-, beklädnads- och läderindustri",6.138476181
+1961,men,kemi- och gummiindustri,6.558435333
+1961,men,vägt genomsnitt,6.826895314
+1962,men,gruvarbetare,9.04
+1962,men,metallindustri,7.305100895
+1962,men,verkstadsindustri,7.681828225
+1962,men,stenbrott,7.065613172
+1962,men,träindustri,6.66
+1962,men,"massa, papper och grafisk industri",7.467560333
+1962,men,"livsmedels-, dryckesvaru- och tobaksindustri",6.921010292
+1962,men,"textil-, beklädnads- och läderindustri",6.755045237
+1962,men,kemi- och gummiindustri,7.062545522
+1962,men,vägt genomsnitt,7.350059384
+1963,men,gruvarbetare,9.58
+1963,men,metallindustri,8.092267835
+1963,men,verkstadsindustri,8.227850644
+1963,men,stenbrott,7.593066382
+1963,men,träindustri,7.19
+1963,men,"massa, papper och grafisk industri",8.0206171
+1963,men,"livsmedels-, dryckesvaru- och tobaksindustri",7.507997714
+1963,men,"textil-, beklädnads- och läderindustri",7.249035295
+1963,men,kemi- och gummiindustri,7.531524987
+1963,men,vägt genomsnitt,7.926926468
+1964,men,gruvarbetare,10.17
+1964,men,metallindustri,8.718000507
+1964,men,verkstadsindustri,8.862199621
+1964,men,stenbrott,8.31257885
+1964,men,träindustri,7.83
+1964,men,"massa, papper och grafisk industri",8.766763999
+1964,men,"livsmedels-, dryckesvaru- och tobaksindustri",8.158889622
+1964,men,"textil-, beklädnads- och läderindustri",7.913120304
+1964,men,kemi- och gummiindustri,8.188762173
+1964,men,vägt genomsnitt,8.578543078
+1965,men,gruvarbetare,10.95
+1965,men,metallindustri,9.603976187
+1965,men,verkstadsindustri,9.731566111
+1965,men,stenbrott,9.194506347
+1965,men,träindustri,8.67
+1965,men,"massa, papper och grafisk industri",9.736982008
+1965,men,"livsmedels-, dryckesvaru- och tobaksindustri",8.973389487
+1965,men,"textil-, beklädnads- och läderindustri",8.699768908
+1965,men,kemi- och gummiindustri,9.083707425
+1965,men,vägt genomsnitt,9.455002759
+1966,men,gruvarbetare,11.78
+1966,men,metallindustri,10.36766662
+1966,men,verkstadsindustri,10.52916045
+1966,men,stenbrott,10.04274758
+1966,men,träindustri,9.38
+1966,men,"massa, papper och grafisk industri",10.56401844
+1966,men,"livsmedels-, dryckesvaru- och tobaksindustri",9.94146248
+1966,men,"textil-, beklädnads- och läderindustri",9.464567922
+1966,men,kemi- och gummiindustri,9.82186463
+1966,men,vägt genomsnitt,10.2588551
+1967,men,gruvarbetare,12.46
+1967,men,metallindustri,11.00729776
+1967,men,verkstadsindustri,11.41481203
+1967,men,stenbrott,10.77210508
+1967,men,träindustri,10.2
+1967,men,"massa, papper och grafisk industri",11.51467996
+1967,men,"livsmedels-, dryckesvaru- och tobaksindustri",10.76308559
+1967,men,"textil-, beklädnads- och läderindustri",10.12876285
+1967,men,kemi- och gummiindustri,10.58550059
+1967,men,vägt genomsnitt,11.0624109
+1968,men,gruvarbetare,13.23
+1968,men,metallindustri,11.98494703
+1968,men,verkstadsindustri,12.09771319
+1968,men,stenbrott,11.51224971
+1968,men,träindustri,10.85
+1968,men,"massa, papper och grafisk industri",12.54663454
+1968,men,"livsmedels-, dryckesvaru- och tobaksindustri",11.45539561
+1968,men,"textil-, beklädnads- och läderindustri",11.00573026
+1968,men,kemi- och gummiindustri,11.25319289
+1968,men,vägt genomsnitt,11.84697681
+1969,men,gruvarbetare,14.32
+1969,men,metallindustri,12.98912986
+1969,men,verkstadsindustri,13.06449798
+1969,men,stenbrott,12.58245885
+1969,men,träindustri,11.85
+1969,men,"massa, papper och grafisk industri",13.76289436
+1969,men,"livsmedels-, dryckesvaru- och tobaksindustri",12.42513059
+1969,men,"textil-, beklädnads- och läderindustri",11.95243574
+1969,men,kemi- och gummiindustri,12.28251148
+1969,men,vägt genomsnitt,12.86496051
+1970,men,gruvarbetare,16.26
+1970,men,metallindustri,14.46648988
+1970,men,verkstadsindustri,14.50353086
+1970,men,stenbrott,13.94272468
+1970,men,träindustri,13.2
+1970,men,"massa, papper och grafisk industri",15.22554374
+1970,men,"livsmedels-, dryckesvaru- och tobaksindustri",13.79549382
+1970,men,"textil-, beklädnads- och läderindustri",13.14216006
+1970,men,kemi- och gummiindustri,13.74988081
+1970,men,vägt genomsnitt,14.3005436
+1971,men,gruvarbetare,18.21
+1971,men,metallindustri,15.96745415
+1971,men,verkstadsindustri,15.90312597
+1971,men,stenbrott,15.13295727
+1971,men,träindustri,14.31
+1971,men,"massa, papper och grafisk industri",16.43518149
+1971,men,"livsmedels-, dryckesvaru- och tobaksindustri",15.14007749
+1971,men,"textil-, beklädnads- och läderindustri",14.43995099
+1971,men,kemi- och gummiindustri,15.02733527
+1971,men,vägt genomsnitt,15.66969959
+1972,men,gruvarbetare,19.56
+1972,men,metallindustri,17.922437
+1972,men,verkstadsindustri,17.09927458
+1972,men,stenbrott,17.16335405
+1972,men,träindustri,16.12
+1972,men,"massa, papper och grafisk industri",18.65231029
+1972,men,"livsmedels-, dryckesvaru- och tobaksindustri",17.30746383
+1972,men,"textil-, beklädnads- och läderindustri",16.39564687
+1972,men,kemi- och gummiindustri,16.62088366
+1972,men,vägt genomsnitt,17.33087441
+1973,men,gruvarbetare,21.09
+1973,men,metallindustri,19.57499194
+1973,men,verkstadsindustri,18.62341158
+1973,men,stenbrott,18.43360228
+1973,men,träindustri,17.57
+1973,men,"massa, papper och grafisk industri",20.13060509
+1973,men,"livsmedels-, dryckesvaru- och tobaksindustri",18.59802038
+1973,men,"textil-, beklädnads- och läderindustri",17.78900046
+1973,men,kemi- och gummiindustri,17.86124811
+1973,men,vägt genomsnitt,18.81605617
+1974,men,gruvarbetare,23.96
+1974,men,metallindustri,21.96302812
+1974,men,verkstadsindustri,20.60866789
+1974,men,stenbrott,20.59402447
+1974,men,träindustri,19.9
+1974,men,"massa, papper och grafisk industri",23.07727326
+1974,men,"livsmedels-, dryckesvaru- och tobaksindustri",20.57887462
+1974,men,"textil-, beklädnads- och läderindustri",19.90667436
+1974,men,kemi- och gummiindustri,20.11374995
+1974,men,vägt genomsnitt,21.04465598
+1975,men,gruvarbetare,29.35
+1975,men,metallindustri,25.8677469
+1975,men,verkstadsindustri,23.95827052
+1975,men,stenbrott,24.08470661
+1975,men,träindustri,23.02
+1975,men,"massa, papper och grafisk industri",27.3038074
+1975,men,"livsmedels-, dryckesvaru- och tobaksindustri",24.27046662
+1975,men,"textil-, beklädnads- och läderindustri",23.13294783
+1975,men,kemi- och gummiindustri,23.60661625
+1975,men,vägt genomsnitt,24.63863399
+1976,men,gruvarbetare,32.85
+1976,men,metallindustri,29.12990022
+1976,men,verkstadsindustri,26.83357002
+1976,men,stenbrott,27.33534185
+1976,men,träindustri,25.76
+1976,men,"massa, papper och grafisk industri",31.14340531
+1976,men,"livsmedels-, dryckesvaru- och tobaksindustri",27.8820241
+1976,men,"textil-, beklädnads- och läderindustri",26.29566156
+1976,men,kemi- och gummiindustri,27.17886587
+1976,men,vägt genomsnitt,27.81372414
+1977,men,gruvarbetare,36.45
+1977,men,metallindustri,31.15822387
+1977,men,verkstadsindustri,29.11085039
+1977,men,stenbrott,29.62578945
+1977,men,träindustri,27.84
+1977,men,"massa, papper och grafisk industri",33.49478698
+1977,men,"livsmedels-, dryckesvaru- och tobaksindustri",29.77283951
+1977,men,"textil-, beklädnads- och läderindustri",28.14795028
+1977,men,kemi- och gummiindustri,29.37183022
+1977,men,vägt genomsnitt,30.01521388
+1978,men,gruvarbetare,39.09
+1978,men,metallindustri,33.77660506
+1978,men,verkstadsindustri,31.53649203
+1978,men,stenbrott,32.49635041
+1978,men,träindustri,30.89
+1978,men,"massa, papper och grafisk industri",36.60019822
+1978,men,"livsmedels-, dryckesvaru- och tobaksindustri",33.0442503
+1978,men,"textil-, beklädnads- och läderindustri",30.84204209
+1978,men,kemi- och gummiindustri,32.28916741
+1978,men,vägt genomsnitt,32.70092328
+1979,men,gruvarbetare,41.46
+1979,men,metallindustri,38.04691337
+1979,men,verkstadsindustri,34.85351265
+1979,men,stenbrott,36.02704037
+1979,men,träindustri,33.87
+1979,men,"massa, papper och grafisk industri",41.41209741
+1979,men,"livsmedels-, dryckesvaru- och tobaksindustri",36.67581641
+1979,men,"textil-, beklädnads- och läderindustri",34.44791917
+1979,men,kemi- och gummiindustri,35.94080036
+1979,men,vägt genomsnitt,36.3900356
+1980,men,gruvarbetare,45.6
+1980,men,metallindustri,41.77076016
+1980,men,verkstadsindustri,38.26778187
+1980,men,stenbrott,40.50791602
+1980,men,träindustri,37.21
+1980,men,"massa, papper och grafisk industri",45.71800308
+1980,men,"livsmedels-, dryckesvaru- och tobaksindustri",40.43743861
+1980,men,"textil-, beklädnads- och läderindustri",38.3088042
+1980,men,kemi- och gummiindustri,40.08857909
+1980,men,vägt genomsnitt,40.12373507
+1981,men,gruvarbetare,50.27
+1981,men,metallindustri,44.86991147
+1981,men,verkstadsindustri,41.94829006
+1981,men,stenbrott,43.82856494
+1981,men,träindustri,40.63
+1981,men,"massa, papper och grafisk industri",49.78579416
+1981,men,"livsmedels-, dryckesvaru- och tobaksindustri",44.45917298
+1981,men,"textil-, beklädnads- och läderindustri",41.53616969
+1981,men,kemi- och gummiindustri,43.71044329
+1981,men,vägt genomsnitt,43.73616847
+1982,men,gruvarbetare,51.49
+1982,men,metallindustri,47.73770572
+1982,men,verkstadsindustri,44.29074317
+1982,men,stenbrott,46.3690614
+1982,men,träindustri,42.72
+1982,men,"massa, papper och grafisk industri",51.97843276
+1982,men,"livsmedels-, dryckesvaru- och tobaksindustri",46.56007899
+1982,men,"textil-, beklädnads- och läderindustri",43.74890995
+1982,men,kemi- och gummiindustri,46.39955342
+1982,men,vägt genomsnitt,46.15402519
+1983,men,gruvarbetare,54.28
+1983,men,metallindustri,50.32017831
+1983,men,verkstadsindustri,46.88314676
+1983,men,stenbrott,49.00957741
+1983,men,träindustri,45.28
+1983,men,"massa, papper och grafisk industri",55.54023031
+1983,men,"livsmedels-, dryckesvaru- och tobaksindustri",49.59138624
+1983,men,"textil-, beklädnads- och läderindustri",46.2014216
+1983,men,kemi- och gummiindustri,49.4359656
+1983,men,vägt genomsnitt,48.90310187
+1984,men,gruvarbetare,63.23
+1984,men,metallindustri,56.29992546
+1984,men,verkstadsindustri,52.00083302
+1984,men,stenbrott,55.16077947
+1984,men,träindustri,50.32
+1984,men,"massa, papper och grafisk industri",62.64398252
+1984,men,"livsmedels-, dryckesvaru- och tobaksindustri",54.14334927
+1984,men,"textil-, beklädnads- och läderindustri",51.84680292
+1984,men,kemi- och gummiindustri,55.55840453
+1984,men,vägt genomsnitt,54.50850728
+1985,men,gruvarbetare,67.12
+1985,men,metallindustri,61.3368989
+1985,men,verkstadsindustri,56.24683068
+1985,men,stenbrott,59.96171767
+1985,men,träindustri,54.53
+1985,men,"massa, papper och grafisk industri",68.65637616
+1985,men,"livsmedels-, dryckesvaru- och tobaksindustri",58.79535545
+1985,men,"textil-, beklädnads- och läderindustri",55.36407707
+1985,men,kemi- och gummiindustri,60.00387073
+1985,men,vägt genomsnitt,59.10598802
+1986,men,gruvarbetare,72.47
+1986,men,metallindustri,65.83593125
+1986,men,verkstadsindustri,60.23029516
+1986,men,stenbrott,64.50260504
+1986,men,träindustri,58.24
+1986,men,"massa, papper och grafisk industri",72.80438873
+1986,men,"livsmedels-, dryckesvaru- och tobaksindustri",62.76706824
+1986,men,"textil-, beklädnads- och läderindustri",59.80026789
+1986,men,kemi- och gummiindustri,64.29057027
+1986,men,vägt genomsnitt,63.25388981
+1987,men,gruvarbetare,77.18
+1987,men,metallindustri,71.81101066
+1987,men,verkstadsindustri,63.8023482
+1987,men,stenbrott,68.68342205
+1987,men,träindustri,62.78
+1987,men,"massa, papper och grafisk industri",78.5053711
+1987,men,"livsmedels-, dryckesvaru- och tobaksindustri",67.22899245
+1987,men,"textil-, beklädnads- och läderindustri",64.05984222
+1987,men,kemi- och gummiindustri,69.21233642
+1987,men,vägt genomsnitt,67.76642387
+1988,men,gruvarbetare,83.66
+1988,men,metallindustri,75.33353925
+1988,men,verkstadsindustri,69.00750603
+1988,men,stenbrott,74.81462021
+1988,men,träindustri,67.62
+1988,men,"massa, papper och grafisk industri",84.39967938
+1988,men,"livsmedels-, dryckesvaru- och tobaksindustri",72.95146025
+1988,men,"textil-, beklädnads- och läderindustri",69.24405586
+1988,men,kemi- och gummiindustri,75.19585454
+1988,men,vägt genomsnitt,72.86515119
+1989,men,gruvarbetare,89.17
+1989,men,metallindustri,83.56778289
+1989,men,verkstadsindustri,76.08417014
+1989,men,stenbrott,81.70596691
+1989,men,träindustri,75.27
+1989,men,"massa, papper och grafisk industri",91.15178816
+1989,men,"livsmedels-, dryckesvaru- och tobaksindustri",80.71480819
+1989,men,"textil-, beklädnads- och läderindustri",76.44377539
+1989,men,kemi- och gummiindustri,83.18380161
+1989,men,vägt genomsnitt,80.35682606
+1990,men,gruvarbetare,100.89
+1990,men,metallindustri,92.48967924
+1990,men,verkstadsindustri,83.52287809
+1990,men,stenbrott,92.01798207
+1990,men,träindustri,83.79
+1990,men,"massa, papper och grafisk industri",101.8825128
+1990,men,"livsmedels-, dryckesvaru- och tobaksindustri",87.66780667
+1990,men,"textil-, beklädnads- och läderindustri",83.39415399
+1990,men,kemi- och gummiindustri,91.91596735
+1990,men,vägt genomsnitt,88.82185693
+1991,men,gruvarbetare,108.76
+1991,men,metallindustri,96.29034885
+1991,men,verkstadsindustri,87.93210864
+1991,men,stenbrott,94.60848831
+1991,men,träindustri,87.05
+1991,men,"massa, papper och grafisk industri",106.5367844
+1991,men,"livsmedels-, dryckesvaru- och tobaksindustri",90.83917432
+1991,men,"textil-, beklädnads- och läderindustri",86.80181345
+1991,men,kemi- och gummiindustri,95.98436275
+1991,men,vägt genomsnitt,92.83957978
+1992,men,gruvarbetare,117.45
+1992,men,metallindustri,102.5580851
+1992,men,verkstadsindustri,95.35797395
+1992,men,stenbrott,100.2495907
+1992,men,träindustri,94.45
+1992,men,"massa, papper och grafisk industri",110.0048553
+1992,men,"livsmedels-, dryckesvaru- och tobaksindustri",97.70213396
+1992,men,"textil-, beklädnads- och läderindustri",94.24048472
+1992,men,kemi- och gummiindustri,104.6272223
+1992,men,vägt genomsnitt,99.5694034
+1993,men,gruvarbetare,117.39
+1993,men,metallindustri,102.929115
+1993,men,verkstadsindustri,94.49738407
+1993,men,stenbrott,100.2595926
+1993,men,träindustri,94.47
+1993,men,"massa, papper och grafisk industri",110.8227204
+1993,men,"livsmedels-, dryckesvaru- och tobaksindustri",97.83219005
+1993,men,"textil-, beklädnads- och läderindustri",93.31584542
+1993,men,kemi- och gummiindustri,103.7936973
+1993,men,vägt genomsnitt,99.5223762
+1994,men,gruvarbetare,121.7519025
+1994,men,metallindustri,105.6573347
+1994,men,verkstadsindustri,97.4303209
+1994,men,stenbrott,103.1763674
+1994,men,träindustri,97.57013483
+1994,men,"massa, papper och grafisk industri",115.5100303
+1994,men,"livsmedels-, dryckesvaru- och tobaksindustri",101.3650191
+1994,men,"textil-, beklädnads- och läderindustri",94.34033321
+1994,men,kemi- och gummiindustri,107.6915234
+1994,men,vägt genomsnitt,102.6783311
+1995,men,gruvarbetare,124.8505218
+1995,men,metallindustri,111.6099744
+1995,men,verkstadsindustri,102.1634734
+1995,men,stenbrott,105.8510861
+1995,men,träindustri,102.1121928
+1995,men,"massa, papper och grafisk industri",120.4268297
+1995,men,"livsmedels-, dryckesvaru- och tobaksindustri",105.5154757
+1995,men,"textil-, beklädnads- och läderindustri",100.1624224
+1995,men,kemi- och gummiindustri,109.8846697
+1995,men,vägt genomsnitt,107.2150598
+1996,men,gruvarbetare,135.8267848
+1996,men,metallindustri,118.3580955
+1996,men,verkstadsindustri,111.7515734
+1996,men,stenbrott,113.8873451
+1996,men,träindustri,110.1028504
+1996,men,"massa, papper och grafisk industri",129.6196882
+1996,men,"livsmedels-, dryckesvaru- och tobaksindustri",112.988768
+1996,men,"textil-, beklädnads- och läderindustri",105.6096989
+1996,men,kemi- och gummiindustri,117.1868345
+1996,men,vägt genomsnitt,115.6909927
+1997,men,gruvarbetare,140.3912893
+1997,men,metallindustri,124.5329549
+1997,men,verkstadsindustri,115.3241501
+1997,men,stenbrott,117.760241
+1997,men,träindustri,113.6716103
+1997,men,"massa, papper och grafisk industri",133.9074462
+1997,men,"livsmedels-, dryckesvaru- och tobaksindustri",115.619861
+1997,men,"textil-, beklädnads- och läderindustri",108.6956561
+1997,men,kemi- och gummiindustri,122.9045185
+1997,men,vägt genomsnitt,119.8808259
+1998,men,gruvarbetare,138.4844467
+1998,men,metallindustri,129.1056558
+1998,men,verkstadsindustri,120.4020713
+1998,men,stenbrott,124.5378088
+1998,men,träindustri,117.2764182
+1998,men,"massa, papper och grafisk industri",137.5305384
+1998,men,"livsmedels-, dryckesvaru- och tobaksindustri",119.8197277
+1998,men,"textil-, beklädnads- och läderindustri",116.8165959
+1998,men,kemi- och gummiindustri,126.1103142
+1998,men,vägt genomsnitt,124.3209031
+1999,men,gruvarbetare,141.940599
+1999,men,metallindustri,132.420647
+1999,men,verkstadsindustri,122.0193483
+1999,men,stenbrott,126.4742568
+1999,men,träindustri,119.5594632
+1999,men,"massa, papper och grafisk industri",138.8958136
+1999,men,"livsmedels-, dryckesvaru- och tobaksindustri",121.3020336
+1999,men,"textil-, beklädnads- och läderindustri",118.0659712
+1999,men,kemi- och gummiindustri,131.7493632
+1999,men,vägt genomsnitt,126.5713972
+2000,men,gruvarbetare,147.6611269
+2000,men,metallindustri,135.7410806
+2000,men,verkstadsindustri,127.8235332
+2000,men,stenbrott,128.8948167
+2000,men,träindustri,123.1642712
+2000,men,"massa, papper och grafisk industri",144.8315018
+2000,men,"livsmedels-, dryckesvaru- och tobaksindustri",128.4665122
+2000,men,"textil-, beklädnads- och läderindustri",126.5617237
+2000,men,kemi- och gummiindustri,136.5765021
+2000,men,vägt genomsnitt,131.7533652
+2001,men,gruvarbetare,152.3090558
+2001,men,metallindustri,143.0235124
+2001,men,verkstadsindustri,129.7159725
+2001,men,stenbrott,135.0672446
+2001,men,träindustri,128.8118036
+2001,men,"massa, papper och grafisk industri",150.5203902
+2001,men,"livsmedels-, dryckesvaru- och tobaksindustri",129.9488181
+2001,men,"textil-, beklädnads- och läderindustri",129.8100996
+2001,men,kemi- och gummiindustri,142.5163635
+2001,men,vägt genomsnitt,135.7242162
+2002,men,gruvarbetare,158.0295838
+2002,men,metallindustri,145.3125975
+2002,men,verkstadsindustri,133.5907405
+2002,men,stenbrott,137.6088325
+2002,men,träindustri,132.8972526
+2002,men,"massa, papper och grafisk industri",154.1918407
+2002,men,"livsmedels-, dryckesvaru- och tobaksindustri",136.4956692
+2002,men,"textil-, beklädnads- och läderindustri",131.1844125
+2002,men,kemi- och gummiindustri,146.7546924
+2002,men,vägt genomsnitt,139.4788023
+2003,men,gruvarbetare,160.7706701
+2003,men,metallindustri,150.1566558
+2003,men,verkstadsindustri,139.6865093
+2003,men,stenbrott,143.7812603
+2003,men,träindustri,137.2230221
+2003,men,"massa, papper och grafisk industri",158.948313
+2003,men,"livsmedels-, dryckesvaru- och tobaksindustri",140.0779085
+2003,men,"textil-, beklädnads- och läderindustri",138.1809145
+2003,men,kemi- och gummiindustri,151.723577
+2003,men,vägt genomsnitt,144.7755042
+2004,men,gruvarbetare,168.3980406
+2004,men,metallindustri,154.0895449
+2004,men,verkstadsindustri,144.2545155
+2004,men,stenbrott,148.5013522
+2004,men,träindustri,142.0294327
+2004,men,"massa, papper och grafisk industri",166.7005643
+2004,men,"livsmedels-, dryckesvaru- och tobaksindustri",145.1424537
+2004,men,"textil-, beklädnads- och läderindustri",142.9285408
+2004,men,kemi- och gummiindustri,156.1852686
+2004,men,vägt genomsnitt,149.6504235
+2005,men,gruvarbetare,172.6884365
+2005,men,metallindustri,157.8883993
+2005,men,verkstadsindustri,150.0957167
+2005,men,stenbrott,146.6859323
+2005,men,träindustri,146.235042
+2005,men,"massa, papper och grafisk industri",170.990461
+2005,men,"livsmedels-, dryckesvaru- och tobaksindustri",149.2187949
+2005,men,"textil-, beklädnads- och läderindustri",148.800605
+2005,men,kemi- och gummiindustri,160.2372085
+2005,men,vägt genomsnitt,154.3219048
+2006,men,gruvarbetare,184.4870254
+2006,men,metallindustri,162.5445021
+2006,men,verkstadsindustri,154.497918
+2006,men,stenbrott,150.9219121
+2006,men,träindustri,150.0801704
+2006,men,"massa, papper och grafisk industri",176.9586712
+2006,men,"livsmedels-, dryckesvaru- och tobaksindustri",154.7774421
+2006,men,"textil-, beklädnads- och läderindustri",150.5497305
+2006,men,kemi- och gummiindustri,166.58101
+2006,men,vägt genomsnitt,159.1827133
+2007,men,gruvarbetare,192.9486396
+2007,men,metallindustri,171.0670364
+2007,men,verkstadsindustri,161.1328698
+2007,men,stenbrott,160.7251799
+2007,men,träindustri,157.169626
+2007,men,"massa, papper och grafisk industri",183.5067554
+2007,men,"livsmedels-, dryckesvaru- och tobaksindustri",161.0772422
+2007,men,"textil-, beklädnads- och läderindustri",157.6711701
+2007,men,kemi- och gummiindustri,171.5295521
+2007,men,vägt genomsnitt,166.1656842
+2008,men,gruvarbetare,202.5660202
+2008,men,vägt genomsnitt,172.4958055
+2009,men,gruvarbetare,218.9952093
+2009,men,vägt genomsnitt,177.3651296
+2010,men,gruvarbetare,218.9362743
+2010,men,vägt genomsnitt,180.286724
+2011,men,gruvarbetare,231.6064232
+2011,men,vägt genomsnitt,186.0081798
+2012,men,gruvarbetare,244.5052855
+2012,men,vägt genomsnitt,194.0425645
+2013,men,gruvarbetare,254.511368
+2013,men,vägt genomsnitt,197.6945576
+1865,women,"textil-, beklädnads- och läderindustri",0.0700257695
+1866,women,"textil-, beklädnads- och läderindustri",0.07702834645
+1867,women,"textil-, beklädnads- och läderindustri",0.07602797832
+1868,women,"textil-, beklädnads- och läderindustri",0.0700257695
+1869,women,"textil-, beklädnads- och läderindustri",0.07202650577
+1870,women,"textil-, beklädnads- och läderindustri",0.07302687391
+1871,women,"textil-, beklädnads- och läderindustri",0.08203018713
+1872,women,"textil-, beklädnads- och läderindustri",0.08303055527
+1873,women,"textil-, beklädnads- och läderindustri",0.08303055527
+1874,women,"textil-, beklädnads- och läderindustri",0.09103350035
+1875,women,"textil-, beklädnads- och läderindustri",0.09203386849
+1876,women,"textil-, beklädnads- och läderindustri",0.09003313222
+1877,women,"textil-, beklädnads- och läderindustri",0.09603534103
+1878,women,"textil-, beklädnads- och läderindustri",0.09403460476
+1879,women,"textil-, beklädnads- och läderindustri",0.09303423663
+1880,women,"textil-, beklädnads- och läderindustri",0.09403460476
+1881,women,"textil-, beklädnads- och läderindustri",0.09603534103
+1882,women,"textil-, beklädnads- och läderindustri",0.1000368136
+1883,women,"textil-, beklädnads- och läderindustri",0.1010371817
+1884,women,"textil-, beklädnads- och läderindustri",0.1050386543
+1885,women,"textil-, beklädnads- och läderindustri",0.1050386543
+1886,women,"textil-, beklädnads- och läderindustri",0.1050386543
+1887,women,"textil-, beklädnads- och läderindustri",0.1080397587
+1888,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.088
+1888,women,"textil-, beklädnads- och läderindustri",0.1140419675
+1889,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.094
+1889,women,"textil-, beklädnads- och läderindustri",0.1190438082
+1890,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.123
+1890,women,"textil-, beklädnads- och läderindustri",0.1220449126
+1891,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.127
+1891,women,"textil-, beklädnads- och läderindustri",0.1230452807
+1892,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.127
+1892,women,"textil-, beklädnads- och läderindustri",0.1210445444
+1893,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.132
+1893,women,"textil-, beklädnads- och läderindustri",0.1220449126
+1894,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.13
+1894,women,"textil-, beklädnads- och läderindustri",0.1260463851
+1895,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.138
+1895,women,"textil-, beklädnads- och läderindustri",0.1300478576
+1896,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.145
+1896,women,"textil-, beklädnads- och läderindustri",0.1350496983
+1897,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.151
+1897,women,"textil-, beklädnads- och läderindustri",0.1350496983
+1898,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.161
+1898,women,"textil-, beklädnads- och läderindustri",0.1460537478
+1899,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.153
+1899,women,"textil-, beklädnads- och läderindustri",0.1500552204
+1900,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.155
+1900,women,"textil-, beklädnads- och läderindustri",0.1530563248
+1901,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.164
+1901,women,"textil-, beklädnads- och läderindustri",0.1510555885
+1902,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.168
+1902,women,"textil-, beklädnads- och läderindustri",0.1530563248
+1903,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.17
+1903,women,"textil-, beklädnads- och läderindustri",0.155057061
+1904,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.176
+1904,women,"textil-, beklädnads- och läderindustri",0.1600589017
+1905,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.181
+1905,women,"textil-, beklädnads- och läderindustri",0.1690622149
+1906,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.195
+1906,women,"textil-, beklädnads- och läderindustri",0.1780655282
+1907,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.214
+1907,women,"textil-, beklädnads- och läderindustri",0.1910703139
+1908,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.234
+1908,women,"textil-, beklädnads- och läderindustri",0.1930710502
+1909,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.256
+1909,women,"textil-, beklädnads- och läderindustri",0.2030747316
+1910,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.266
+1910,women,"textil-, beklädnads- och läderindustri",0.2080765722
+1911,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.261
+1911,women,"textil-, beklädnads- och läderindustri",0.2130784129
+1912,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.265
+1912,women,"textil-, beklädnads- och läderindustri",0.2300846712
+1913,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.275
+1913,women,"textil-, beklädnads- och läderindustri",0.228083935
+1921,women,metallindustri,0.9098726572
+1921,women,verkstadsindustri,1.073620027
+1921,women,stenbrott,0.83
+1921,women,träindustri,0.83
+1921,women,"massa, papper och grafisk industri",0.99
+1921,women,"livsmedels-, dryckesvaru- och tobaksindustri",1.1
+1921,women,"textil-, beklädnads- och läderindustri",0.9079779042
+1921,women,kemi- och gummiindustri,0.9958000776
+1921,women,vägt genomsnitt,0.9776182732
+1922,women,metallindustri,0.6983518299
+1922,women,verkstadsindustri,0.7680820292
+1922,women,stenbrott,0.57
+1922,women,träindustri,0.77
+1922,women,"massa, papper och grafisk industri",0.75
+1922,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.87
+1922,women,"textil-, beklädnads- och läderindustri",0.7067452116
+1922,women,kemi- och gummiindustri,0.7579425573
+1922,women,vägt genomsnitt,0.7495299314
+1923,women,metallindustri,0.6557496124
+1923,women,verkstadsindustri,0.7049979396
+1923,women,stenbrott,0.59
+1923,women,träindustri,0.65
+1923,women,"massa, papper och grafisk industri",0.69
+1923,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.75
+1923,women,"textil-, beklädnads- och läderindustri",0.6774999571
+1923,women,kemi- och gummiindustri,0.6869477049
+1923,women,vägt genomsnitt,0.6914331825
+1924,women,metallindustri,0.6912961521
+1924,women,verkstadsindustri,0.7190399706
+1924,women,stenbrott,0.55
+1924,women,träindustri,0.69
+1924,women,"massa, papper och grafisk industri",0.7
+1924,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.79
+1924,women,"textil-, beklädnads- och läderindustri",0.6845483855
+1924,women,kemi- och gummiindustri,0.6923498837
+1924,women,vägt genomsnitt,0.7051050549
+1925,women,metallindustri,0.7164092648
+1925,women,verkstadsindustri,0.8067444596
+1925,women,stenbrott,0.6
+1925,women,träindustri,0.68
+1925,women,"massa, papper och grafisk industri",0.69
+1925,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.83
+1925,women,"textil-, beklädnads- och läderindustri",0.685418548
+1925,women,kemi- och gummiindustri,0.7055128575
+1925,women,vägt genomsnitt,0.7190629941
+1926,women,metallindustri,0.7164092648
+1926,women,verkstadsindustri,0.8735780201
+1926,women,stenbrott,0.63
+1926,women,träindustri,0.69
+1926,women,"massa, papper och grafisk industri",0.74
+1926,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.85
+1926,women,"textil-, beklädnads- och läderindustri",0.6840221812
+1926,women,kemi- och gummiindustri,0.7189702266
+1926,women,vägt genomsnitt,0.7346187058
+1927,women,metallindustri,0.7200910866
+1927,women,verkstadsindustri,0.903517534
+1927,women,stenbrott,0.59
+1927,women,träindustri,0.72
+1927,women,"massa, papper och grafisk industri",0.7
+1927,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.86
+1927,women,"textil-, beklädnads- och läderindustri",0.6943733804
+1927,women,kemi- och gummiindustri,0.7225397871
+1927,women,vägt genomsnitt,0.7357535174
+1928,women,metallindustri,0.7343076621
+1928,women,verkstadsindustri,0.910415272
+1928,women,stenbrott,0.61
+1928,women,träindustri,0.74
+1928,women,"massa, papper och grafisk industri",0.72
+1928,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.84
+1928,women,"textil-, beklädnads- och läderindustri",0.700963911
+1928,women,kemi- och gummiindustri,0.7286917205
+1928,women,vägt genomsnitt,0.7407025732
+1929,women,metallindustri,0.7307473771
+1929,women,verkstadsindustri,0.9290594181
+1929,women,stenbrott,0.66
+1929,women,träindustri,0.69
+1929,women,"massa, papper och grafisk industri",0.74
+1929,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.86
+1929,women,"textil-, beklädnads- och läderindustri",0.6994004609
+1929,women,kemi- och gummiindustri,0.7262093275
+1929,women,vägt genomsnitt,0.748958927
+1930,women,metallindustri,0.7430023416
+1930,women,verkstadsindustri,0.9585944955
+1930,women,stenbrott,0.67
+1930,women,träindustri,0.69
+1930,women,"massa, papper och grafisk industri",0.74
+1930,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.86
+1930,women,"textil-, beklädnads- och läderindustri",0.7183186777
+1930,women,kemi- och gummiindustri,0.767846461
+1930,women,vägt genomsnitt,0.7641663742
+1931,women,metallindustri,0.7421785256
+1931,women,verkstadsindustri,0.9348216406
+1931,women,stenbrott,0.67
+1931,women,träindustri,0.71
+1931,women,"massa, papper och grafisk industri",0.76
+1931,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.85
+1931,women,"textil-, beklädnads- och läderindustri",0.706535974
+1931,women,kemi- och gummiindustri,0.7741242113
+1931,women,vägt genomsnitt,0.7575248613
+1932,women,metallindustri,0.7255164827
+1932,women,verkstadsindustri,0.8526701017
+1932,women,stenbrott,0.65
+1932,women,träindustri,0.73
+1932,women,"massa, papper och grafisk industri",0.75
+1932,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.85
+1932,women,"textil-, beklädnads- och läderindustri",0.7160619023
+1932,women,kemi- och gummiindustri,0.7659418627
+1932,women,vägt genomsnitt,0.7527061328
+1933,women,metallindustri,0.720232342
+1933,women,verkstadsindustri,0.8418662344
+1933,women,stenbrott,0.65
+1933,women,träindustri,0.78
+1933,women,"massa, papper och grafisk industri",0.74
+1933,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.85
+1933,women,"textil-, beklädnads- och läderindustri",0.6990331952
+1933,women,kemi- och gummiindustri,0.7701782028
+1933,women,vägt genomsnitt,0.7428168144
+1934,women,metallindustri,0.7261391244
+1934,women,verkstadsindustri,0.8553945542
+1934,women,stenbrott,0.65
+1934,women,träindustri,0.75
+1934,women,"massa, papper och grafisk industri",0.76
+1934,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.83
+1934,women,"textil-, beklädnads- och läderindustri",0.6989066367
+1934,women,kemi- och gummiindustri,0.7558182908
+1934,women,vägt genomsnitt,0.740458742
+1935,women,metallindustri,0.7470223882
+1935,women,verkstadsindustri,0.8562868267
+1935,women,stenbrott,0.64
+1935,women,träindustri,0.74
+1935,women,"massa, papper och grafisk industri",0.76
+1935,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.84
+1935,women,"textil-, beklädnads- och läderindustri",0.7071952418
+1935,women,kemi- och gummiindustri,0.7558182908
+1935,women,vägt genomsnitt,0.747254145
+1936,women,metallindustri,0.7540171782
+1936,women,verkstadsindustri,0.8700613426
+1936,women,stenbrott,0.64
+1936,women,träindustri,0.69
+1936,women,"massa, papper och grafisk industri",0.77
+1936,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.84
+1936,women,"textil-, beklädnads- och läderindustri",0.7141061253
+1936,women,kemi- och gummiindustri,0.7747259149
+1936,women,vägt genomsnitt,0.7538650543
+1937,women,metallindustri,0.7591010357
+1937,women,verkstadsindustri,0.8866558612
+1937,women,stenbrott,0.64
+1937,women,träindustri,0.7
+1937,women,"massa, papper och grafisk industri",0.8
+1937,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.86
+1937,women,"textil-, beklädnads- och läderindustri",0.7439878823
+1937,women,kemi- och gummiindustri,0.7802316362
+1937,women,vägt genomsnitt,0.7784795262
+1938,women,metallindustri,0.8196116751
+1938,women,verkstadsindustri,0.9808999282
+1938,women,stenbrott,0.68
+1938,women,träindustri,0.7
+1938,women,"massa, papper och grafisk industri",0.83
+1938,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.88
+1938,women,"textil-, beklädnads- och läderindustri",0.7597093629
+1938,women,kemi- och gummiindustri,0.8257956903
+1938,women,vägt genomsnitt,0.8096791755
+1939,women,metallindustri,0.8379099202
+1939,women,verkstadsindustri,1.022238365
+1939,women,stenbrott,0.69
+1939,women,träindustri,0.75
+1939,women,"massa, papper och grafisk industri",0.88
+1939,women,"livsmedels-, dryckesvaru- och tobaksindustri",0.91
+1939,women,"textil-, beklädnads- och läderindustri",0.8001519755
+1939,women,kemi- och gummiindustri,0.829631774
+1939,women,vägt genomsnitt,0.84465804
+1940,women,metallindustri,0.9157440083
+1940,women,verkstadsindustri,1.092440694
+1940,women,stenbrott,0.75
+1940,women,träindustri,0.88
+1940,women,"massa, papper och grafisk industri",0.95
+1940,women,"livsmedels-, dryckesvaru- och tobaksindustri",1
+1940,women,"textil-, beklädnads- och läderindustri",0.8930556448
+1940,women,kemi- och gummiindustri,0.9052049923
+1940,women,vägt genomsnitt,0.9306053115
+1941,women,metallindustri,1.003338316
+1941,women,verkstadsindustri,1.187027548
+1941,women,stenbrott,0.8
+1941,women,träindustri,0.9
+1941,women,"massa, papper och grafisk industri",1.04
+1941,women,"livsmedels-, dryckesvaru- och tobaksindustri",1.07
+1941,women,"textil-, beklädnads- och läderindustri",0.9632268174
+1941,women,kemi- och gummiindustri,1.008776932
+1941,women,vägt genomsnitt,1.009756467
+1942,women,metallindustri,1.084178086
+1942,women,verkstadsindustri,1.277473425
+1942,women,stenbrott,0.89
+1942,women,träindustri,0.99
+1942,women,"massa, papper och grafisk industri",1.13
+1942,women,"livsmedels-, dryckesvaru- och tobaksindustri",1.15
+1942,women,"textil-, beklädnads- och läderindustri",1.052828684
+1942,women,kemi- och gummiindustri,1.085404247
+1942,women,vägt genomsnitt,1.096412543
+1943,women,metallindustri,1.126743013
+1943,women,verkstadsindustri,1.220300627
+1943,women,stenbrott,0.96
+1943,women,träindustri,1
+1943,women,"massa, papper och grafisk industri",1.18
+1943,women,"livsmedels-, dryckesvaru- och tobaksindustri",1.2
+1943,women,"textil-, beklädnads- och läderindustri",1.093846481
+1943,women,kemi- och gummiindustri,1.105812646
+1943,women,vägt genomsnitt,1.127506168
+1944,women,metallindustri,1.175965334
+1944,women,verkstadsindustri,1.354641721
+1944,women,stenbrott,1.02
+1944,women,träindustri,1.06
+1944,women,"massa, papper och grafisk industri",1.22
+1944,women,"livsmedels-, dryckesvaru- och tobaksindustri",1.22
+1944,women,"textil-, beklädnads- och läderindustri",1.160088283
+1944,women,kemi- och gummiindustri,1.154556982
+1944,women,vägt genomsnitt,1.191497963
+1945,women,metallindustri,1.260095515
+1945,women,verkstadsindustri,1.426837835
+1945,women,stenbrott,1.08
+1945,women,träindustri,1.12
+1945,women,"massa, papper och grafisk industri",1.3
+1945,women,"livsmedels-, dryckesvaru- och tobaksindustri",1.27
+1945,women,"textil-, beklädnads- och läderindustri",1.2471678
+1945,women,kemi- och gummiindustri,1.229234805
+1945,women,vägt genomsnitt,1.268291969
+1946,women,metallindustri,1.351306496
+1946,women,verkstadsindustri,1.47691415
+1946,women,stenbrott,1.2
+1946,women,träindustri,1.3
+1946,women,"massa, papper och grafisk industri",1.43
+1946,women,"livsmedels-, dryckesvaru- och tobaksindustri",1.4
+1946,women,"textil-, beklädnads- och läderindustri",1.365312919
+1946,women,kemi- och gummiindustri,1.332737439
+1946,women,vägt genomsnitt,1.37877549
+1947,women,metallindustri,1.566172005
+1947,women,verkstadsindustri,1.730543327
+1947,women,stenbrott,1.47
+1947,women,träindustri,1.53
+1947,women,"massa, papper och grafisk industri",1.69
+1947,women,"livsmedels-, dryckesvaru- och tobaksindustri",1.64
+1947,women,"textil-, beklädnads- och läderindustri",1.611893445
+1947,women,kemi- och gummiindustri,1.56852037
+1947,women,vägt genomsnitt,1.625572738
+1948,women,metallindustri,1.73901801
+1948,women,verkstadsindustri,1.886973405
+1948,women,stenbrott,1.61
+1948,women,träindustri,1.7
+1948,women,"massa, papper och grafisk industri",1.88
+1948,women,"livsmedels-, dryckesvaru- och tobaksindustri",1.78
+1948,women,"textil-, beklädnads- och läderindustri",1.792492377
+1948,women,kemi- och gummiindustri,1.728912128
+1948,women,vägt genomsnitt,1.796361635
+1949,women,metallindustri,1.81489125
+1949,women,verkstadsindustri,1.983041092
+1949,women,stenbrott,1.66
+1949,women,träindustri,1.75
+1949,women,"massa, papper och grafisk industri",1.91
+1949,women,"livsmedels-, dryckesvaru- och tobaksindustri",1.86
+1949,women,"textil-, beklädnads- och läderindustri",1.86450996
+1949,women,kemi- och gummiindustri,1.823002912
+1949,women,vägt genomsnitt,1.869113872
+1950,women,metallindustri,1.898494957
+1950,women,verkstadsindustri,2.07374958
+1950,women,stenbrott,1.7
+1950,women,träindustri,1.82
+1950,women,"massa, papper och grafisk industri",1.96
+1950,women,"livsmedels-, dryckesvaru- och tobaksindustri",1.87
+1950,women,"textil-, beklädnads- och läderindustri",1.924073956
+1950,women,kemi- och gummiindustri,1.909524263
+1950,women,vägt genomsnitt,1.929326334
+1951,women,metallindustri,2.298398419
+1951,women,verkstadsindustri,2.493164469
+1951,women,stenbrott,2.07
+1951,women,träindustri,2.21
+1951,women,"massa, papper och grafisk industri",2.29
+1951,women,"livsmedels-, dryckesvaru- och tobaksindustri",2.29
+1951,women,"textil-, beklädnads- och läderindustri",2.294737748
+1951,women,kemi- och gummiindustri,2.237753636
+1951,women,vägt genomsnitt,2.306612385
+1952,women,gruvarbetare,2.52
+1952,women,metallindustri,2.795794529
+1952,women,verkstadsindustri,3.050670193
+1952,women,stenbrott,2.49
+1952,women,träindustri,2.57
+1952,women,"massa, papper och grafisk industri",2.914650722
+1952,women,"livsmedels-, dryckesvaru- och tobaksindustri",2.705594785
+1952,women,"textil-, beklädnads- och läderindustri",2.672710387
+1952,women,kemi- och gummiindustri,2.679713592
+1952,women,vägt genomsnitt,2.765018824
+1953,women,gruvarbetare,2.59
+1953,women,metallindustri,2.923208901
+1953,women,verkstadsindustri,3.206452877
+1953,women,stenbrott,2.59
+1953,women,träindustri,2.72
+1953,women,"massa, papper och grafisk industri",3.00969898
+1953,women,"livsmedels-, dryckesvaru- och tobaksindustri",2.848491539
+1953,women,"textil-, beklädnads- och läderindustri",2.785975825
+1953,women,kemi- och gummiindustri,2.813675055
+1953,women,vägt genomsnitt,2.881071391
+1954,women,gruvarbetare,2.67
+1954,women,metallindustri,3.007925855
+1954,women,verkstadsindustri,3.308566157
+1954,women,stenbrott,2.82
+1954,women,träindustri,2.84
+1954,women,"massa, papper och grafisk industri",3.109696569
+1954,women,"livsmedels-, dryckesvaru- och tobaksindustri",2.961702745
+1954,women,"textil-, beklädnads- och läderindustri",2.907005076
+1954,women,kemi- och gummiindustri,2.993034594
+1954,women,vägt genomsnitt,3.004008233
+1955,women,gruvarbetare,2.87
+1955,women,metallindustri,3.247749539
+1955,women,verkstadsindustri,3.528425778
+1955,women,stenbrott,2.94
+1955,women,träindustri,3.18
+1955,women,"massa, papper och grafisk industri",3.424683208
+1955,women,"livsmedels-, dryckesvaru- och tobaksindustri",3.229764567
+1955,women,"textil-, beklädnads- och läderindustri",3.132723203
+1955,women,kemi- och gummiindustri,3.250336554
+1955,women,vägt genomsnitt,3.251529971
+1956,women,gruvarbetare,3.14
+1956,women,metallindustri,3.557578421
+1956,women,verkstadsindustri,3.88467258
+1956,women,stenbrott,3.2
+1956,women,träindustri,3.45
+1956,women,"massa, papper och grafisk industri",3.71465614
+1956,women,"livsmedels-, dryckesvaru- och tobaksindustri",3.499134169
+1956,women,"textil-, beklädnads- och läderindustri",3.40351811
+1956,women,kemi- och gummiindustri,3.542402967
+1956,women,vägt genomsnitt,3.545135983
+1957,women,gruvarbetare,3.22
+1957,women,metallindustri,3.787940002
+1957,women,verkstadsindustri,4.113685824
+1957,women,stenbrott,3.39
+1957,women,träindustri,3.68
+1957,women,"massa, papper och grafisk industri",3.924618135
+1957,women,"livsmedels-, dryckesvaru- och tobaksindustri",3.687979092
+1957,women,"textil-, beklädnads- och läderindustri",3.617261434
+1957,women,kemi- och gummiindustri,3.746792954
+1957,women,vägt genomsnitt,3.759270887
+1958,women,gruvarbetare,3.33
+1958,women,metallindustri,4.023402509
+1958,women,verkstadsindustri,4.376322509
+1958,women,stenbrott,3.55
+1958,women,träindustri,3.85
+1958,women,"massa, papper och grafisk industri",4.134640262
+1958,women,"livsmedels-, dryckesvaru- och tobaksindustri",3.89977977
+1958,women,"textil-, beklädnads- och läderindustri",3.818062592
+1958,women,kemi- och gummiindustri,3.938059949
+1958,women,vägt genomsnitt,3.976025902
+1959,women,gruvarbetare,3.39
+1959,women,metallindustri,4.20538217
+1959,women,verkstadsindustri,4.540408532
+1959,women,stenbrott,3.68
+1959,women,träindustri,4.12
+1959,women,"massa, papper och grafisk industri",4.279889749
+1959,women,"livsmedels-, dryckesvaru- och tobaksindustri",4.110399714
+1959,women,"textil-, beklädnads- och läderindustri",3.963602046
+1959,women,kemi- och gummiindustri,4.075327121
+1959,women,vägt genomsnitt,4.138003466
+1960,women,gruvarbetare,3.84
+1960,women,metallindustri,4.496434035
+1960,women,verkstadsindustri,4.800110361
+1960,women,stenbrott,3.97
+1960,women,träindustri,4.41
+1960,women,"massa, papper och grafisk industri",4.525460128
+1960,women,"livsmedels-, dryckesvaru- och tobaksindustri",4.42583285
+1960,women,"textil-, beklädnads- och läderindustri",4.2095997
+1960,women,kemi- och gummiindustri,4.350652071
+1960,women,vägt genomsnitt,4.40954938
+1961,women,gruvarbetare,4.32
+1961,women,metallindustri,4.872478221
+1961,women,verkstadsindustri,5.147416119
+1961,women,stenbrott,4.28
+1961,women,träindustri,4.73
+1961,women,"massa, papper och grafisk industri",4.883933376
+1961,women,"livsmedels-, dryckesvaru- och tobaksindustri",4.823340223
+1961,women,"textil-, beklädnads- och läderindustri",4.557905426
+1961,women,kemi- och gummiindustri,4.692247266
+1961,women,vägt genomsnitt,4.775051277
+1962,women,gruvarbetare,4.8
+1962,women,metallindustri,5.395353824
+1962,women,verkstadsindustri,5.629730168
+1962,women,stenbrott,4.77
+1962,women,träindustri,5.26
+1962,women,"massa, papper och grafisk industri",5.323065344
+1962,women,"livsmedels-, dryckesvaru- och tobaksindustri",5.391861494
+1962,women,"textil-, beklädnads- och läderindustri",5.021711276
+1962,women,kemi- och gummiindustri,5.121437428
+1962,women,vägt genomsnitt,5.267380535
+1963,women,gruvarbetare,5.3
+1963,women,metallindustri,5.974629196
+1963,women,verkstadsindustri,6.320224875
+1963,women,stenbrott,5.21
+1963,women,träindustri,5.82
+1963,women,"massa, papper och grafisk industri",5.830722067
+1963,women,"livsmedels-, dryckesvaru- och tobaksindustri",5.908571565
+1963,women,"textil-, beklädnads- och läderindustri",5.46410791
+1963,women,kemi- och gummiindustri,5.502799063
+1963,women,vägt genomsnitt,5.788963593
+1964,women,gruvarbetare,5.97
+1964,women,metallindustri,6.643060192
+1964,women,verkstadsindustri,7.054749308
+1964,women,stenbrott,5.75
+1964,women,träindustri,6.35
+1964,women,"massa, papper och grafisk industri",6.525561839
+1964,women,"livsmedels-, dryckesvaru- och tobaksindustri",6.486968539
+1964,women,"textil-, beklädnads- och läderindustri",6.013763095
+1964,women,kemi- och gummiindustri,6.044874317
+1964,women,vägt genomsnitt,6.414037388
+1965,women,gruvarbetare,7.03
+1965,women,metallindustri,7.580669288
+1965,women,verkstadsindustri,7.957773175
+1965,women,stenbrott,6.5
+1965,women,träindustri,7.16
+1965,women,"massa, papper och grafisk industri",7.266371573
+1965,women,"livsmedels-, dryckesvaru- och tobaksindustri",7.182707427
+1965,women,"textil-, beklädnads- och läderindustri",6.662081803
+1965,women,kemi- och gummiindustri,6.822477855
+1965,women,vägt genomsnitt,7.206422717
+1966,women,gruvarbetare,8.38
+1966,women,metallindustri,8.388609041
+1966,women,verkstadsindustri,8.769360909
+1966,women,stenbrott,7.34
+1966,women,träindustri,7.9
+1966,women,"massa, papper och grafisk industri",8.021063377
+1966,women,"livsmedels-, dryckesvaru- och tobaksindustri",8.022435035
+1966,women,"textil-, beklädnads- och läderindustri",7.313140867
+1966,women,kemi- och gummiindustri,7.588622658
+1966,women,vägt genomsnitt,7.990221764
+1967,women,gruvarbetare,9.89
+1967,women,metallindustri,9.186574229
+1967,women,verkstadsindustri,9.558594903
+1967,women,stenbrott,8.04
+1967,women,träindustri,8.76
+1967,women,"massa, papper och grafisk industri",8.940110945
+1967,women,"livsmedels-, dryckesvaru- och tobaksindustri",8.810085377
+1967,women,"textil-, beklädnads- och läderindustri",7.975076037
+1967,women,kemi- och gummiindustri,8.398598383
+1967,women,vägt genomsnitt,8.766680009
+1968,women,gruvarbetare,10.46
+1968,women,metallindustri,9.645404212
+1968,women,verkstadsindustri,10.1171924
+1968,women,stenbrott,8.82
+1968,women,träindustri,9.28
+1968,women,"massa, papper och grafisk industri",9.663563443
+1968,women,"livsmedels-, dryckesvaru- och tobaksindustri",9.32884395
+1968,women,"textil-, beklädnads- och läderindustri",8.691153916
+1968,women,kemi- och gummiindustri,8.986472795
+1968,women,vägt genomsnitt,9.378514492
+1969,women,gruvarbetare,11.43
+1969,women,metallindustri,10.42342027
+1969,women,verkstadsindustri,10.88692601
+1969,women,stenbrott,9.78
+1969,women,träindustri,10.26
+1969,women,"massa, papper och grafisk industri",10.7369349
+1969,women,"livsmedels-, dryckesvaru- och tobaksindustri",10.26176534
+1969,women,"textil-, beklädnads- och läderindustri",9.550286454
+1969,women,kemi- och gummiindustri,9.900852788
+1969,women,vägt genomsnitt,10.2886835
+1970,women,gruvarbetare,13.55
+1970,women,metallindustri,11.73008827
+1970,women,verkstadsindustri,12.14202678
+1970,women,stenbrott,11.11
+1970,women,träindustri,11.48
+1970,women,"massa, papper och grafisk industri",11.88916814
+1970,women,"livsmedels-, dryckesvaru- och tobaksindustri",11.48629695
+1970,women,"textil-, beklädnads- och läderindustri",10.6220312
+1970,women,kemi- och gummiindustri,11.25461681
+1970,women,vägt genomsnitt,11.55045002
+1971,women,gruvarbetare,15.35
+1971,women,metallindustri,13.26617125
+1971,women,verkstadsindustri,13.67619392
+1971,women,stenbrott,12.5
+1971,women,träindustri,12.87
+1971,women,"massa, papper och grafisk industri",13.14811505
+1971,women,"livsmedels-, dryckesvaru- och tobaksindustri",12.8228106
+1971,women,"textil-, beklädnads- och läderindustri",11.81650179
+1971,women,kemi- och gummiindustri,12.59710906
+1971,women,vägt genomsnitt,12.97308682
+1972,women,gruvarbetare,17.14
+1972,women,metallindustri,15.43365254
+1972,women,verkstadsindustri,15.08521222
+1972,women,stenbrott,14.49
+1972,women,träindustri,14.45
+1972,women,"massa, papper och grafisk industri",15.1669021
+1972,women,"livsmedels-, dryckesvaru- och tobaksindustri",14.83477588
+1972,women,"textil-, beklädnads- och läderindustri",13.49356523
+1972,women,kemi- och gummiindustri,14.39893529
+1972,women,vägt genomsnitt,14.75210254
+1973,women,gruvarbetare,18.39
+1973,women,metallindustri,16.85580064
+1973,women,verkstadsindustri,16.44398866
+1973,women,stenbrott,15.83
+1973,women,träindustri,15.87
+1973,women,"massa, papper och grafisk industri",16.51283911
+1973,women,"livsmedels-, dryckesvaru- och tobaksindustri",15.9418487
+1973,women,"textil-, beklädnads- och läderindustri",14.7581371
+1973,women,kemi- och gummiindustri,15.4734827
+1973,women,vägt genomsnitt,16.05844307
+1974,women,gruvarbetare,20.78
+1974,women,metallindustri,18.8014898
+1974,women,verkstadsindustri,18.19595398
+1974,women,stenbrott,17.66
+1974,women,träindustri,17.81
+1974,women,"massa, papper och grafisk industri",18.98373839
+1974,women,"livsmedels-, dryckesvaru- och tobaksindustri",17.61252224
+1974,women,"textil-, beklädnads- och läderindustri",16.38885819
+1974,women,kemi- och gummiindustri,17.4248608
+1974,women,vägt genomsnitt,17.96028203
+1975,women,gruvarbetare,25.17
+1975,women,metallindustri,22.47971196
+1975,women,verkstadsindustri,21.5475016
+1975,women,stenbrott,21.1
+1975,women,träindustri,20.79
+1975,women,"massa, papper och grafisk industri",22.72022023
+1975,women,"livsmedels-, dryckesvaru- och tobaksindustri",20.82303344
+1975,women,"textil-, beklädnads- och läderindustri",19.3716812
+1975,women,kemi- och gummiindustri,20.4507863
+1975,women,vägt genomsnitt,21.33764186
+1976,women,gruvarbetare,28.17
+1976,women,metallindustri,25.58239416
+1976,women,verkstadsindustri,24.82030632
+1976,women,stenbrott,24.36
+1976,women,träindustri,23.74
+1976,women,"massa, papper och grafisk industri",25.27147396
+1976,women,"livsmedels-, dryckesvaru- och tobaksindustri",24.22476631
+1976,women,"textil-, beklädnads- och läderindustri",22.46199041
+1976,women,kemi- och gummiindustri,23.54548284
+1976,women,vägt genomsnitt,24.48249334
+1977,women,gruvarbetare,31.55
+1977,women,metallindustri,27.85840676
+1977,women,verkstadsindustri,26.92809032
+1977,women,stenbrott,26.43
+1977,women,träindustri,25.76
+1977,women,"massa, papper och grafisk industri",28.46556328
+1977,women,"livsmedels-, dryckesvaru- och tobaksindustri",26.07659722
+1977,women,"textil-, beklädnads- och läderindustri",24.56841359
+1977,women,kemi- och gummiindustri,25.44528266
+1977,women,vägt genomsnitt,26.725811
+1978,women,gruvarbetare,33.9
+1978,women,metallindustri,30.56751608
+1978,women,verkstadsindustri,29.63025936
+1978,women,stenbrott,29.42
+1978,women,träindustri,28.84
+1978,women,"massa, papper och grafisk industri",31.76009565
+1978,women,"livsmedels-, dryckesvaru- och tobaksindustri",29.09588674
+1978,women,"textil-, beklädnads- och läderindustri",27.18689917
+1978,women,kemi- och gummiindustri,27.97261817
+1978,women,vägt genomsnitt,29.55029212
+1979,women,gruvarbetare,35.88
+1979,women,metallindustri,34.30068044
+1979,women,verkstadsindustri,33.29381587
+1979,women,stenbrott,32.24
+1979,women,träindustri,32.07
+1979,women,"massa, papper och grafisk industri",35.32582429
+1979,women,"livsmedels-, dryckesvaru- och tobaksindustri",32.46742672
+1979,women,"textil-, beklädnads- och läderindustri",30.34211304
+1979,women,kemi- och gummiindustri,31.13608574
+1979,women,vägt genomsnitt,33.05299591
+1980,women,gruvarbetare,41.08
+1980,women,metallindustri,37.85138738
+1980,women,verkstadsindustri,36.82245259
+1980,women,stenbrott,36.36
+1980,women,träindustri,35.4
+1980,women,"massa, papper och grafisk industri",39.46407837
+1980,women,"livsmedels-, dryckesvaru- och tobaksindustri",36.11070274
+1980,women,"textil-, beklädnads- och läderindustri",33.81456873
+1980,women,kemi- och gummiindustri,34.72937228
+1980,women,vägt genomsnitt,36.70593301
+1981,women,gruvarbetare,44.78
+1981,women,metallindustri,40.75044478
+1981,women,verkstadsindustri,40.62149855
+1981,women,stenbrott,40
+1981,women,träindustri,38.57
+1981,women,"massa, papper och grafisk industri",42.81887658
+1981,women,"livsmedels-, dryckesvaru- och tobaksindustri",39.5728214
+1981,women,"textil-, beklädnads- och läderindustri",36.9636035
+1981,women,kemi- och gummiindustri,37.86705072
+1981,women,vägt genomsnitt,40.13549033
+1982,women,gruvarbetare,46.25
+1982,women,metallindustri,43.02267232
+1982,women,verkstadsindustri,43.01855502
+1982,women,stenbrott,41.78
+1982,women,träindustri,40.48
+1982,women,"massa, papper och grafisk industri",45.28977587
+1982,women,"livsmedels-, dryckesvaru- och tobaksindustri",41.89767434
+1982,women,"textil-, beklädnads- och läderindustri",38.73280213
+1982,women,kemi- och gummiindustri,40.1966695
+1982,women,vägt genomsnitt,42.42319467
+1983,women,gruvarbetare,49.29
+1983,women,metallindustri,45.5279555
+1983,women,verkstadsindustri,45.66596255
+1983,women,stenbrott,44.37
+1983,women,träindustri,43.11
+1983,women,"massa, papper och grafisk industri",47.91133974
+1983,women,"livsmedels-, dryckesvaru- och tobaksindustri",44.34329886
+1983,women,"textil-, beklädnads- och läderindustri",41.08752558
+1983,women,kemi- och gummiindustri,42.82716156
+1983,women,vägt genomsnitt,45.00033881
+1984,women,gruvarbetare,57.73
+1984,women,metallindustri,50.43961359
+1984,women,verkstadsindustri,50.74892585
+1984,women,stenbrott,50.56
+1984,women,träindustri,47.38
+1984,women,"massa, papper och grafisk industri",53.5160625
+1984,women,"livsmedels-, dryckesvaru- och tobaksindustri",48.41933972
+1984,women,"textil-, beklädnads- och läderindustri",45.30637185
+1984,women,kemi- och gummiindustri,48.13112757
+1984,women,vägt genomsnitt,49.97600071
+1985,women,gruvarbetare,60.59
+1985,women,metallindustri,55.2660729
+1985,women,verkstadsindustri,54.74895977
+1985,women,stenbrott,54.77
+1985,women,träindustri,51.59
+1985,women,"massa, papper och grafisk industri",58.58843704
+1985,women,"livsmedels-, dryckesvaru- och tobaksindustri",52.56583067
+1985,women,"textil-, beklädnads- och läderindustri",48.74258866
+1985,women,kemi- och gummiindustri,51.98230549
+1985,women,vägt genomsnitt,54.2350189
+1986,women,gruvarbetare,66.8
+1986,women,metallindustri,59.45074298
+1986,women,verkstadsindustri,58.89855319
+1986,women,stenbrott,59.55
+1986,women,träindustri,55
+1986,women,"massa, papper och grafisk industri",62.63642942
+1986,women,"livsmedels-, dryckesvaru- och tobaksindustri",56.67206442
+1986,women,"textil-, beklädnads- och läderindustri",52.75751287
+1986,women,kemi- och gummiindustri,56.03022732
+1986,women,vägt genomsnitt,58.35227822
+1987,women,gruvarbetare,70.42
+1987,women,metallindustri,65.18159685
+1987,women,verkstadsindustri,62.22491241
+1987,women,stenbrott,63.25
+1987,women,träindustri,59.24
+1987,women,"massa, papper och grafisk industri",66.92546566
+1987,women,"livsmedels-, dryckesvaru- och tobaksindustri",60.61726941
+1987,women,"textil-, beklädnads- och läderindustri",55.92718988
+1987,women,kemi- och gummiindustri,60.05873465
+1987,women,vägt genomsnitt,62.34027897
+1988,women,gruvarbetare,73.1
+1988,women,metallindustri,67.41544523
+1988,women,verkstadsindustri,67.33376966
+1988,women,stenbrott,68.64
+1988,women,träindustri,63.52
+1988,women,"massa, papper och grafisk industri",72.00900203
+1988,women,"livsmedels-, dryckesvaru- och tobaksindustri",65.61922572
+1988,women,"textil-, beklädnads- och läderindustri",60.45529989
+1988,women,kemi- och gummiindustri,64.96089418
+1988,women,vägt genomsnitt,67.06523173
+1989,women,gruvarbetare,77.82
+1989,women,metallindustri,74.48955246
+1989,women,verkstadsindustri,73.05159299
+1989,women,stenbrott,74.19
+1989,women,träindustri,70.09
+1989,women,"massa, papper och grafisk industri",78.26838745
+1989,women,"livsmedels-, dryckesvaru- och tobaksindustri",72.1811483
+1989,women,"textil-, beklädnads- och läderindustri",65.89909437
+1989,women,kemi- och gummiindustri,71.21236099
+1989,women,vägt genomsnitt,73.25014967
+1990,women,gruvarbetare,87.54
+1990,women,metallindustri,81.48768685
+1990,women,verkstadsindustri,79.39604483
+1990,women,stenbrott,82.73
+1990,women,träindustri,77
+1990,women,"massa, papper och grafisk industri",86.48541816
+1990,women,"livsmedels-, dryckesvaru- och tobaksindustri",78.27004884
+1990,women,"textil-, beklädnads- och läderindustri",73.60694386
+1990,women,kemi- och gummiindustri,78.22099302
+1990,women,vägt genomsnitt,80.21101773
+1991,women,gruvarbetare,92.21
+1991,women,metallindustri,84.88303733
+1991,women,verkstadsindustri,84.45158761
+1991,women,stenbrott,85.95
+1991,women,träindustri,80.26
+1991,women,"massa, papper och grafisk industri",91.49767387
+1991,women,"livsmedels-, dryckesvaru- och tobaksindustri",81.46043144
+1991,women,"textil-, beklädnads- och läderindustri",74.82450233
+1991,women,kemi- och gummiindustri,81.73501629
+1991,women,vägt genomsnitt,84.42883812
+1992,women,gruvarbetare,101.83
+1992,women,metallindustri,90.13848316
+1992,women,verkstadsindustri,92.14581268
+1992,women,stenbrott,92.33
+1992,women,träindustri,86.98
+1992,women,"massa, papper och grafisk industri",94.7935675
+1992,women,"livsmedels-, dryckesvaru- och tobaksindustri",90.12579239
+1992,women,"textil-, beklädnads- och läderindustri",82.00910355
+1992,women,kemi- och gummiindustri,84.6957265
+1992,women,vägt genomsnitt,90.61498329
+1993,women,gruvarbetare,99.82
+1993,women,metallindustri,91.54084278
+1993,women,verkstadsindustri,91.00423649
+1993,women,stenbrott,91.41
+1993,women,träindustri,88.16
+1993,women,"massa, papper och grafisk industri",94.23477144
+1993,women,"livsmedels-, dryckesvaru- och tobaksindustri",88.7469835
+1993,women,"textil-, beklädnads- och läderindustri",80.46954614
+1993,women,kemi- och gummiindustri,88.14179904
+1993,women,vägt genomsnitt,90.39211216
+1994,women,gruvarbetare,102.9179436
+1994,women,metallindustri,93.31362233
+1994,women,verkstadsindustri,94.09224309
+1994,women,stenbrott,95.7805819
+1994,women,träindustri,91.90125848
+1994,women,"massa, papper och grafisk industri",96.57442457
+1994,women,"livsmedels-, dryckesvaru- och tobaksindustri",93.93333554
+1994,women,"textil-, beklädnads- och läderindustri",81.05902256
+1994,women,kemi- och gummiindustri,91.92505191
+1994,women,vägt genomsnitt,93.47513528
+1995,women,gruvarbetare,108.6053897
+1995,women,metallindustri,97.90458211
+1995,women,verkstadsindustri,99.33053916
+1995,women,stenbrott,98.84239065
+1995,women,träindustri,94.04749767
+1995,women,"massa, papper och grafisk industri",99.93439507
+1995,women,"livsmedels-, dryckesvaru- och tobaksindustri",96.49571374
+1995,women,"textil-, beklädnads- och läderindustri",84.98084526
+1995,women,kemi- och gummiindustri,94.20097928
+1995,women,vägt genomsnitt,97.38909384
+1996,women,gruvarbetare,116.2438308
+1996,women,metallindustri,104.4012379
+1996,women,verkstadsindustri,107.6206923
+1996,women,stenbrott,104.3296322
+1996,women,träindustri,107.229863
+1996,women,"massa, papper och grafisk industri",107.5602458
+1996,women,"livsmedels-, dryckesvaru- och tobaksindustri",104.4538691
+1996,women,"textil-, beklädnads- och läderindustri",90.64703695
+1996,women,kemi- och gummiindustri,100.1563843
+1996,women,vägt genomsnitt,105.0286635
+1997,women,gruvarbetare,121.0799337
+1997,women,metallindustri,109.4735852
+1997,women,verkstadsindustri,112.6740108
+1997,women,stenbrott,110.3451859
+1997,women,träindustri,110.5958228
+1997,women,"massa, papper och grafisk industri",113.4319055
+1997,women,"livsmedels-, dryckesvaru- och tobaksindustri",106.4372484
+1997,women,"textil-, beklädnads- och läderindustri",94.67713083
+1997,women,kemi- och gummiindustri,105.1948629
+1997,women,vägt genomsnitt,109.7489119
+1998,women,gruvarbetare,116.7049751
+1998,women,metallindustri,115.0826581
+1998,women,verkstadsindustri,117.2116364
+1998,women,stenbrott,114.1874557
+1998,women,träindustri,113.6451244
+1998,women,"massa, papper och grafisk industri",120.6452064
+1998,women,"livsmedels-, dryckesvaru- och tobaksindustri",110.8721337
+1998,women,"textil-, beklädnads- och läderindustri",101.2937029
+1998,women,kemi- och gummiindustri,108.9635741
+1998,women,vägt genomsnitt,114.7609764
+1999,women,gruvarbetare,119.7792703
+1999,women,metallindustri,117.8204221
+1999,women,verkstadsindustri,120.595994
+1999,women,stenbrott,117.4293708
+1999,women,träindustri,114.583371
+1999,women,"massa, papper och grafisk industri",120.9150811
+1999,women,"livsmedels-, dryckesvaru- och tobaksindustri",110.50256
+1999,women,"textil-, beklädnads- och läderindustri",103.9403317
+1999,women,kemi- och gummiindustri,116.5225102
+1999,women,vägt genomsnitt,117.4944101
+2000,women,gruvarbetare,122.8535655
+2000,women,metallindustri,121.1056167
+2000,women,verkstadsindustri,125.7226452
+2000,women,stenbrott,119.4705766
+2000,women,träindustri,117.9845151
+2000,women,"massa, papper och grafisk industri",125.6300555
+2000,women,"livsmedels-, dryckesvaru- och tobaksindustri",115.4302104
+2000,women,"textil-, beklädnads- och läderindustri",106.9478644
+2000,women,kemi- och gummiindustri,120.1241487
+2000,women,vägt genomsnitt,121.9329039
+2001,women,gruvarbetare,128.5291874
+2001,women,metallindustri,130.2525698
+2001,women,verkstadsindustri,126.4066691
+2001,women,stenbrott,123.3128464
+2001,women,träindustri,123.1448716
+2001,women,"massa, papper och grafisk industri",130.5835583
+2001,women,"livsmedels-, dryckesvaru- och tobaksindustri",119.1259481
+2001,women,"textil-, beklädnads- och läderindustri",111.5193142
+2001,women,kemi- och gummiindustri,125.0947834
+2001,women,vägt genomsnitt,125.5796577
+2002,women,gruvarbetare,138.2250415
+2002,women,metallindustri,130.4218682
+2002,women,verkstadsindustri,127.6469938
+2002,women,stenbrott,125.9544069
+2002,women,träindustri,126.1941732
+2002,women,"massa, papper och grafisk industri",134.1500601
+2002,women,"livsmedels-, dryckesvaru- och tobaksindustri",125.5318937
+2002,women,"textil-, beklädnads- och läderindustri",114.526847
+2002,women,kemi- och gummiindustri,130.1982987
+2002,women,vägt genomsnitt,128.5696339
+2003,women,gruvarbetare,138.69801
+2003,women,metallindustri,136.8166499
+2003,women,verkstadsindustri,134.357325
+2003,women,stenbrott,129.4364639
+2003,women,träindustri,129.0089131
+2003,women,"massa, papper och grafisk industri",138.1311739
+2003,women,"livsmedels-, dryckesvaru- och tobaksindustri",127.6261451
+2003,women,"textil-, beklädnads- och läderindustri",119.8201046
+2003,women,kemi- och gummiindustri,134.0066675
+2003,women,vägt genomsnitt,133.4673225
+2004,women,gruvarbetare,153.0053068
+2004,women,metallindustri,141.9404266
+2004,women,verkstadsindustri,138.4691298
+2004,women,stenbrott,132.0780244
+2004,women,träindustri,134.638393
+2004,women,"massa, papper och grafisk industri",144.5734865
+2004,women,"livsmedels-, dryckesvaru- och tobaksindustri",133.0465605
+2004,women,"textil-, beklädnads- och läderindustri",122.9479386
+2004,women,kemi- och gummiindustri,137.8649246
+2004,women,vägt genomsnitt,138.2666161
+2005,women,gruvarbetare,159.5086235
+2005,women,metallindustri,145.506833
+2005,women,verkstadsindustri,143.6046793
+2005,women,stenbrott,137.6012873
+2005,women,träindustri,140.3851537
+2005,women,"massa, papper och grafisk industri",149.2125786
+2005,women,"livsmedels-, dryckesvaru- och tobaksindustri",135.5103857
+2005,women,"textil-, beklädnads- och läderindustri",125.3539648
+2005,women,kemi- och gummiindustri,140.9380887
+2005,women,vägt genomsnitt,142.4722165
+2006,women,gruvarbetare,176.8902156
+2006,women,metallindustri,149.1444541
+2006,women,verkstadsindustri,149.4016402
+2006,women,stenbrott,141.4435571
+2006,women,träindustri,142.8480511
+2006,women,"massa, papper och grafisk industri",152.3411608
+2006,women,"livsmedels-, dryckesvaru- och tobaksindustri",141.9163312
+2006,women,"textil-, beklädnads- och läderindustri",130.0457159
+2006,women,kemi- och gummiindustri,145.8639391
+2006,women,vägt genomsnitt,147.4633378
+2007,women,gruvarbetare,186.940796
+2007,women,metallindustri,154.5186433
+2007,women,verkstadsindustri,154.1361177
+2007,women,stenbrott,146.7266781
+2007,women,träindustri,148.9466543
+2007,women,"massa, papper och grafisk industri",159.114347
+2007,women,"livsmedels-, dryckesvaru- och tobaksindustri",147.2135554
+2007,women,"textil-, beklädnads- och läderindustri",134.6171657
+2007,women,kemi- och gummiindustri,151.3117936
+2007,women,vägt genomsnitt,152.8510034
+2008,women,gruvarbetare,199.3317337
+2008,women,vägt genomsnitt,159.5127904
+2009,women,gruvarbetare,217.0128328
+2009,women,vägt genomsnitt,166.1745775
+2010,women,gruvarbetare,222.2210669
+2010,women,vägt genomsnitt,169.7522039
+2011,women,gruvarbetare,235.2326328
+2011,women,vägt genomsnitt,174.3167617
+2012,women,gruvarbetare,246.9998127
+2012,women,vägt genomsnitt,181.7187473
+2013,women,gruvarbetare,266.9121901
+2013,women,vägt genomsnitt,185.2963737

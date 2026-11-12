@@ -1,0 +1,7 @@
+---
+title: Lönedata
+---
+
+<section class="page-intro"><p class="eyebrow"><span class="eyebrow-line"></span> GEMENSAMT UNDERLAG</p><h1>Lönedata<br><em>och källor</em></h1><p class="hero-intro">Löneunderlagen som används i Trueprice samlas här. Jämförelsesidorna länkar hit och räknar fram sin egen kostnadsandel.</p></section>
+<section class="wage-source-grid"><article class="method-card method-card-primary"><p class="eyebrow">ÅRLIG GENOMSNITTSLÖN</p><h2>Samtliga sektorer</h2><p>SCB:s genomsnittliga månadslön för båda könen och samtliga sektorer. Årslön i bensinjämförelsen beräknas som månadslön × 12. Serien täcker 1992–2025.</p><a href="../data/average_monthly_salaries.csv">Hämta löneserien ↗</a></article><article class="method-card"><p class="eyebrow">HISTORISKA TIMLÖNER</p><h2>Tillverkningsindustri</h2><p>Historiska timlöner per industri och kön, 1860-talet–2013. Separat underlag; det är inte direkt jämförbart med dagens genomsnittliga månadslön.</p><a href="../data/historical_manufacturing_hourly_wages.csv">Hämta historisk serie ↗</a></article></section>
+<section class="history-note"><div class="history-icon" aria-hidden="true">i</div><div><p class="eyebrow">JÄMFÖRBARHET</p><h2>Olika mått ska hållas isär</h2><p>Timlön, månadslön, yrkesgrupper och löner före eller efter skatt beskriver olika saker. Varje jämförelse anger vilket löneunderlag den använder; luckor fylls inte genom uppskattningar.</p><a href="../data/series.json">Se maskinläsbar data och källmetadata ↗</a></div></section>

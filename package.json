@@ -1,0 +1,1 @@
+{"scripts":{"validate":"python3 scripts/build.py","build":"python3 scripts/build.py && hugo --minify","preview":"hugo server --renderToMemory --baseURL http://localhost:1313/trueprice/ --bind 127.0.0.1 --port 1313"}}
