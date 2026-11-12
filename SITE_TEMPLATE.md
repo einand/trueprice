@@ -3,7 +3,7 @@
 All comparisons use `layouts/_default/comparison.html` and the same content sequence:
 
 1. **Kort presentation**: what is measured, for whom, and which unit is used.
-2. **Relativ kostnad**: item amount divided by the selected annual wage, multiplied by 100. Show year-on-year direction as ↑ or ↓ only; provide its meaning to assistive technology.
+2. **Relativ kostnad**: item amount divided by the selected annual wage, multiplied by 100. The shared scenario control offers **En vuxen** or **Familj** (two adults with one average salary each). Show year-on-year direction as ↑ or ↓ only; provide its meaning to assistive technology.
 3. **Kostnad per år**: a yearly price chart followed by a table. Show the observed value and relative share where both input series exist. Leave missing shares empty.
 4. **Gemensamt löneunderlag och källor**: link to `/loner/` and expose provenance for the item series. Do not copy salary observations into page content.
 
@@ -32,6 +32,7 @@ comparison:
 - Use national/yearly coverage only when the source supports that coverage. Document tax inclusion, geographic scope, and price basis.
 - Keep item source observations, wage observations, and any adjustment index as separate reusable inputs.
 - Mark a structural definition or liable-population change as a series break. Do not draw a continuous line or year-on-year trend across it, even if a numeric value exists on both sides.
+- For household-based fees, count a single fee for Familj. For per-person fees, count one fee for each adult. State the assumption beside the scenario control and in source metadata.
 - Document source organization and URL, unit, definition, coverage, retrieval time, and transformations in `data/sources.json`.
 - Never interpolate missing observations. Clearly distinguish nominal prices from inflation-adjusted prices.
 

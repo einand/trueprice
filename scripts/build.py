@@ -39,15 +39,20 @@ rows=[]
 for year in sorted(prices.keys() | salaries.keys() | tv_fees.keys()):
     p, m=prices.get(year), salaries.get(year)
     tv_fee=tv_fees.get(year)
-    rows.append({'year':year,'gasoline_price_sek_per_liter':p,'average_monthly_salary_sek':m,'average_annual_salary_sek':m*12 if m else None,'share_percent':p/(m*12)*100 if p and m else None,'trend':None,'tv_license_fee_sek':tv_fee,'tv_license_fee_unit':tv_fee_meta[year]['unit'] if tv_fee else None,'tv_license_regime':tv_fee_meta[year]['regime'] if tv_fee else None,'tv_license_share_percent':tv_fee/(m*12)*100 if tv_fee and m else None,'tv_license_trend':None,'tv_license_break_before':year==2019})
+    fee_unit=tv_fee_meta[year]['unit'] if tv_fee else None
+    rows.append({'year':year,'gasoline_price_sek_per_liter':p,'average_monthly_salary_sek':m,'average_annual_salary_sek':m*12 if m else None,'share_percent':p/(m*12)*100 if p and m else None,'share_percent_two_adults':p/(m*12*2)*100 if p and m else None,'trend':None,'trend_two_adults':None,'tv_license_fee_sek':tv_fee,'tv_license_fee_unit':fee_unit,'tv_license_regime':tv_fee_meta[year]['regime'] if tv_fee else None,'tv_license_share_percent':tv_fee/(m*12)*100 if tv_fee and m else None,'tv_license_share_percent_two_adults':tv_fee*(2 if fee_unit=='person_year_max' else 1)/(m*12*2)*100 if tv_fee and m else None,'tv_license_trend':None,'tv_license_trend_two_adults':None,'tv_license_break_before':year==2019})
 for i in range(1,len(rows)):
     prev, cur=rows[i-1],rows[i]
-    if prev['share_percent'] is not None and cur['share_percent'] is not None:
+    if prev['year']+1==cur['year'] and prev['share_percent'] is not None and cur['share_percent'] is not None:
         delta=cur['share_percent']-prev['share_percent']
         cur['trend']='dyrare relativt lön' if delta>0 else 'billigare relativt lön' if delta<0 else 'oförändrat'
+        delta=cur['share_percent_two_adults']-prev['share_percent_two_adults']
+        cur['trend_two_adults']='dyrare relativt lön' if delta>0 else 'billigare relativt lön' if delta<0 else 'oförändrat'
     if prev['year']+1==cur['year'] and prev['tv_license_regime']==cur['tv_license_regime'] and prev['tv_license_share_percent'] is not None and cur['tv_license_share_percent'] is not None:
         delta=cur['tv_license_share_percent']-prev['tv_license_share_percent']
         cur['tv_license_trend']='dyrare relativt lön' if delta>0 else 'billigare relativt lön' if delta<0 else 'oförändrat'
+        delta=cur['tv_license_share_percent_two_adults']-prev['tv_license_share_percent_two_adults']
+        cur['tv_license_trend_two_adults']='dyrare relativt lön' if delta>0 else 'billigare relativt lön' if delta<0 else 'oförändrat'
 comparison_rows=[{k:v for k,v in row.items() if k not in ('average_monthly_salary_sek','average_annual_salary_sek')} for row in rows]
 result={'generated_at_utc':datetime.now(timezone.utc).isoformat(),'sources':json.loads((ROOT/'data/sources.json').read_text()),'wage_series_reference':'average_monthly_salaries.csv','data':comparison_rows,'supplementary_series':{'historical_manufacturing_hourly_wages_by_industry':historical_wages}}
 (ROOT/'static/data/series.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
