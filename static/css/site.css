@@ -25,7 +25,10 @@
 .latest-scenarios strong i{margin-left:4px;color:#c5d0c4;font:500 12px var(--mono);letter-spacing:0}
 .latest-scenarios small{display:block;min-height:16px;margin-top:7px;color:#e1a38e;font:600 15px var(--sans)}
 .latest-scenarios>div:last-child small{color:#81b0d8}
+.latest-scenarios>div:first-child small{color:#e58a83}
 .chart-key-multi{gap:16px}.chart-key-multi>span{display:inline-flex;align-items:center;gap:7px}
+.chart-key-multi>span:first-child .key-dot{background:#c6433f}
+.chart-line{stroke:#c6433f}.chart-point{stroke:#c6433f}
 .chart-key-multi .key-dot-blue,.key-dot-blue{background:var(--blue)}
 .chart-line-blue{stroke:var(--blue);stroke-dasharray:7 4}.chart-point-blue{stroke:var(--blue)}.chart-point-blue.latest{fill:var(--blue)}
 .comparison-data-table th:nth-child(5),.comparison-data-table th:nth-child(6),.comparison-data-table th:nth-child(7){background:var(--blue-pale);color:var(--blue-dark)}
