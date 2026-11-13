@@ -18,6 +18,7 @@
       <a href="{{ "/bensin/" | relURL }}"{{ if eq .RelPermalink ("/bensin/" | relURL) }} aria-current="page"{{ end }}>Bensin</a>
       <a href="{{ "/skatt/" | relURL }}"{{ if eq .RelPermalink ("/skatt/" | relURL) }} aria-current="page"{{ end }}>Skatt</a>
       <a href="{{ "/tv-licens/" | relURL }}"{{ if eq .RelPermalink ("/tv-licens/" | relURL) }} aria-current="page"{{ end }}>TV-licens</a>
+      <a href="{{ "/konsoler/nintendo/" | relURL }}"{{ if hasPrefix .RelPermalink ("/konsoler/nintendo/" | relURL) }} aria-current="page"{{ end }}>Nintendo</a>
       <a href="{{ "/loner/" | relURL }}"{{ if eq .RelPermalink ("/loner/" | relURL) }} aria-current="page"{{ end }}>Lönedata</a>
     </nav>
   </header>

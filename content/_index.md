@@ -25,6 +25,7 @@ title: Vad kostar saker egentligen?
     <a class="topic-card topic-ready" href="bensin/"><span class="topic-index">01 / ENERGI</span><strong>Bensin</strong><span>Literpriset i förhållande till lönen</span><b aria-hidden="true">↗</b></a>
     <a class="topic-card" href="skatt/"><span class="topic-index">02 / SKATTER</span><strong>Skatt</strong><span>Skatter i förhållande till lönen</span><b aria-hidden="true">↗</b></a>
     <a class="topic-card" href="tv-licens/"><span class="topic-index">03 / AVGIFTER</span><strong>TV-licens</strong><span>Avgiften i förhållande till lönen</span><b aria-hidden="true">↗</b></a>
+    <a class="topic-card topic-ready" href="konsoler/nintendo/"><span class="topic-index">04 / KONSOLER</span><strong>Nintendo</strong><span>Spel och konsolpriser jämfört med lön</span><b aria-hidden="true">↗</b></a>
   </div>
   <p class="home-note">Nya jämförelser publiceras när underlag och definitioner går att belägga.</p>
 </section>

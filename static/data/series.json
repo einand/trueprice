@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-13T11:06:12.267879+00:00",
+  "generated_at_utc": "2026-11-13T11:29:16.477239+00:00",
   "sources": {
     "retrieved_at": "2026-11-13",
     "series": [
@@ -118,6 +118,32 @@
         "definition": "Annual arithmetic average of the 12 monthly fixed CPI index values. Rebased values preserve the year-to-year price-level ratio used for deflation/reflation.",
         "coverage": "Sweden, annual 1980–2025.",
         "transformation": "Arithmetic mean of monthly values; CPI is used only to convert the gasoline series between 2024 prices and nominal annual SEK."
+      },
+      {
+        "id": "nintendo_hardware_launch_prices",
+        "file": "data/nintendo_hardware_launch_prices.csv",
+        "source": "FZ.se's 2017 summary of Swedish new console prices, based on Cuponation's compilation from historical Swedish articles and forums including FZ, Aftonbladet and Sweclockers.",
+        "url": "https://www.fz.se/nyhet/270044-sa-har-konsolpriserna-andrats-under-30-ar",
+        "retrieved_at": "2026-11-13",
+        "unit": "nominal SEK per console at Swedish launch",
+        "definition": "Reported Swedish new retail price at launch for the original Nintendo console model; these are discrete product launch observations, not calendar-year average retail prices.",
+        "coverage": "Sweden; six Nintendo consoles with prices reported for 1992, 1997, 2002, 2006, 2012 and 2017. NES is omitted: FZ reports 1987, while other sources document Swedish retail availability from 1 September 1986, and no contemporaneous price source was verified. This is a secondary compilation, not a primary price list.",
+        "transformation": "Prices transcribed from the nominal-price column. Wage share is launch price divided by SCB average monthly salary for the same year × 12 × 100; family share uses twice that annual wage. No inflation adjustment. No trend arrow is calculated between different hardware models."
+      },
+      {
+        "id": "nintendo_software_prices",
+        "file": "data/nintendo_software_prices.csv",
+        "source": "Bergsala/Nintendo Sweden annual promotional brochures, preserved as scans by RL Vision; brochure years 1988–1993. The scans document Swedish game catalogues but the inspected catalogue pages do not show a verifiable price series.",
+        "url": "https://www.rlvision.com/blog/swedish-nintendo-brochure-scans-1988-1993/",
+        "additional_source_urls": [
+          "https://www.rlvision.com/blog/wp-content/uploads/2019/04/Nintendo-Reklamblad-NES-1988.pdf",
+          "https://www.rlvision.com/blog/wp-content/uploads/2019/04/Nintendo-Reklamblad-Super-NES-1992.pdf"
+        ],
+        "retrieved_at": "2026-11-13",
+        "unit": "nominal SEK per Nintendo game",
+        "definition": "Intended annual measure is the arithmetic mean of documented Swedish new-retail prices for Nintendo games in a dated source sample. Each published year must state the sample size and sampling basis; it must not be presented as a market-wide mean unless the source coverage supports that claim.",
+        "coverage": "NES entered Swedish retail 1 September 1986. Brochure scans inspected cover 1988–1993, but do not provide verifiable price observations. The CSV therefore intentionally contains headers only; no annual average game-price value is currently verified.",
+        "transformation": "No value until a reproducible annual sample of comparable Swedish new-game prices is transcribed. Average only observations within a documented source/sample definition; keep years with no evidence blank. Exclude second-hand prices and do not interpolate."
       }
     ]
   },
@@ -130,6 +156,14 @@
     {
       "id": "tv_license",
       "file": "tv_license_series.json"
+    },
+    {
+      "id": "nintendo_hardware_launch_prices",
+      "file": "nintendo_hardware_launch_prices.json"
+    },
+    {
+      "id": "nintendo_software_prices",
+      "file": "nintendo_software_prices.csv"
     },
     {
       "id": "historical_manufacturing_hourly_wages_by_industry",

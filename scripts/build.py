@@ -69,8 +69,22 @@ def write_series(filename, series_id, series_data, source_ids):
     (ROOT/'static/data'/filename).write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
 write_series('gasoline_series.json','gasoline',gasoline_data,{'average_salary','gasoline_price_nominal','gasoline_price_2024_level','cpi_annual_average','gasoline_historical_prewar_price_ranges'})
 write_series('tv_license_series.json','tv_license',tv_data,{'average_salary','tv_license_and_public_service_fee'})
-index={'generated_at_utc':generated_at,'sources':all_sources,'wage_series_reference':'average_monthly_salaries.csv','series':[{'id':'gasoline','file':'gasoline_series.json'},{'id':'tv_license','file':'tv_license_series.json'},{'id':'historical_manufacturing_hourly_wages_by_industry','file':'historical_manufacturing_hourly_wages.csv'}]}
+# Observed Swedish Nintendo launch prices are discrete product events, not an annual price series.
+with (ROOT/'data/nintendo_hardware_launch_prices.csv').open(newline='') as f:
+    nintendo_hardware=list(csv.DictReader(f))
+if len({r['console'] for r in nintendo_hardware}) != len(nintendo_hardware):
+    raise ValueError('duplicate Nintendo console launch observation')
+nintendo_data=[]
+for r in nintendo_hardware:
+    year=int(r['year']); price=float(r['price_sek']); salary=salaries.get(year)
+    if price<=0 or year<1986:
+        raise ValueError('invalid Nintendo hardware launch observation')
+    annual_salary=salary*12 if salary else None
+    nintendo_data.append({'year':year,'console':r['console'],'price_sek':price,'share_percent':price/annual_salary*100 if annual_salary else None,'share_percent_two_adults':price/(annual_salary*2) * 100 if annual_salary else None,'trend':None,'trend_two_adults':None})
+hardware_payload={'generated_at_utc':generated_at,'series_id':'nintendo_hardware_launch_prices','wage_series_reference':'average_monthly_salaries.csv','sources':[s for s in all_sources['series'] if s['id'] in {'average_salary','nintendo_hardware_launch_prices'}],'data':nintendo_data}
+(ROOT/'static/data/nintendo_hardware_launch_prices.json').write_text(json.dumps(hardware_payload,ensure_ascii=False,indent=2)+'\n')
+index={'generated_at_utc':generated_at,'sources':all_sources,'wage_series_reference':'average_monthly_salaries.csv','series':[{'id':'gasoline','file':'gasoline_series.json'},{'id':'tv_license','file':'tv_license_series.json'},{'id':'nintendo_hardware_launch_prices','file':'nintendo_hardware_launch_prices.json'},{'id':'nintendo_software_prices','file':'nintendo_software_prices.csv'},{'id':'historical_manufacturing_hourly_wages_by_industry','file':'historical_manufacturing_hourly_wages.csv'}]}
 (ROOT/'static/data/series.json').write_text(json.dumps(index,ensure_ascii=False,indent=2)+'\n')
-for source_file in ['data/average_monthly_salaries.csv','data/historical_manufacturing_hourly_wages.csv','data/gasoline_prices.csv','data/gasoline_prices_2024_sek_per_liter.csv','data/gasoline_historical_price_ranges.csv','data/cpi_annual_average.csv','data/tv_license_annual_fees.csv']:
+for source_file in ['data/average_monthly_salaries.csv','data/historical_manufacturing_hourly_wages.csv','data/gasoline_prices.csv','data/gasoline_prices_2024_sek_per_liter.csv','data/gasoline_historical_price_ranges.csv','data/cpi_annual_average.csv','data/tv_license_annual_fees.csv','data/nintendo_hardware_launch_prices.csv','data/nintendo_software_prices.csv']:
     shutil.copyfile(ROOT/source_file, ROOT/'static/data'/Path(source_file).name)
-print(f"Validated {len(rows)} annual rows; gasoline pump-price series {min(prices)}–{max(prices)}, historical gasoline observations {len(historical_gasoline)} years, radio/TV fee observations {min(tv_fees)}–{max(tv_fees)} with gaps, salary {min(salaries)}–{max(salaries)}, historical wage-category observations {len(historical_wages)}.")
+print(f"Validated {len(rows)} annual rows; gasoline pump-price series {min(prices)}–{max(prices)}, historical gasoline observations {len(historical_gasoline)} years, radio/TV fee observations {min(tv_fees)}–{max(tv_fees)} with gaps, salary {min(salaries)}–{max(salaries)}, historical wage-category observations {len(historical_wages)}, Nintendo hardware launch prices {len(nintendo_data)}.")
