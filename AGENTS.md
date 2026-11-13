@@ -17,5 +17,5 @@
 ## Adding a comparison
 1. Add a content section with the required `comparison` front matter fields documented in `SITE_TEMPLATE.md`.
 2. Add a pipeline series and source metadata before setting `available: true`.
-3. Add a navigation link in `layouts/_default/baseof.html` and a directory card on the root page.
+3. Add a navigation link in `layouts/_default/baseof.html` and a directory card on the root page. Console comparisons belong in the grouped Konsoller dropdown, under a brand with Mjukvara and Hårdvara routes; create the linked routes before exposing them in the menu.
 4. Keep all comparison pages on `layouts/_default/comparison.html`; avoid one-off page markup or styles.

@@ -40,4 +40,4 @@ comparison:
 
 ## Adding a route
 
-Create `content/<slug>/_index.md` with the front matter above, add it to the shared nav in `layouts/_default/baseof.html`, and add a directory card to `content/_index.md`. Keep page-specific styling and markup out of the content file; shared presentation belongs in the comparison layout and site stylesheet.
+Create `content/<slug>/_index.md` with the front matter above, add it to the shared navigation in `layouts/_default/baseof.html`, and add a directory card to `content/_index.md`. Console brands use the Konsoller dropdown with separate Mjukvara and Hårdvara routes. Keep page-specific styling and markup out of comparison content; shared presentation belongs in the comparison layout and site stylesheet.

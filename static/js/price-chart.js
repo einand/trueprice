@@ -42,7 +42,7 @@
     document.getElementById('latest-amount-label').textContent = isNintendoHardware ? latest.console : 'En vuxen';
     document.getElementById('latest-price').textContent = `${fmt(latest.amount, isTvPage ? 0 : 2)} ${unit}`;
     document.getElementById('latest-family-price').textContent = `${fmt(latest.familyAmount, isTvPage ? 0 : 2)} ${isTvPage ? (latest.unit === 'household_year' ? 'kr/hushåll/år' : 'kr/hushåll/år, max') : (page.dataset.priceUnit || 'kr/l')}`;
-    document.getElementById('latest-amount-label').textContent = 'En vuxen';
+    if (!isNintendoHardware) document.getElementById('latest-amount-label').textContent = 'En vuxen';
   }
   const valid = rows.filter((d) => d.one != null || d.family != null);
   const chartStart = rows[0]?.year || valid[0]?.year || 0;

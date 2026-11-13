@@ -18,7 +18,14 @@
       <a href="{{ "/bensin/" | relURL }}"{{ if eq .RelPermalink ("/bensin/" | relURL) }} aria-current="page"{{ end }}>Bensin</a>
       <a href="{{ "/skatt/" | relURL }}"{{ if eq .RelPermalink ("/skatt/" | relURL) }} aria-current="page"{{ end }}>Skatt</a>
       <a href="{{ "/tv-licens/" | relURL }}"{{ if eq .RelPermalink ("/tv-licens/" | relURL) }} aria-current="page"{{ end }}>TV-licens</a>
-      <a href="{{ "/konsoler/nintendo/" | relURL }}"{{ if hasPrefix .RelPermalink ("/konsoler/nintendo/" | relURL) }} aria-current="page"{{ end }}>Nintendo</a>
+      <details class="nav-dropdown"{{ if hasPrefix .RelPermalink ("/konsoler/" | relURL) }} data-current="true"{{ end }}>
+        <summary>Konsoller</summary>
+        <div class="console-menu">
+          <section class="console-menu-group"><a class="console-menu-brand" href="{{ "/konsoler/nintendo/" | relURL }}">Nintendo</a><div><a href="{{ "/konsoler/nintendo/software/" | relURL }}">Mjukvara</a><a href="{{ "/konsoler/nintendo/hardware/" | relURL }}">Hårdvara</a></div></section>
+          <section class="console-menu-group"><a class="console-menu-brand" href="{{ "/konsoler/playstation/" | relURL }}">Playstation</a><div><a href="{{ "/konsoler/playstation/software/" | relURL }}">Mjukvara</a><a href="{{ "/konsoler/playstation/hardware/" | relURL }}">Hårdvara</a></div></section>
+          <section class="console-menu-group"><a class="console-menu-brand" href="{{ "/konsoler/xbox/" | relURL }}">Xbox</a><div><a href="{{ "/konsoler/xbox/software/" | relURL }}">Mjukvara</a><a href="{{ "/konsoler/xbox/hardware/" | relURL }}">Hårdvara</a></div></section>
+        </div>
+      </details>
       <a href="{{ "/loner/" | relURL }}"{{ if eq .RelPermalink ("/loner/" | relURL) }} aria-current="page"{{ end }}>Lönedata</a>
     </nav>
   </header>
