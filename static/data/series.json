@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-13T12:32:39.432063+00:00",
+  "generated_at_utc": "2026-11-13T13:12:57.514034+00:00",
   "sources": {
     "retrieved_at": "2026-11-13",
     "series": [
@@ -141,19 +141,27 @@
       {
         "id": "nintendo_software_prices",
         "file": "data/nintendo_software_prices.csv",
-        "source": "Swedish mail-order catalogues: Spelhuset/High Score Express 1993 issue 18, and Nordic Games advertisement in Datormagazin 1994 issue 19. Bergsala brochure scans were also reviewed but do not show verifiable prices.",
-        "url": "https://dmzarkivet.se/pdf/HighScore-199318.pdf",
+        "source": "Swedish Nintendo price observations from a Milu Handels AB flyer archived by a seller and dated 1987, Larkman Computer Center catalogue in Datormagazin issue 6/91, Spelhuset/High Score Express issue 18/93, and Nordic Games advertisement in Datormagazin issue 19/94. Bergsala's 1988–1993 brochures and 1992 SNES/game guides were reviewed; they list games but do not establish prices.",
+        "url": "https://www.tradera.com/item/300809/760249700/milu-handels-ab-reklamblad-fran-1987-nintendo-nes-8-bit-",
         "additional_source_urls": [
+          "https://dmzarkivet.se/pdf/199106.pdf",
+          "https://www.stone-oakvalley-studios.com/uploads/000931052017174258/datormagazin_dmz_1992-13.pdf",
+          "https://www.stone-oakvalley-studios.com/uploads/000931052017175717/datormagazin_dmz_1992-17.pdf",
           "https://dmzarkivet.se/pdf/199419.pdf",
           "https://www.rlvision.com/blog/swedish-nintendo-brochure-scans-1988-1993/",
           "https://www.rlvision.com/blog/wp-content/uploads/2019/04/Nintendo-Reklamblad-NES-1988.pdf",
+          "https://www.rlvision.com/blog/wp-content/uploads/2019/04/Nintendo-Reklamblad-NES-1989.pdf",
+          "https://www.rlvision.com/blog/wp-content/uploads/2019/04/Nintendo-Reklamblad-NES-1990.pdf",
+          "https://www.rlvision.com/blog/wp-content/uploads/2019/04/Nintendo-Reklamblad-NES-1991.pdf",
+          "https://www.rlvision.com/blog/wp-content/uploads/2019/04/Nintendo-Reklamblad-NES-1992.pdf",
+          "https://www.rlvision.com/blog/wp-content/uploads/2019/04/Nintendo-Reklamblad-NES-1993.pdf",
           "https://www.rlvision.com/blog/wp-content/uploads/2019/04/Nintendo-Reklamblad-Super-NES-1992.pdf"
         ],
         "retrieved_at": "2026-11-13",
         "unit": "nominal SEK per Nintendo game",
-        "definition": "Intended annual measure is the arithmetic mean of documented Swedish new-retail prices for Nintendo games in a dated source sample. Each published year must state the sample size and sampling basis; it must not be presented as a market-wide mean unless the source coverage supports that claim.",
-        "coverage": "Two sparse SNES catalogue samples: 1993 issue 18 lists 17 SNES games for sale; 1994 issue 19 lists 9 SNES games explicitly under 'SUPER NINTENDO – NYA'. Both are Swedish mail-order seller prices, not a representative all-retailer market sample. 1994 advertises low mail-order prices. No observations are available for other years, and the catalogue series from 1988–1993 does not itself establish prices.",
-        "transformation": "CSV values are unweighted arithmetic means of the listed game prices (1993: 17 prices, 11,133 SEK total => 654.88 SEK; 1994: 9 prices, 4,941 SEK total => 549.00 SEK). Values describe each dated seller catalogue's selected SNES listings only, not a Swedish annual market average. They are nominal advertised prices incl. VAT; shipping excluded where stated. The 1993 and 1994 seller/sample methods differ, so no year-to-year price or wage-share trend is inferred. No interpolation; absent years remain gaps. Wage shares use SCB average monthly salary × 12 only to contextualize these dated observations."
+        "definition": "Sparse dated source samples of nominal listed price per Nintendo game. The displayed value is the unweighted arithmetic mean of the games whose prices are documented in each source; this is not a market-wide or calendar-year mean. Platform scope and source/sample type are reported per row.",
+        "coverage": "Seven retailer/catalogue observations across five years: 1987 NES (12 cassette prices in one Milu Handels AB flyer dated 1987 by the archive seller; image lists each at 289 SEK), 1991 NES (51 prices in Larkman Computer Center's Datormagazin 6/91 catalogue), 1992 NES (26 titles) and SNES (10 games) from Aintronic's Datormagazin 13/92 ad, plus 1992 SNES (44 titles) from Landsbergs Spel & Data's Datormagazin 17/92 ad; 1993 SNES (17 listed prices) and 1994 SNES (9 new games). No verified values found for 1988–1990 or 1995 onward. Official-distributor brochure scans reviewed for 1988–1993 are game lists, not price lists. The 1990 Datormagazin examples at 398 SEK are in a hypothetical reader letter, not a price advertisement, and are excluded.",
+        "transformation": "1987 mean is 12×289 SEK / 12 = 289 SEK; source is a surviving flyer image, and its year is attributed by the archive seller listing, so the date is less secure than a dated periodical. 1991: 51 prices total 19,125 SEK / 51 = 375.00 SEK; catalogue footer says prices include VAT and postage is extra. Aintronic 1992 sample: 26 NES prices total 9,354 / 26 = 359.77 SEK; 10 individually listed SNES games total 4,760 / 10 = 476 SEK; excludes a Super Scope 6-game pack. The Datormagazin 13/92 ad states 25% VAT is included, while postage/handling is extra. Landsbergs Spel & Data 1992 SNES sample: 44 listed titles all 499 SEK incl. VAT; some marked 'ute snart', and postage/payment fees extra. 1993: 11,133 / 17 = 654.88 SEK. 1994: 4,941 / 9 = 549.00 SEK. The sources differ by seller, platform, and sample design; no trend is inferred. Price points are nominal. Wage shares are calculated only when SCB all-sector monthly salaries exist (monthly salary × 12); no historical wage series is substituted for missing SCB years. No interpolation; missing years stay gaps."
       }
     ]
   },

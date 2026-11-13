@@ -101,11 +101,11 @@ with (ROOT/'data/nintendo_software_prices.csv').open(newline='') as f:
 software_data=[]
 for r in software_prices:
     year=int(r['year']); price=float(r['average_game_price_sek']); count=int(r['sample_size']); annual_salary=salaries.get(year,0)*12
-    if price<=0 or count<=0 or r.get('platform_scope')!='SNES' or not r.get('source_url'):
+    if price<=0 or count<=0 or not r.get('platform_scope') or not r.get('source_url'):
         raise ValueError('invalid Nintendo software price observation')
     software_data.append({'year':year,'price_sek':price,'sample_size':count,'platform_scope':r['platform_scope'],'price_basis':r['price_basis'],'source_url':r['source_url'],'annual_wage_sek':annual_salary or None,'wage_basis':'SCB average monthly salary, all sectors, total gender × 12' if annual_salary else None,'share_percent':price/annual_salary*100 if annual_salary else None,'share_percent_two_adults':None,'trend':None,'trend_two_adults':None})
-if len({r['year'] for r in software_data}) != len(software_data):
-    raise ValueError('duplicate Nintendo software price year')
+if len({(r['year'],r['platform_scope'],r['source_url']) for r in software_data}) != len(software_data):
+    raise ValueError('duplicate Nintendo software source/platform observation')
 software_payload={'generated_at_utc':generated_at,'series_id':'nintendo_software_prices','wage_series_reference':'average_monthly_salaries.csv','sources':[s for s in all_sources['series'] if s['id'] in {'average_salary','nintendo_software_prices'}],'data':software_data}
 (ROOT/'static/data/nintendo_software_prices.json').write_text(json.dumps(software_payload,ensure_ascii=False,indent=2)+'\n')
 index={'generated_at_utc':generated_at,'sources':all_sources,'wage_series_reference':'average_monthly_salaries.csv','series':[{'id':'gasoline','file':'gasoline_series.json'},{'id':'tv_license','file':'tv_license_series.json'},{'id':'nintendo_hardware_launch_prices','file':'nintendo_hardware_launch_prices.json'},{'id':'nintendo_software_prices','file':'nintendo_software_prices.json'},{'id':'historical_manufacturing_hourly_wages_by_industry','file':'historical_manufacturing_hourly_wages.csv'}]}
