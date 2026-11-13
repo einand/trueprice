@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-13T09:34:04.231701+00:00",
+  "generated_at_utc": "2026-11-13T09:37:18.020137+00:00",
   "series_id": "gasoline",
   "wage_series_reference": "average_monthly_salaries.csv",
   "sources": [
@@ -30,13 +30,17 @@
     {
       "id": "gasoline_historical_prewar_price_ranges",
       "file": "data/gasoline_historical_price_ranges.csv",
-      "source": "Swedish Parliament, Första kammarens andra tillfälliga utskotts utlåtande nr 14 (1945), quoting retail gasoline price ranges collected from different sources.",
+      "source": "Swedish Parliament, Första kammarens andra tillfälliga utskotts utlåtande nr 14 (1945), plus the 1948 official SOU and 1954 Government proposition for individual O-zone price observations.",
       "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/utlatande/forsta-kammarens-andra-tillfalliga-utskotts_e61ctfua14/html/",
+      "additional_source_urls": [
+        "https://lagen.nu/forarbeten/sou/1948-43",
+        "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/kungi-maj-ts-proposition-nr-112_ef30112/html/"
+      ],
       "retrieved_at": "2026-11-13",
       "unit": "öre/liter, tax excluded",
-      "definition": "Reported annual minimum and maximum retail-price quotations for gasoline. The source says gasoline tax is excluded and gives a range when the quote changed during a year; it does not establish a national annual mean, consistent city coverage, gasoline grade, or pump-price tax basis.",
-      "coverage": "Swedish retail quotations, 1925–1939. Values are ranges, not comparable national annual mean pump prices. Years 1940–1979 are unavailable in this series.",
-      "transformation": "Transcribed source intervals as min/max in öre per litre. No conversion to a single mean and no interpolation."
+      "definition": "The 1925–1939 entries are the source's minimum and maximum retail-price quotations with gasoline tax excluded. The 1948 O-zone price is reported as 66 öre/liter with taxes; the 1953 O-zone figure is an October price calculation of 59 öre/liter with taxes. None of these points is a national annual mean or a consistent fuel specification.",
+      "coverage": "Sweden, reported quotation ranges 1925–1939 plus individual O-zone observations in 1948 and 1953. There are no entries for 1940–1947, 1949–1952, or 1954–1979. The national annual pump-price series begins in 1980.",
+      "transformation": "Transcribed min/max source values as öre per litre; where the source gives a point price, min equals max and the observation type identifies it. No averaging, tax adjustment, conversion to a single series, or interpolation."
     },
     {
       "id": "gasoline_price_2024_level",

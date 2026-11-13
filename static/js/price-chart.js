@@ -56,10 +56,13 @@
       const lines = (await historicalResponse.text()).trim().split(/\r?\n/);
       const headers = lines.shift().split(',');
       const records = lines.map((line) => line.split(','));
-      historicalTable.innerHTML = `<table class="comparison-data-table"><thead><tr><th>År</th><th>Lägsta notering</th><th>Högsta notering</th><th>Skatt</th></tr></thead><tbody>${records.map((record) => {
+      historicalTable.innerHTML = `<table class="comparison-data-table"><thead><tr><th>År</th><th>Pris/notering</th><th>Skatt</th><th>Område</th><th>Underlag</th></tr></thead><tbody>${records.map((record) => {
         const item = Object.fromEntries(headers.map((header, i) => [header, record[i]]));
-        return `<tr><td>${item.year}</td><td>${fmt(Number(item.price_min_ore_per_liter)/100,2)} kr/l</td><td>${fmt(Number(item.price_max_ore_per_liter)/100,2)} kr/l</td><td>Exklusive</td></tr>`;
-      }).join('')}</tbody></table><p class="table-note">Intervallen är omräknade från öre till kronor per liter (÷ 100). Enkäten redovisar lägsta/högsta notering per år, inte medelpris.</p>`;
+        const low=Number(item.price_min_ore_per_liter)/100, high=Number(item.price_max_ore_per_liter)/100;
+        const quotation=low===high?`${fmt(low,2)} kr/l`:`${fmt(low,2)}–${fmt(high,2)} kr/l`;
+        const kind={annual_range:'Årsintervall',single_zone_price:'En zonnotering',current_price_not_annual_mean:'Enskilt pris (ej årsmedel)',calculated_price_october_1953:'Kalkylpris okt. (ej årsmedel)'}[item.observation_type]||item.observation_type;
+        return `<tr><td>${item.year}</td><td>${quotation}</td><td>${item.tax_included==='true'?'Inklusive':'Exklusive'}</td><td>${item.geography==='O-zone'?'O-zon':'Ej angivet'}</td><td>${kind}</td></tr>`;
+      }).join('')}</tbody></table><p class="table-note">Noteringarna är omräknade från öre till kronor per liter (÷ 100). De äldre värdena har olika skattestatus och geografisk/metodisk täckning; de ska inte läsas som en jämn årsmedelsserie.</p>`;
     } else historicalTable.innerHTML = '<p class="loading">De historiska prisnoteringarna kunde inte hämtas.</p>';
   }
 

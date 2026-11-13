@@ -1,16 +1,18 @@
-year,price_min_ore_per_liter,price_max_ore_per_liter,tax_included,observation_type
-1925,31,35,false,reported annual range
-1926,29,33,false,reported annual range
-1927,24,30,false,reported annual range
-1928,18,24,false,reported annual range
-1929,24,24,false,reported annual range
-1930,16,21,false,reported annual range
-1931,14,16,false,reported annual range
-1932,12,19,false,reported annual range
-1933,17,19,false,reported annual range
-1934,15,17,false,reported annual range
-1935,17,17,false,reported annual range
-1936,15,17,false,reported annual range
-1937,15,16,false,reported annual range
-1938,15,15,false,reported annual range
-1939,15,15,false,reported annual range
+year,price_min_ore_per_liter,price_max_ore_per_liter,tax_included,geography,observation_type
+1925,31,35,false,unspecified,annual_range
+1926,29,33,false,unspecified,annual_range
+1927,24,30,false,unspecified,annual_range
+1928,18,24,false,unspecified,annual_range
+1929,24,24,false,unspecified,annual_range
+1930,16,21,false,unspecified,annual_range
+1931,14,16,false,unspecified,annual_range
+1932,12,19,false,unspecified,annual_range
+1933,17,19,false,unspecified,annual_range
+1934,15,17,false,unspecified,annual_range
+1935,17,17,false,unspecified,annual_range
+1936,15,17,false,unspecified,annual_range
+1937,15,16,false,unspecified,annual_range
+1938,15,15,false,unspecified,annual_range
+1939,15,15,false,O-zone,single_zone_price
+1948,66,66,true,O-zone,current_price_not_annual_mean
+1953,59,59,true,O-zone,calculated_price_october_1953
