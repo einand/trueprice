@@ -5,6 +5,7 @@
   const page = document.querySelector('.comparison-page');
   const isTvPage = page?.dataset.comparison === 'tv-license';
   const isNintendoHardware = page?.dataset.comparison === 'nintendo-hardware';
+  const isConsolePage = page?.dataset.console === 'true';
   const itemName = page?.dataset.priceLabel || 'Pris';
   const response = await fetch(page?.dataset.seriesUrl || 'data/series.json');
   if (!response.ok) {
@@ -23,26 +24,28 @@
     amount: isTvPage ? d.fee_sek : (isNintendoHardware ? d.price_sek : d.price_sek_per_liter),
     familyAmount: isTvPage ? (d.fee_sek == null ? null : d.fee_sek * (d.fee_unit === 'person_year_max' ? 2 : 1)) : (isNintendoHardware ? d.price_sek : d.price_sek_per_liter),
     console: d.console || null,
+    priceBasis: d.price_basis || null,
+    sourceUrl: d.source_url || null,
     unit: isTvPage ? d.fee_unit : null,
     one: isTvPage ? d.share_percent : d.share_percent,
-    family: d.share_percent_two_adults,
+    family: isConsolePage ? null : d.share_percent_two_adults,
     trend: d.trend,
     familyTrend: d.trend_two_adults,
     breakBefore: isTvPage && d.break_before === true
   }));
-  const latest = [...rows].reverse().find((d) => d.one != null && d.family != null);
+  const latest = [...rows].reverse().find((d) => d.one != null && (isConsolePage || d.family != null));
   if (latest) {
     document.getElementById('latest-year').textContent = latest.year;
     document.getElementById('latest-share').textContent = fmt(latest.one, 4);
-    document.getElementById('latest-family-share').textContent = fmt(latest.family, 4);
-    for (const [id, trend] of [['latest-trend', latest.trend], ['latest-family-trend', latest.familyTrend]]) {
+    if (!isConsolePage) document.getElementById('latest-family-share').textContent = fmt(latest.family, 4);
+    for (const [id, trend] of (isConsolePage ? [] : [['latest-trend', latest.trend], ['latest-family-trend', latest.familyTrend]])) {
       const el = document.getElementById(id); el.textContent = arrow(trend); el.setAttribute('aria-label', trendLabel(trend));
     }
     const unit = isTvPage ? (latest.unit === 'household_year' ? 'kr/hushåll/år' : 'kr/person/år, max') : (page.dataset.priceUnit || 'kr/l');
     document.getElementById('latest-amount-label').textContent = isNintendoHardware ? latest.console : 'En vuxen';
     document.getElementById('latest-price').textContent = `${fmt(latest.amount, isTvPage ? 0 : 2)} ${unit}`;
-    document.getElementById('latest-family-price').textContent = `${fmt(latest.familyAmount, isTvPage ? 0 : 2)} ${isTvPage ? (latest.unit === 'household_year' ? 'kr/hushåll/år' : 'kr/hushåll/år, max') : (page.dataset.priceUnit || 'kr/l')}`;
-    if (!isNintendoHardware) document.getElementById('latest-amount-label').textContent = 'En vuxen';
+    if (!isConsolePage) document.getElementById('latest-family-price').textContent = `${fmt(latest.familyAmount, isTvPage ? 0 : 2)} ${isTvPage ? (latest.unit === 'household_year' ? 'kr/hushåll/år' : 'kr/hushåll/år, max') : (page.dataset.priceUnit || 'kr/l')}`;
+    document.getElementById('latest-amount-label').textContent = isNintendoHardware ? latest.console : (isConsolePage ? 'Pris' : 'En vuxen');
   }
   const valid = rows.filter((d) => d.one != null || d.family != null);
   const chartStart = rows[0]?.year || valid[0]?.year || 0;
@@ -89,9 +92,9 @@
     const x = (year) => m.left + (lastYear===firstYear ? iw/2 : (year-firstYear)*iw/(lastYear-firstYear));
     const y = (v) => m.top + ih - v/max*ih;
     const grid = Array.from({length:6}, (_,i) => { const v=max*i/5, yy=y(v); return `<line class="grid-line" x1="${m.left}" x2="${w-m.right}" y1="${yy}" y2="${yy}"/><text class="axis-label" x="${m.left-12}" y="${yy+3}" text-anchor="end">${fmt(v,3)}%</text>`; }).join('');
-    const series = [['one',''],['family',' blue']].map(([key, color]) => {
+    const series = (isConsolePage ? [['one','']] : [['one',''],['family',' blue']]).map(([key, color]) => {
       const ps = points.map((d,i) => ({...d,index:i,value:d[key]})).filter((d) => d.value != null);
-      const lines = segments(ps).map((g) => g.length > 1 ? `<polyline class="chart-line${color ? ' chart-line-blue' : ''}" points="${g.map((p)=>`${x(p.year)},${y(p.value)}`).join(' ')}"/>` : '').join('');
+      const lines = isNintendoHardware ? '' : segments(ps).map((g) => g.length > 1 ? `<polyline class="chart-line${color ? ' chart-line-blue' : ''}" points="${g.map((p)=>`${x(p.year)},${y(p.value)}`).join(' ')}"/>` : '').join('');
       const marks = ps.map((p) => `<circle class="chart-point${color ? ' chart-point-blue' : ''}" cx="${x(p.year)}" cy="${y(p.value)}" r="3.5" tabindex="0" aria-label="${p.year}: ${fmt(p.value,4)} procent"><title>${p.year}: ${fmt(p.value,4)} %</title></circle>`).join('');
       return lines + marks;
     }).join('');
@@ -111,7 +114,7 @@
     const amountSeries=isTvPage?[['amount','En vuxen',''],['familyAmount','Familj',' blue']]:[['amount',itemName,'']];
     const series=amountSeries.map(([key,label,color])=>{
       const ps=points.map((d)=>({...d,value:d[key]})).filter(d=>d.value!=null);
-      const lines=segments(ps).map(g=>g.length>1?`<polyline class="chart-line${color?' chart-line-blue':''}" points="${g.map(p=>`${x(p.year)},${y(p.value)}`).join(' ')}"/>`:'').join('');
+      const lines=isNintendoHardware?'':segments(ps).map(g=>g.length>1?`<polyline class="chart-line${color?' chart-line-blue':''}" points="${g.map(p=>`${x(p.year)},${y(p.value)}`).join(' ')}"/>`:'').join('');
       const marks=ps.map(p=>`<circle class="chart-point${color?' chart-point-blue':''}" cx="${x(p.year)}" cy="${y(p.value)}" r="2.8"><title>${p.year}${p.console?`, ${p.console}`:''}, ${label}: ${fmt(p.value,(isTvPage||isNintendoHardware)?0:2)} kr</title></circle>`).join('');
       return lines+marks;
     }).join('');
@@ -123,14 +126,15 @@
     const body=points.map(d=>{
       const mark=(t)=>`<td class="trend-cell ${arrow(t)==='↑'?'trend-up':arrow(t)==='↓'?'trend-down':''}" aria-label="${trendLabel(t)}">${arrow(t)}</td>`;
       const share=(v)=>`<td class="share">${val(v,4)}${v==null?'':' %'}</td>`;
-      if (isNintendoHardware) return `<tr><td>${d.year}</td><td>${d.console}</td><td>${val(d.amount,0)} kr</td>${share(d.one)}${share(d.family)}</tr>`;
+      if (isNintendoHardware) return `<tr><td>${d.year}</td><td>${d.console}</td><td>${val(d.amount,0)} kr${d.console==='Nintendo Wii'?' ≈':''}</td>${share(d.one)}<td>${d.priceBasis || '—'}${d.sourceUrl?` <a href="${d.sourceUrl}">Källa ↗</a>`:''}</td></tr>`;
+      if (isConsolePage) return `<tr><td>${d.year}</td><td>${val(d.amount,2)} ${page.dataset.priceUnit || 'kr'}</td>${share(d.one)}${mark(d.trend)}</tr>`;
       if (!isTvPage) return `<tr><td>${d.year}</td><td>${val(d.amount,2)} kr/l</td>${share(d.one)}${mark(d.trend)}${share(d.family)}${mark(d.familyTrend)}</tr>`;
       const adultUnit=d.unit==='household_year'?'kr/hushåll':d.unit==='receiver_year'?'kr/mottagare':'kr/person, max';
       const familyUnit=d.unit==='household_year'?'kr/hushåll':d.unit==='receiver_year'?'kr/mottagare (en delad apparat)':'kr/hushåll, max';
       return `<tr><td>${d.year}</td><td>${val(d.amount,0)} ${adultUnit}</td><td>${val(d.familyAmount,0)} ${familyUnit}</td>${share(d.one)}${mark(d.trend)}${share(d.family)}${mark(d.familyTrend)}</tr>`;
     }).join('');
-    const headers=isNintendoHardware?'<tr><th>Lanseringsår</th><th>Konsol</th><th>Lanseringspris</th><th>Andel av en årslön</th><th>Andel av två årslöner</th></tr>':isTvPage?'<tr><th>År</th><th>En vuxen, avgift</th><th>Familj, avgift</th><th>En vuxen, andel</th><th>Trend</th><th>Familj, andel</th><th>Trend</th></tr>':'<tr><th>År</th><th>Bensinpris</th><th>En vuxen, andel</th><th>Trend</th><th>Familj, andel</th><th>Trend</th></tr>';
-    const note=isNintendoHardware?'Familj avser två genomsnittliga SCB-årslöner. Priserna är observerade lanseringspriser för olika konsolmodeller, inte ett årligt prisindex. Inga trendpilar jämförs mellan olika modeller.':'Familj avser två vuxna med varsin genomsnittlig lön. Andelarna använder samma pris.';
+    const headers=isNintendoHardware?'<tr><th>Lanseringsår enl. källa</th><th>Konsol</th><th>Lanseringspris</th><th>Andel av årslön</th><th>Källanmärkning</th></tr>':isConsolePage?'<tr><th>År</th><th>Pris</th><th>Andel av årslön</th><th>Trend</th></tr>':isTvPage?'<tr><th>År</th><th>En vuxen, avgift</th><th>Familj, avgift</th><th>En vuxen, andel</th><th>Trend</th><th>Familj, andel</th><th>Trend</th></tr>':'<tr><th>År</th><th>Bensinpris</th><th>En vuxen, andel</th><th>Trend</th><th>Familj, andel</th><th>Trend</th></tr>';
+    const note=isNintendoHardware?'Priserna är observerade lanseringspriser för olika konsolmodeller, inte ett årligt prisindex. Ingen trendpil jämför olika modeller.':isConsolePage?'Andel beräknad mot en genomsnittlig årslön.':'Familj avser två vuxna med varsin genomsnittlig lön. Andelarna använder samma pris.';
     el.innerHTML=`<table class="comparison-data-table${isTvPage?' comparison-data-table-tv':''}"><thead>${headers}</thead><tbody>${body}</tbody></table><p class="table-note">${note}</p>`;
   }
 })();

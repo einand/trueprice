@@ -3,6 +3,7 @@ title: Playstation-spel
 layout: comparison
 comparison:
   id: playstation-software
+  console: true
   category: KONSOLER · SPEL
   intro: Genomsnittligt svenskt nypris för Playstation-spel år för år, jämfört med lönen.
   available: false

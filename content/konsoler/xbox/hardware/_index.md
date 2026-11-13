@@ -3,6 +3,7 @@ title: Xbox-konsoler
 layout: comparison
 comparison:
   id: xbox-hardware
+  console: true
   category: KONSOLER · HÅRDVARA
   intro: Svenska lanseringspriser för Xbox-konsoler, jämförda med lönen samma år.
   available: false

@@ -3,6 +3,7 @@ title: Xbox-spel
 layout: comparison
 comparison:
   id: xbox-software
+  console: true
   category: KONSOLER · SPEL
   intro: Genomsnittligt svenskt nypris för Xbox-spel år för år, jämfört med lönen.
   available: false

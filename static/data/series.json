@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-13T11:57:48.803112+00:00",
+  "generated_at_utc": "2026-11-13T12:12:32.466000+00:00",
   "sources": {
     "retrieved_at": "2026-11-13",
     "series": [
@@ -127,8 +127,14 @@
         "retrieved_at": "2026-11-13",
         "unit": "nominal SEK per console at Swedish launch",
         "definition": "Reported Swedish new retail price at launch for the original Nintendo console model; these are discrete product launch observations, not calendar-year average retail prices.",
-        "coverage": "Sweden; six Nintendo consoles with prices reported for 1992, 1997, 2002, 2006, 2012 and 2017. NES is omitted: FZ reports 1987, while other sources document Swedish retail availability from 1 September 1986, and no contemporaneous price source was verified. This is a secondary compilation, not a primary price list.",
-        "transformation": "Prices transcribed from the nominal-price column. Wage share is launch price divided by SCB average monthly salary for the same year × 12 × 100; family share uses twice that annual wage. No inflation adjustment. No trend arrow is calculated between different hardware models."
+        "coverage": "Sweden; eight observations: NES 1987, SNES 1992, Nintendo 64 1997, GameCube 2002, Wii 2006, Wii U Basic and Premium 2012, and Switch 2017. The NES year is FZ/Cuponation's report; Swedish retail availability is documented from 1 September 1986, so the source's 1987 launch year is inconsistent and not treated as a verified 1986 price. Wii U is split into two launch packages because the contemporary Swedish source reports distinct Basic and Premium prices. Wii is marked approximate; FZ reported about 2,700 SEK including VAT and one game on release day. FZ/Cuponation's entries are a secondary compilation; see per-row source_url and price_basis in the data file.",
+        "additional_source_urls": [
+          "https://www.fz.se/nyhet/261767-hipp-hipp-nes-fyller-30-ar-i-sverige",
+          "https://www.fz.se/nyhet/4964-wii-sjunker-i-pris",
+          "https://www.fz.se/nyhet/12686-nintendos-tv-spelskonsol-wii-slappt-i-sverige",
+          "https://www.senses.se/senses-se-testar-nintendo-startar-morgondagens-spelande-med-wii-u/"
+        ],
+        "transformation": "Nominal Swedish launch-price observations transcribed as published. The Wii price is approximate, not an exact list price; Wii U Basic/Premium are separate packages. Wage share is reported price divided by SCB average monthly salary for the same year × 12 × 100 when a matching salary exists. No inflation adjustment, no annualization, and no trend arrow between different hardware models."
       },
       {
         "id": "nintendo_software_prices",

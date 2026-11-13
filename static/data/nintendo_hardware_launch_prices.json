@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-13T11:57:48.803112+00:00",
+  "generated_at_utc": "2026-11-13T12:12:32.466000+00:00",
   "series_id": "nintendo_hardware_launch_prices",
   "wage_series_reference": "average_monthly_salaries.csv",
   "sources": [
@@ -23,15 +23,34 @@
       "retrieved_at": "2026-11-13",
       "unit": "nominal SEK per console at Swedish launch",
       "definition": "Reported Swedish new retail price at launch for the original Nintendo console model; these are discrete product launch observations, not calendar-year average retail prices.",
-      "coverage": "Sweden; six Nintendo consoles with prices reported for 1992, 1997, 2002, 2006, 2012 and 2017. NES is omitted: FZ reports 1987, while other sources document Swedish retail availability from 1 September 1986, and no contemporaneous price source was verified. This is a secondary compilation, not a primary price list.",
-      "transformation": "Prices transcribed from the nominal-price column. Wage share is launch price divided by SCB average monthly salary for the same year × 12 × 100; family share uses twice that annual wage. No inflation adjustment. No trend arrow is calculated between different hardware models."
+      "coverage": "Sweden; eight observations: NES 1987, SNES 1992, Nintendo 64 1997, GameCube 2002, Wii 2006, Wii U Basic and Premium 2012, and Switch 2017. The NES year is FZ/Cuponation's report; Swedish retail availability is documented from 1 September 1986, so the source's 1987 launch year is inconsistent and not treated as a verified 1986 price. Wii U is split into two launch packages because the contemporary Swedish source reports distinct Basic and Premium prices. Wii is marked approximate; FZ reported about 2,700 SEK including VAT and one game on release day. FZ/Cuponation's entries are a secondary compilation; see per-row source_url and price_basis in the data file.",
+      "additional_source_urls": [
+        "https://www.fz.se/nyhet/261767-hipp-hipp-nes-fyller-30-ar-i-sverige",
+        "https://www.fz.se/nyhet/4964-wii-sjunker-i-pris",
+        "https://www.fz.se/nyhet/12686-nintendos-tv-spelskonsol-wii-slappt-i-sverige",
+        "https://www.senses.se/senses-se-testar-nintendo-startar-morgondagens-spelande-med-wii-u/"
+      ],
+      "transformation": "Nominal Swedish launch-price observations transcribed as published. The Wii price is approximate, not an exact list price; Wii U Basic/Premium are separate packages. Wage share is reported price divided by SCB average monthly salary for the same year × 12 × 100 when a matching salary exists. No inflation adjustment, no annualization, and no trend arrow between different hardware models."
     }
   ],
   "data": [
     {
+      "year": 1987,
+      "console": "Nintendo Entertainment System (NES)",
+      "price_sek": 1495.0,
+      "price_basis": "FZ/Cuponation reports 1987; Swedish retail launch is separately documented in 1986",
+      "source_url": "https://www.fz.se/nyhet/270044-sa-har-konsolpriserna-andrats-under-30-ar",
+      "share_percent": null,
+      "share_percent_two_adults": null,
+      "trend": null,
+      "trend_two_adults": null
+    },
+    {
       "year": 1992,
       "console": "Super Nintendo (SNES)",
       "price_sek": 1695.0,
+      "price_basis": "FZ/Cuponation reported Swedish launch price",
+      "source_url": "https://www.fz.se/nyhet/270044-sa-har-konsolpriserna-andrats-under-30-ar",
       "share_percent": 0.9608843537414966,
       "share_percent_two_adults": 0.4804421768707483,
       "trend": null,
@@ -41,6 +60,8 @@
       "year": 1997,
       "console": "Nintendo 64",
       "price_sek": 2495.0,
+      "price_basis": "FZ/Cuponation reported Swedish launch price",
+      "source_url": "https://www.fz.se/nyhet/270044-sa-har-konsolpriserna-andrats-under-30-ar",
       "share_percent": 1.1615456238361266,
       "share_percent_two_adults": 0.5807728119180633,
       "trend": null,
@@ -50,6 +71,8 @@
       "year": 2002,
       "console": "Nintendo GameCube",
       "price_sek": 2499.0,
+      "price_basis": "FZ/Cuponation reported Swedish launch price",
+      "source_url": "https://www.fz.se/nyhet/270044-sa-har-konsolpriserna-andrats-under-30-ar",
       "share_percent": 0.9423076923076923,
       "share_percent_two_adults": 0.47115384615384615,
       "trend": null,
@@ -58,18 +81,33 @@
     {
       "year": 2006,
       "console": "Nintendo Wii",
-      "price_sek": 2800.0,
-      "share_percent": 0.9333333333333335,
-      "share_percent_two_adults": 0.46666666666666673,
+      "price_sek": 2700.0,
+      "price_basis": "Approximate Swedish release-period price including VAT and one game, reported by FZ on release day",
+      "source_url": "https://www.fz.se/nyhet/12686-nintendos-tv-spelskonsol-wii-slappt-i-sverige",
+      "share_percent": 0.8999999999999999,
+      "share_percent_two_adults": 0.44999999999999996,
       "trend": null,
       "trend_two_adults": null
     },
     {
       "year": 2012,
-      "console": "Nintendo Wii U",
-      "price_sek": 2500.0,
-      "share_percent": 0.6991051454138703,
-      "share_percent_two_adults": 0.3495525727069351,
+      "console": "Nintendo Wii U Basic",
+      "price_sek": 2995.0,
+      "price_basis": "Swedish launch price, white 8 GB package",
+      "source_url": "https://www.senses.se/senses-se-testar-nintendo-startar-morgondagens-spelande-med-wii-u/",
+      "share_percent": 0.8375279642058167,
+      "share_percent_two_adults": 0.4187639821029083,
+      "trend": null,
+      "trend_two_adults": null
+    },
+    {
+      "year": 2012,
+      "console": "Nintendo Wii U Premium",
+      "price_sek": 3495.0,
+      "price_basis": "Swedish launch price, black 32 GB package with Nintendo Land",
+      "source_url": "https://www.senses.se/senses-se-testar-nintendo-startar-morgondagens-spelande-med-wii-u/",
+      "share_percent": 0.9773489932885906,
+      "share_percent_two_adults": 0.4886744966442953,
       "trend": null,
       "trend_two_adults": null
     },
@@ -77,6 +115,8 @@
       "year": 2017,
       "console": "Nintendo Switch",
       "price_sek": 3690.0,
+      "price_basis": "FZ/Cuponation reported Swedish launch price",
+      "source_url": "https://www.fz.se/nyhet/270044-sa-har-konsolpriserna-andrats-under-30-ar",
       "share_percent": 0.9124629080118695,
       "share_percent_two_adults": 0.45623145400593473,
       "trend": null,

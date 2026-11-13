@@ -80,7 +80,7 @@ for r in nintendo_hardware:
     if price<=0 or year<1986:
         raise ValueError('invalid Nintendo hardware launch observation')
     annual_salary=salary*12 if salary else None
-    nintendo_data.append({'year':year,'console':r['console'],'price_sek':price,'share_percent':price/annual_salary*100 if annual_salary else None,'share_percent_two_adults':price/(annual_salary*2) * 100 if annual_salary else None,'trend':None,'trend_two_adults':None})
+    nintendo_data.append({'year':year,'console':r['console'],'price_sek':price,'price_basis':r['price_basis'],'source_url':r['source_url'],'share_percent':price/annual_salary*100 if annual_salary else None,'share_percent_two_adults':price/(annual_salary*2) * 100 if annual_salary else None,'trend':None,'trend_two_adults':None})
 hardware_payload={'generated_at_utc':generated_at,'series_id':'nintendo_hardware_launch_prices','wage_series_reference':'average_monthly_salaries.csv','sources':[s for s in all_sources['series'] if s['id'] in {'average_salary','nintendo_hardware_launch_prices'}],'data':nintendo_data}
 (ROOT/'static/data/nintendo_hardware_launch_prices.json').write_text(json.dumps(hardware_payload,ensure_ascii=False,indent=2)+'\n')
 index={'generated_at_utc':generated_at,'sources':all_sources,'wage_series_reference':'average_monthly_salaries.csv','series':[{'id':'gasoline','file':'gasoline_series.json'},{'id':'tv_license','file':'tv_license_series.json'},{'id':'nintendo_hardware_launch_prices','file':'nintendo_hardware_launch_prices.json'},{'id':'nintendo_software_prices','file':'nintendo_software_prices.csv'},{'id':'historical_manufacturing_hourly_wages_by_industry','file':'historical_manufacturing_hourly_wages.csv'}]}

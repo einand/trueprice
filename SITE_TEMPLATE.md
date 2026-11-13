@@ -3,7 +3,7 @@
 All comparisons use `layouts/_default/comparison.html` and the same content sequence:
 
 1. **Kort presentation**: what is measured, for whom, and which unit is used.
-2. **Relativ kostnad**: item amount divided by the selected annual wage, multiplied by 100. The shared scenario control offers **En vuxen** or **Familj** (two adults with one average salary each). Show year-on-year direction as ↑ or ↓ only; provide its meaning to assistive technology.
+2. **Relativ kostnad**: item amount divided by annual wage, multiplied by 100. Household comparisons offer **En vuxen** or **Familj** (two adults with one average salary each). Console pages show only the individual scenario. Show year-on-year direction as ↑ or ↓ only where the series is comparable; provide its meaning to assistive technology.
 3. **Kostnad per år**: a yearly price chart followed by a table. Show the observed value and relative share where both input series exist. Leave missing shares empty.
 4. **Gemensamt löneunderlag och källor**: link to `/loner/` and expose provenance for the item series. Do not copy salary observations into page content.
 

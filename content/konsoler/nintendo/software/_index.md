@@ -3,6 +3,7 @@ title: Nintendo-spel
 layout: comparison
 comparison:
   id: nintendo-software
+  console: true
   category: KONSOLER · SPEL
   intro: Målet är att visa genomsnittspriset för ett Nintendo-spel i Sverige år för år från NES-lanseringen, jämfört med lönen. Varje års snitt måste bygga på daterade nypriser och en dokumenterad, jämförbar urvalsmetod.
   available: false

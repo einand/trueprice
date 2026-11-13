@@ -3,6 +3,7 @@ title: Playstation-konsoler
 layout: comparison
 comparison:
   id: playstation-hardware
+  console: true
   category: KONSOLER · HÅRDVARA
   intro: Svenska lanseringspriser för Playstation-konsoler, jämförda med lönen samma år.
   available: false
