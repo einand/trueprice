@@ -99,10 +99,15 @@
     const firstYear=points[0]?.year||0,lastYear=points.at(-1)?.year||firstYear;
     const x=(year)=>m.left+(lastYear===firstYear?iw/2:(year-firstYear)*iw/(lastYear-firstYear)), y=(v)=>m.top+ih-v/max*ih;
     const grid=Array.from({length:5},(_,i)=>{const v=max*i/4,yy=y(v);return `<line class="grid-line" x1="${m.left}" x2="${w-m.right}" y1="${yy}" y2="${yy}"/><text class="axis-label" x="${m.left-12}" y="${yy+3}" text-anchor="end">${fmt(v,0)} kr</text>`}).join('');
-    const ps=points.map((d,i)=>({...d,index:i,value:d.amount})).filter(d=>d.value!=null);
-    const series=segments(ps).map(g=>g.length>1?`<polyline class="chart-line" points="${g.map(p=>`${x(p.year)},${y(p.value)}`).join(' ')}"/>`:'').join('')+ps.map(p=>`<circle class="chart-point" cx="${x(p.year)}" cy="${y(p.value)}" r="2.8"><title>${p.year}: ${fmt(p.value,isTvPage?0:2)} kr</title></circle>`).join('');
+    const amountSeries=isTvPage?[['amount','En vuxen',''],['familyAmount','Familj',' blue']]:[['amount',itemName,'']];
+    const series=amountSeries.map(([key,label,color])=>{
+      const ps=points.map((d)=>({...d,value:d[key]})).filter(d=>d.value!=null);
+      const lines=segments(ps).map(g=>g.length>1?`<polyline class="chart-line${color?' chart-line-blue':''}" points="${g.map(p=>`${x(p.year)},${y(p.value)}`).join(' ')}"/>`:'').join('');
+      const marks=ps.map(p=>`<circle class="chart-point${color?' chart-point-blue':''}" cx="${x(p.year)}" cy="${y(p.value)}" r="2.8"><title>${p.year}, ${label}: ${fmt(p.value,isTvPage?0:2)} kr</title></circle>`).join('');
+      return lines+marks;
+    }).join('');
     const labels=points.map(d=>d.year%5===0||d.year===firstYear||d.year===lastYear?`<text class="axis-label" x="${x(d.year)}" y="${h-8}" text-anchor="middle">${d.year}</text>`:'').join('');
-    el.innerHTML=`<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${itemName} per år för en vuxen och familj" preserveAspectRatio="none">${grid}${series}${labels}</svg>`;
+    el.innerHTML=`<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${itemName} per år${isTvPage?' för en vuxen och familj':''}" preserveAspectRatio="none">${grid}${series}${labels}</svg>`;
   }
   function renderTable(el, points) {
     if (!el) return;
