@@ -42,12 +42,14 @@
     document.getElementById('latest-amount-label').textContent = 'En vuxen';
   }
   const valid = rows.filter((d) => d.one != null || d.family != null);
-  document.getElementById('chart-period').textContent = valid.length ? `${valid[0].year}–${valid.at(-1).year}` : '—';
-  renderRelative(root, valid);
+  const chartStart = rows[0]?.year || valid[0]?.year || 0;
+  const chartEnd = rows.at(-1)?.year || valid.at(-1)?.year || chartStart;
+  document.getElementById('chart-period').textContent = valid.length ? `${chartStart}–${chartEnd}` : '—';
+  renderRelative(root, valid, chartStart, chartEnd);
   renderAmount(document.getElementById('price-chart'), rows);
   renderTable(document.getElementById('table'), rows);
   document.getElementById('chart-takeaway').textContent = isTvPage
-    ? 'Båda linjerna visar avgiften som andel av respektive lön. Linjebrott markerar ändrade avgiftsregler; trendpilar jämför inte över ett sådant brott.'
+    ? 'Tidsaxeln börjar 1925. Löneandelen kan beräknas från 1992, då jämförbara årslöner börjar; tidigare år lämnas tomma. Linjebrott markerar ändrade avgiftsregler.'
     : 'Röd linje visar en vuxen och blå linje familj med två vuxna. Uppåtpil betyder dyrare relativt lön; nedåtpil billigare.';
   const historicalTable = document.getElementById('historical-data-table');
   if (historicalTable && page.dataset.historicalUrl) {
@@ -75,11 +77,10 @@
     }
     return out;
   }
-  function renderRelative(el, points) {
+  function renderRelative(el, points, firstYear, lastYear) {
     const w = 900, h = 300, m = { top: 18, right: 24, bottom: 34, left: 70 }, iw = w-m.left-m.right, ih=h-m.top-m.bottom;
     const values = points.flatMap((d) => [d.one, d.family]).filter((v) => v != null);
     const max = Math.ceil(Math.max(...values) * 200) / 200 || 1;
-    const firstYear=points[0]?.year||0,lastYear=points.at(-1)?.year||firstYear;
     const x = (year) => m.left + (lastYear===firstYear ? iw/2 : (year-firstYear)*iw/(lastYear-firstYear));
     const y = (v) => m.top + ih - v/max*ih;
     const grid = Array.from({length:6}, (_,i) => { const v=max*i/5, yy=y(v); return `<line class="grid-line" x1="${m.left}" x2="${w-m.right}" y1="${yy}" y2="${yy}"/><text class="axis-label" x="${m.left-12}" y="${yy+3}" text-anchor="end">${fmt(v,3)}%</text>`; }).join('');
@@ -89,8 +90,11 @@
       const marks = ps.map((p) => `<circle class="chart-point${color ? ' chart-point-blue' : ''}" cx="${x(p.year)}" cy="${y(p.value)}" r="3.5" tabindex="0" aria-label="${p.year}: ${fmt(p.value,4)} procent"><title>${p.year}: ${fmt(p.value,4)} %</title></circle>`).join('');
       return lines + marks;
     }).join('');
-    const labels = points.map((d) => d.year%5===0 || d.year===firstYear || d.year===lastYear ? `<text class="axis-label" x="${x(d.year)}" y="${h-8}" text-anchor="middle">${d.year}</text>` : '').join('');
-    el.innerHTML = `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${itemName} som andel av lön för en vuxen och familj" preserveAspectRatio="none">${grid}${series}${labels}</svg>`;
+    const yearStep = lastYear-firstYear > 60 ? 20 : lastYear-firstYear > 30 ? 10 : 5;
+    const labels = Array.from({length:Math.floor((lastYear-firstYear)/yearStep)+1},(_,i)=>firstYear+i*yearStep).concat(lastYear).filter((year,i,all)=>all.indexOf(year)===i).map((year) => `<text class="axis-label" x="${x(year)}" y="${h-8}" text-anchor="middle">${year}</text>`).join('');
+    const firstObserved = points.find((d) => d.one != null || d.family != null)?.year;
+    const missing = firstObserved && firstObserved > firstYear ? `<rect class="chart-missing-region" x="${x(firstYear)}" y="${m.top}" width="${x(firstObserved)-x(firstYear)}" height="${ih}"/><text class="chart-missing-label" x="${(x(firstYear)+x(firstObserved))/2}" y="${m.top+ih/2}" text-anchor="middle">Löneunderlag saknas</text>` : '';
+    el.innerHTML = `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${itemName} som andel av lön; tidsaxel ${firstYear} till ${lastYear}" preserveAspectRatio="none">${grid}${missing}${series}${labels}</svg>`;
   }
   function renderAmount(el, points) {
     if (!el) return;
