@@ -26,6 +26,8 @@
     console: d.console || null,
     priceBasis: d.price_basis || null,
     sourceUrl: d.source_url || null,
+    wageBasis: d.wage_basis || null,
+    wageSourceUrl: d.wage_source_url || null,
     unit: isTvPage ? d.fee_unit : null,
     one: isTvPage ? d.share_percent : d.share_percent,
     family: isConsolePage ? null : d.share_percent_two_adults,
@@ -55,7 +57,7 @@
   renderAmount(document.getElementById('price-chart'), rows);
   renderTable(document.getElementById('table'), rows);
   document.getElementById('chart-takeaway').textContent = isNintendoHardware
-    ? 'Punkterna visar olika konsolers svenska lanseringspris. Modellerna lanserades olika år; linjer och år-till-år-pilar används därför inte. Löneandel visas där SCB:s årslön täcker lanseringsåret.'
+    ? 'Punkterna visar olika konsolers rapporterade svenska lanseringspris. Modellerna lanserades olika år; linjer och år-till-år-pilar används därför inte. NES-andelen använder en separat historisk industrilön och är inte direkt jämförbar med SCB:s allsektorslön från 1992.'
     : isTvPage
     ? 'Tidsaxeln börjar 1925. Löneandelen kan beräknas från 1992, då jämförbara årslöner börjar; tidigare år lämnas tomma. Linjebrott markerar ändrade avgiftsregler.'
     : 'Röd linje visar en vuxen och blå linje familj med två vuxna. Uppåtpil betyder dyrare relativt lön; nedåtpil billigare.';
@@ -126,7 +128,7 @@
     const body=points.map(d=>{
       const mark=(t)=>`<td class="trend-cell ${arrow(t)==='↑'?'trend-up':arrow(t)==='↓'?'trend-down':''}" aria-label="${trendLabel(t)}">${arrow(t)}</td>`;
       const share=(v)=>`<td class="share">${val(v,4)}${v==null?'':' %'}</td>`;
-      if (isNintendoHardware) return `<tr><td>${d.year}</td><td>${d.console}</td><td>${val(d.amount,0)} kr${d.console==='Nintendo Wii'?' ≈':''}</td>${share(d.one)}<td>${d.priceBasis || '—'}${d.sourceUrl?` <a href="${d.sourceUrl}">Källa ↗</a>`:''}</td></tr>`;
+      if (isNintendoHardware) return `<tr><td>${d.year}</td><td>${d.console}</td><td>${val(d.amount,0)} kr${d.console==='Nintendo Wii'?' ≈':''}</td>${share(d.one)}<td>${d.priceBasis || '—'}${d.sourceUrl?` <a href="${d.sourceUrl}">Priskälla ↗</a>`:''}<br><small>${d.wageBasis || 'Löneunderlag saknas'}${d.wageSourceUrl?` <a href="${d.wageSourceUrl}">Lönekälla ↗</a>`:''}</small></td></tr>`;
       if (isConsolePage) return `<tr><td>${d.year}</td><td>${val(d.amount,2)} ${page.dataset.priceUnit || 'kr'}</td>${share(d.one)}${mark(d.trend)}</tr>`;
       if (!isTvPage) return `<tr><td>${d.year}</td><td>${val(d.amount,2)} kr/l</td>${share(d.one)}${mark(d.trend)}${share(d.family)}${mark(d.familyTrend)}</tr>`;
       const adultUnit=d.unit==='household_year'?'kr/hushåll':d.unit==='receiver_year'?'kr/mottagare':'kr/person, max';
@@ -134,7 +136,7 @@
       return `<tr><td>${d.year}</td><td>${val(d.amount,0)} ${adultUnit}</td><td>${val(d.familyAmount,0)} ${familyUnit}</td>${share(d.one)}${mark(d.trend)}${share(d.family)}${mark(d.familyTrend)}</tr>`;
     }).join('');
     const headers=isNintendoHardware?'<tr><th>Lanseringsår enl. källa</th><th>Konsol</th><th>Lanseringspris</th><th>Andel av årslön</th><th>Källanmärkning</th></tr>':isConsolePage?'<tr><th>År</th><th>Pris</th><th>Andel av årslön</th><th>Trend</th></tr>':isTvPage?'<tr><th>År</th><th>En vuxen, avgift</th><th>Familj, avgift</th><th>En vuxen, andel</th><th>Trend</th><th>Familj, andel</th><th>Trend</th></tr>':'<tr><th>År</th><th>Bensinpris</th><th>En vuxen, andel</th><th>Trend</th><th>Familj, andel</th><th>Trend</th></tr>';
-    const note=isNintendoHardware?'Priserna är observerade lanseringspriser för olika konsolmodeller, inte ett årligt prisindex. Ingen trendpil jämför olika modeller.':isConsolePage?'Andel beräknad mot en genomsnittlig årslön.':'Familj avser två vuxna med varsin genomsnittlig lön. Andelarna använder samma pris.';
+    const note=isNintendoHardware?'NES-andelen (1,06 %) beräknas med mäns viktade genomsnittliga timlön i tillverkningsindustrin 1987, omräknad med 2 080 timmar/år. Övriga löneandelar använder SCB:s genomsnittslön för samtliga sektorer från 1992. Löneunderlagen har olika populationer och är inte direkt jämförbara. Switch 2-priset är en rapporterad återförsäljarprislapp; enligt Konkurrensverket satte återförsäljarna sina priser självständigt och Bergsala lämnade inget rekommenderat pris.':isConsolePage?'Andel beräknad mot en genomsnittlig årslön.':'Familj avser två vuxna med varsin genomsnittlig lön. Andelarna använder samma pris.';
     el.innerHTML=`<table class="comparison-data-table${isTvPage?' comparison-data-table-tv':''}"><thead>${headers}</thead><tbody>${body}</tbody></table><p class="table-note">${note}</p>`;
   }
 })();

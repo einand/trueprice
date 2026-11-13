@@ -1,9 +1,10 @@
-console,year,price_sek,price_basis,source_url
-Nintendo Entertainment System (NES),1987,1495,"FZ/Cuponation reports 1987; Swedish retail launch is separately documented in 1986",https://www.fz.se/nyhet/270044-sa-har-konsolpriserna-andrats-under-30-ar
-Super Nintendo (SNES),1992,1695,"FZ/Cuponation reported Swedish launch price",https://www.fz.se/nyhet/270044-sa-har-konsolpriserna-andrats-under-30-ar
-Nintendo 64,1997,2495,"FZ/Cuponation reported Swedish launch price",https://www.fz.se/nyhet/270044-sa-har-konsolpriserna-andrats-under-30-ar
-Nintendo GameCube,2002,2499,"FZ/Cuponation reported Swedish launch price",https://www.fz.se/nyhet/270044-sa-har-konsolpriserna-andrats-under-30-ar
-Nintendo Wii,2006,2700,"Approximate Swedish release-period price including VAT and one game, reported by FZ on release day",https://www.fz.se/nyhet/12686-nintendos-tv-spelskonsol-wii-slappt-i-sverige
-Nintendo Wii U Basic,2012,2995,"Swedish launch price, white 8 GB package",https://www.senses.se/senses-se-testar-nintendo-startar-morgondagens-spelande-med-wii-u/
-Nintendo Wii U Premium,2012,3495,"Swedish launch price, black 32 GB package with Nintendo Land",https://www.senses.se/senses-se-testar-nintendo-startar-morgondagens-spelande-med-wii-u/
-Nintendo Switch,2017,3690,"FZ/Cuponation reported Swedish launch price",https://www.fz.se/nyhet/270044-sa-har-konsolpriserna-andrats-under-30-ar
+console,year,price_sek,price_basis,source_url,wage_basis
+Nintendo Entertainment System (NES),1987,1495,"FZ/Cuponation reports this price/year; Swedish retail availability began in 1986, so exact launch year and launch price are uncertain",https://www.fz.se/nyhet/270044-sa-har-konsolpriserna-andrats-under-30-ar,"1987 male weighted average manufacturing hourly wage × 2,080 hours (40 × 52); not comparable to the all-sector SCB salary series"
+Super Nintendo (SNES),1992,1695,"FZ/Cuponation reported Swedish launch price",https://www.fz.se/nyhet/270044-sa-har-konsolpriserna-andrats-under-30-ar,
+Nintendo 64,1997,2495,"FZ/Cuponation reported Swedish launch price",https://www.fz.se/nyhet/270044-sa-har-konsolpriserna-andrats-under-30-ar,
+Nintendo GameCube,2002,2499,"FZ/Cuponation reported Swedish launch price",https://www.fz.se/nyhet/270044-sa-har-konsolpriserna-andrats-under-30-ar,
+Nintendo Wii,2006,2700,"Approximate Swedish release-period price including VAT and one game, reported by FZ on release day",https://www.fz.se/nyhet/12686-nintendos-tv-spelskonsol-wii-slappt-i-sverige,
+Nintendo Wii U Basic,2012,2995,"Swedish launch price, white 8 GB package",https://www.senses.se/senses-se-testar-nintendo-startar-morgondagens-spelande-med-wii-u/,
+Nintendo Wii U Premium,2012,3495,"Swedish launch price, black 32 GB package with Nintendo Land",https://www.senses.se/senses-se-testar-nintendo-startar-morgondagens-spelande-med-wii-u/,
+Nintendo Switch,2017,3690,"FZ/Cuponation reported Swedish launch price",https://www.fz.se/nyhet/270044-sa-har-konsolpriserna-andrats-under-30-ar,
+Nintendo Switch 2,2025,6795,"Swedish retailer launch price for console-only package, reported at announcement; Sweden has no fixed official recommended price",https://www.senses.se/nintendo-switch-2-lanseras-5-juni-och-spelen-far-hogre-prislapp/,

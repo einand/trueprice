@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-11-13T12:12:32.466000+00:00",
+  "generated_at_utc": "2026-11-13T12:19:41.808442+00:00",
   "series_id": "nintendo_hardware_launch_prices",
-  "wage_series_reference": "average_monthly_salaries.csv",
+  "wage_series_reference": "average_monthly_salaries.csv; NES exception: historical_manufacturing_hourly_wages.csv",
   "sources": [
     {
       "id": "average_salary",
@@ -16,21 +16,35 @@
       "coverage_years": "1992–2025"
     },
     {
+      "id": "historical_manufacturing_hourly_wages_by_industry",
+      "file": "data/historical_manufacturing_hourly_wages.csv",
+      "source": "Sveriges Riksbank, Historical Monetary and Financial Statistics for Sweden, Volume I, Svante Prado workbook, Tables I.A10.1 and I.A10.2.",
+      "url": "https://www.riksbank.se/sv/om-riksbanken/riksbankens-uppdrag/forskning/historisk-monetar-statistik-for-sverige/volume-i-exchange-rates-prices-and-wages-1277-2008/",
+      "data_url": "https://www.riksbank.se/globalassets/media/forskning/monetar-statistik/volym1/volumeich10wages1860_.xls",
+      "retrieved_at": "2026-11-12",
+      "unit": "SEK/hour",
+      "definition": "Hourly earnings by manufacturing industry category and sex, plus a separately identified source-provided weighted average. Source table categories are represented in Swedish in the CSV.",
+      "coverage": "Sweden; manufacturing workers. Coverage varies by industry and sex. Male categories are observed from 1860 or later depending on category; female coverage starts between 1865 and 1952 by category. Male weighted average 1871–2013; female weighted average 1921–2013.",
+      "transformation": "Transcribed source observations without annualization or interpolation. Missing cells are omitted. This sectoral hourly series is not directly equivalent to all-sector monthly salary; overlap does not imply equivalent population or method."
+    },
+    {
       "id": "nintendo_hardware_launch_prices",
       "file": "data/nintendo_hardware_launch_prices.csv",
       "source": "FZ.se's 2017 summary of Swedish new console prices, based on Cuponation's compilation from historical Swedish articles and forums including FZ, Aftonbladet and Sweclockers.",
       "url": "https://www.fz.se/nyhet/270044-sa-har-konsolpriserna-andrats-under-30-ar",
       "retrieved_at": "2026-11-13",
-      "unit": "nominal SEK per console at Swedish launch",
-      "definition": "Reported Swedish new retail price at launch for the original Nintendo console model; these are discrete product launch observations, not calendar-year average retail prices.",
-      "coverage": "Sweden; eight observations: NES 1987, SNES 1992, Nintendo 64 1997, GameCube 2002, Wii 2006, Wii U Basic and Premium 2012, and Switch 2017. The NES year is FZ/Cuponation's report; Swedish retail availability is documented from 1 September 1986, so the source's 1987 launch year is inconsistent and not treated as a verified 1986 price. Wii U is split into two launch packages because the contemporary Swedish source reports distinct Basic and Premium prices. Wii is marked approximate; FZ reported about 2,700 SEK including VAT and one game on release day. FZ/Cuponation's entries are a secondary compilation; see per-row source_url and price_basis in the data file.",
+      "unit": "nominal SEK per console/package at reported Swedish launch",
+      "definition": "Reported Swedish new retail price at launch for Nintendo console models; discrete product launch observations, not calendar-year average retail prices. Switch 2 has no fixed official Swedish price; the recorded point is the console-only retail price reported at launch.",
+      "coverage": "Sweden; nine observations: NES (reported as 1987, although Swedish retail availability began 1 September 1986), SNES 1992, Nintendo 64 1997, GameCube 2002, Wii 2006, Wii U Basic and Premium 2012, Switch 2017, and Switch 2 2025. The NES year/launch price are uncertain and marked; its displayed wage share uses the 1987 male weighted-average manufacturing hourly wage annualized at 2,080 hours, not the all-sector SCB salary series. Wii U is split into two launch packages per contemporary Swedish reporting. Wii is approximate; FZ reported about 2,700 SEK including VAT and one game on release day. Switch 2's 6,795 SEK is a reported Swedish retailer price for the console-only package; Swedish retailers set prices independently. FZ/Cuponation's 2017 compilation is secondary; see per-row source_url and price_basis in the data file.",
       "additional_source_urls": [
         "https://www.fz.se/nyhet/261767-hipp-hipp-nes-fyller-30-ar-i-sverige",
         "https://www.fz.se/nyhet/4964-wii-sjunker-i-pris",
         "https://www.fz.se/nyhet/12686-nintendos-tv-spelskonsol-wii-slappt-i-sverige",
-        "https://www.senses.se/senses-se-testar-nintendo-startar-morgondagens-spelande-med-wii-u/"
+        "https://www.senses.se/senses-se-testar-nintendo-startar-morgondagens-spelande-med-wii-u/",
+        "https://www.senses.se/nintendo-switch-2-lanseras-5-juni-och-spelen-far-hogre-prislapp/",
+        "https://www.konkurrensverket.se/diarium/sok-i-Konkurrensverkets-diarium/arendedata/file?pdf=25-0387.pdf"
       ],
-      "transformation": "Nominal Swedish launch-price observations transcribed as published. The Wii price is approximate, not an exact list price; Wii U Basic/Premium are separate packages. Wage share is reported price divided by SCB average monthly salary for the same year × 12 × 100 when a matching salary exists. No inflation adjustment, no annualization, and no trend arrow between different hardware models."
+      "transformation": "Nominal reported Swedish launch prices transcribed from the cited sources. The Wii price is approximate and includes one game; Wii U Basic/Premium are separate packages. Switch 2 uses a contemporaneously reported retailer console-only price, not an official fixed Swedish price. For 1992 onward, wage share is launch price ÷ SCB all-sector average monthly salary for that year ÷ 12 × 100. For the NES source-year 1987 only, wage share is launch price ÷ male weighted-average manufacturing hourly wage from the Riksbank historical series ÷ 2,080 (40 hours × 52 weeks) × 100. That point uses a different population and is not directly comparable to SCB points. No inflation adjustment, no year-to-year trend arrow between distinct models."
     }
   ],
   "data": [
@@ -38,9 +52,12 @@
       "year": 1987,
       "console": "Nintendo Entertainment System (NES)",
       "price_sek": 1495.0,
-      "price_basis": "FZ/Cuponation reports 1987; Swedish retail launch is separately documented in 1986",
+      "price_basis": "FZ/Cuponation reports this price/year; Swedish retail availability began in 1986, so exact launch year and launch price are uncertain",
       "source_url": "https://www.fz.se/nyhet/270044-sa-har-konsolpriserna-andrats-under-30-ar",
-      "share_percent": null,
+      "wage_basis": "1987 male weighted average manufacturing hourly wage × 2,080 hours (40 × 52); not comparable to the all-sector SCB salary series",
+      "wage_source_url": "https://www.riksbank.se/globalassets/media/forskning/monetar-statistik/volym1/volumeich10wages1860_.xls",
+      "annual_wage_sek": 140954.1616496,
+      "share_percent": 1.0606284926275835,
       "share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null
@@ -51,8 +68,11 @@
       "price_sek": 1695.0,
       "price_basis": "FZ/Cuponation reported Swedish launch price",
       "source_url": "https://www.fz.se/nyhet/270044-sa-har-konsolpriserna-andrats-under-30-ar",
+      "wage_basis": "SCB average monthly salary, all sectors, total gender × 12",
+      "wage_source_url": "https://www.scb.se/hitta-statistik/statistik-efter-amne/arbetsmarknad/loner-och-arbetskostnader/lonestrukturstatistik-hela-ekonomin/pong/tabell-och-diagram/genomsnittlig-manadslon-efter-sektor/",
+      "annual_wage_sek": 176400.0,
       "share_percent": 0.9608843537414966,
-      "share_percent_two_adults": 0.4804421768707483,
+      "share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null
     },
@@ -62,8 +82,11 @@
       "price_sek": 2495.0,
       "price_basis": "FZ/Cuponation reported Swedish launch price",
       "source_url": "https://www.fz.se/nyhet/270044-sa-har-konsolpriserna-andrats-under-30-ar",
+      "wage_basis": "SCB average monthly salary, all sectors, total gender × 12",
+      "wage_source_url": "https://www.scb.se/hitta-statistik/statistik-efter-amne/arbetsmarknad/loner-och-arbetskostnader/lonestrukturstatistik-hela-ekonomin/pong/tabell-och-diagram/genomsnittlig-manadslon-efter-sektor/",
+      "annual_wage_sek": 214800.0,
       "share_percent": 1.1615456238361266,
-      "share_percent_two_adults": 0.5807728119180633,
+      "share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null
     },
@@ -73,8 +96,11 @@
       "price_sek": 2499.0,
       "price_basis": "FZ/Cuponation reported Swedish launch price",
       "source_url": "https://www.fz.se/nyhet/270044-sa-har-konsolpriserna-andrats-under-30-ar",
+      "wage_basis": "SCB average monthly salary, all sectors, total gender × 12",
+      "wage_source_url": "https://www.scb.se/hitta-statistik/statistik-efter-amne/arbetsmarknad/loner-och-arbetskostnader/lonestrukturstatistik-hela-ekonomin/pong/tabell-och-diagram/genomsnittlig-manadslon-efter-sektor/",
+      "annual_wage_sek": 265200.0,
       "share_percent": 0.9423076923076923,
-      "share_percent_two_adults": 0.47115384615384615,
+      "share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null
     },
@@ -84,8 +110,11 @@
       "price_sek": 2700.0,
       "price_basis": "Approximate Swedish release-period price including VAT and one game, reported by FZ on release day",
       "source_url": "https://www.fz.se/nyhet/12686-nintendos-tv-spelskonsol-wii-slappt-i-sverige",
+      "wage_basis": "SCB average monthly salary, all sectors, total gender × 12",
+      "wage_source_url": "https://www.scb.se/hitta-statistik/statistik-efter-amne/arbetsmarknad/loner-och-arbetskostnader/lonestrukturstatistik-hela-ekonomin/pong/tabell-och-diagram/genomsnittlig-manadslon-efter-sektor/",
+      "annual_wage_sek": 300000.0,
       "share_percent": 0.8999999999999999,
-      "share_percent_two_adults": 0.44999999999999996,
+      "share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null
     },
@@ -95,8 +124,11 @@
       "price_sek": 2995.0,
       "price_basis": "Swedish launch price, white 8 GB package",
       "source_url": "https://www.senses.se/senses-se-testar-nintendo-startar-morgondagens-spelande-med-wii-u/",
+      "wage_basis": "SCB average monthly salary, all sectors, total gender × 12",
+      "wage_source_url": "https://www.scb.se/hitta-statistik/statistik-efter-amne/arbetsmarknad/loner-och-arbetskostnader/lonestrukturstatistik-hela-ekonomin/pong/tabell-och-diagram/genomsnittlig-manadslon-efter-sektor/",
+      "annual_wage_sek": 357600.0,
       "share_percent": 0.8375279642058167,
-      "share_percent_two_adults": 0.4187639821029083,
+      "share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null
     },
@@ -106,8 +138,11 @@
       "price_sek": 3495.0,
       "price_basis": "Swedish launch price, black 32 GB package with Nintendo Land",
       "source_url": "https://www.senses.se/senses-se-testar-nintendo-startar-morgondagens-spelande-med-wii-u/",
+      "wage_basis": "SCB average monthly salary, all sectors, total gender × 12",
+      "wage_source_url": "https://www.scb.se/hitta-statistik/statistik-efter-amne/arbetsmarknad/loner-och-arbetskostnader/lonestrukturstatistik-hela-ekonomin/pong/tabell-och-diagram/genomsnittlig-manadslon-efter-sektor/",
+      "annual_wage_sek": 357600.0,
       "share_percent": 0.9773489932885906,
-      "share_percent_two_adults": 0.4886744966442953,
+      "share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null
     },
@@ -117,8 +152,25 @@
       "price_sek": 3690.0,
       "price_basis": "FZ/Cuponation reported Swedish launch price",
       "source_url": "https://www.fz.se/nyhet/270044-sa-har-konsolpriserna-andrats-under-30-ar",
+      "wage_basis": "SCB average monthly salary, all sectors, total gender × 12",
+      "wage_source_url": "https://www.scb.se/hitta-statistik/statistik-efter-amne/arbetsmarknad/loner-och-arbetskostnader/lonestrukturstatistik-hela-ekonomin/pong/tabell-och-diagram/genomsnittlig-manadslon-efter-sektor/",
+      "annual_wage_sek": 404400.0,
       "share_percent": 0.9124629080118695,
-      "share_percent_two_adults": 0.45623145400593473,
+      "share_percent_two_adults": null,
+      "trend": null,
+      "trend_two_adults": null
+    },
+    {
+      "year": 2025,
+      "console": "Nintendo Switch 2",
+      "price_sek": 6795.0,
+      "price_basis": "Swedish retailer launch price for console-only package, reported at announcement; Sweden has no fixed official recommended price",
+      "source_url": "https://www.senses.se/nintendo-switch-2-lanseras-5-juni-och-spelen-far-hogre-prislapp/",
+      "wage_basis": "SCB average monthly salary, all sectors, total gender × 12",
+      "wage_source_url": "https://www.scb.se/hitta-statistik/statistik-efter-amne/arbetsmarknad/loner-och-arbetskostnader/lonestrukturstatistik-hela-ekonomin/pong/tabell-och-diagram/genomsnittlig-manadslon-efter-sektor/",
+      "annual_wage_sek": 514800.0,
+      "share_percent": 1.31993006993007,
+      "share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null
     }

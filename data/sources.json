@@ -123,16 +123,18 @@
       "source": "FZ.se's 2017 summary of Swedish new console prices, based on Cuponation's compilation from historical Swedish articles and forums including FZ, Aftonbladet and Sweclockers.",
       "url": "https://www.fz.se/nyhet/270044-sa-har-konsolpriserna-andrats-under-30-ar",
       "retrieved_at": "2026-11-13",
-      "unit": "nominal SEK per console at Swedish launch",
-      "definition": "Reported Swedish new retail price at launch for the original Nintendo console model; these are discrete product launch observations, not calendar-year average retail prices.",
-      "coverage": "Sweden; eight observations: NES 1987, SNES 1992, Nintendo 64 1997, GameCube 2002, Wii 2006, Wii U Basic and Premium 2012, and Switch 2017. The NES year is FZ/Cuponation's report; Swedish retail availability is documented from 1 September 1986, so the source's 1987 launch year is inconsistent and not treated as a verified 1986 price. Wii U is split into two launch packages because the contemporary Swedish source reports distinct Basic and Premium prices. Wii is marked approximate; FZ reported about 2,700 SEK including VAT and one game on release day. FZ/Cuponation's entries are a secondary compilation; see per-row source_url and price_basis in the data file.",
+      "unit": "nominal SEK per console/package at reported Swedish launch",
+      "definition": "Reported Swedish new retail price at launch for Nintendo console models; discrete product launch observations, not calendar-year average retail prices. Switch 2 has no fixed official Swedish price; the recorded point is the console-only retail price reported at launch.",
+      "coverage": "Sweden; nine observations: NES (reported as 1987, although Swedish retail availability began 1 September 1986), SNES 1992, Nintendo 64 1997, GameCube 2002, Wii 2006, Wii U Basic and Premium 2012, Switch 2017, and Switch 2 2025. The NES year/launch price are uncertain and marked; its displayed wage share uses the 1987 male weighted-average manufacturing hourly wage annualized at 2,080 hours, not the all-sector SCB salary series. Wii U is split into two launch packages per contemporary Swedish reporting. Wii is approximate; FZ reported about 2,700 SEK including VAT and one game on release day. Switch 2's 6,795 SEK is a reported Swedish retailer price for the console-only package; Swedish retailers set prices independently. FZ/Cuponation's 2017 compilation is secondary; see per-row source_url and price_basis in the data file.",
       "additional_source_urls": [
         "https://www.fz.se/nyhet/261767-hipp-hipp-nes-fyller-30-ar-i-sverige",
         "https://www.fz.se/nyhet/4964-wii-sjunker-i-pris",
         "https://www.fz.se/nyhet/12686-nintendos-tv-spelskonsol-wii-slappt-i-sverige",
-        "https://www.senses.se/senses-se-testar-nintendo-startar-morgondagens-spelande-med-wii-u/"
+        "https://www.senses.se/senses-se-testar-nintendo-startar-morgondagens-spelande-med-wii-u/",
+        "https://www.senses.se/nintendo-switch-2-lanseras-5-juni-och-spelen-far-hogre-prislapp/",
+        "https://www.konkurrensverket.se/diarium/sok-i-Konkurrensverkets-diarium/arendedata/file?pdf=25-0387.pdf"
       ],
-      "transformation": "Nominal Swedish launch-price observations transcribed as published. The Wii price is approximate, not an exact list price; Wii U Basic/Premium are separate packages. Wage share is reported price divided by SCB average monthly salary for the same year × 12 × 100 when a matching salary exists. No inflation adjustment, no annualization, and no trend arrow between different hardware models."
+      "transformation": "Nominal reported Swedish launch prices transcribed from the cited sources. The Wii price is approximate and includes one game; Wii U Basic/Premium are separate packages. Switch 2 uses a contemporaneously reported retailer console-only price, not an official fixed Swedish price. For 1992 onward, wage share is launch price ÷ SCB all-sector average monthly salary for that year ÷ 12 × 100. For the NES source-year 1987 only, wage share is launch price ÷ male weighted-average manufacturing hourly wage from the Riksbank historical series ÷ 2,080 (40 hours × 52 weeks) × 100. That point uses a different population and is not directly comparable to SCB points. No inflation adjustment, no year-to-year trend arrow between distinct models."
     },
     {
       "id": "nintendo_software_prices",
