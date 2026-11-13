@@ -21,9 +21,9 @@
       <details class="nav-dropdown"{{ if hasPrefix .RelPermalink ("/konsoler/" | relURL) }} data-current="true"{{ end }}>
         <summary>Konsoller</summary>
         <div class="console-menu">
-          <section class="console-menu-group"><a class="console-menu-brand" href="{{ "/konsoler/nintendo/" | relURL }}">Nintendo</a><div><a href="{{ "/konsoler/nintendo/software/" | relURL }}">Mjukvara</a><a href="{{ "/konsoler/nintendo/hardware/" | relURL }}">Hårdvara</a></div></section>
-          <section class="console-menu-group"><a class="console-menu-brand" href="{{ "/konsoler/playstation/" | relURL }}">Playstation</a><div><a href="{{ "/konsoler/playstation/software/" | relURL }}">Mjukvara</a><a href="{{ "/konsoler/playstation/hardware/" | relURL }}">Hårdvara</a></div></section>
-          <section class="console-menu-group"><a class="console-menu-brand" href="{{ "/konsoler/xbox/" | relURL }}">Xbox</a><div><a href="{{ "/konsoler/xbox/software/" | relURL }}">Mjukvara</a><a href="{{ "/konsoler/xbox/hardware/" | relURL }}">Hårdvara</a></div></section>
+          <section class="console-menu-group"><a class="console-menu-brand" href="{{ "/konsoler/nintendo/" | relURL }}">Nintendo</a><div class="console-menu-links"><a href="{{ "/konsoler/nintendo/software/" | relURL }}">Mjukvara</a><a href="{{ "/konsoler/nintendo/hardware/" | relURL }}">Hårdvara</a></div></section>
+          <section class="console-menu-group"><a class="console-menu-brand" href="{{ "/konsoler/playstation/" | relURL }}">Playstation</a><div class="console-menu-links"><a href="{{ "/konsoler/playstation/software/" | relURL }}">Mjukvara</a><a href="{{ "/konsoler/playstation/hardware/" | relURL }}">Hårdvara</a></div></section>
+          <section class="console-menu-group"><a class="console-menu-brand" href="{{ "/konsoler/xbox/" | relURL }}">Xbox</a><div class="console-menu-links"><a href="{{ "/konsoler/xbox/software/" | relURL }}">Mjukvara</a><a href="{{ "/konsoler/xbox/hardware/" | relURL }}">Hårdvara</a></div></section>
         </div>
       </details>
       <a href="{{ "/loner/" | relURL }}"{{ if eq .RelPermalink ("/loner/" | relURL) }} aria-current="page"{{ end }}>Lönedata</a>
