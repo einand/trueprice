@@ -23,10 +23,13 @@ tv_fees=read('data/tv_license_annual_fees.csv','annual_fee_sek')
 with (ROOT/'data/tv_license_annual_fees.csv').open(newline='') as f:
     tv_fee_source=list(csv.DictReader(f))
 tv_fee_meta={int(r['year']):{'unit':r['fee_unit'],'regime':r['regime']} for r in tv_fee_source}
-if set(tv_fees)!=set(range(min(tv_fees),max(tv_fees)+1)) or min(tv_fees)!=1991 or max(tv_fees)!=2025:
-    raise ValueError('TV fee series must be continuous for 1991–2025')
-if any(tv_fee_meta[y]['regime'] != ('tv_receiver_fee' if y<=2018 else 'public_service_fee') for y in tv_fees):
-    raise ValueError('TV fee regime must switch from household receiver fee to individual public service fee in 2019')
+if not set(range(1991,2026)).issubset(tv_fees) or any(tv_fee_meta[y]['regime'] != ('tv_receiver_fee' if y<=2018 else 'public_service_fee') for y in range(1991,2026)):
+    raise ValueError('TV fee series must retain continuous 1991–2025 values and the 2019 regime change')
+with (ROOT/'data/gasoline_historical_price_ranges.csv').open(newline='') as f:
+    historical_gasoline=list(csv.DictReader(f))
+for row in historical_gasoline:
+    if int(row['year'])<1900 or float(row['price_min_ore_per_liter'])<=0 or float(row['price_max_ore_per_liter'])<float(row['price_min_ore_per_liter']):
+        raise ValueError('invalid historical gasoline price range')
 with (ROOT/'data/historical_manufacturing_hourly_wages.csv').open(newline='') as f:
     historical_wages=list(csv.DictReader(f))
 seen=set()
@@ -56,14 +59,14 @@ for i in range(1,len(rows)):
 all_sources=json.loads((ROOT/'data/sources.json').read_text())
 generated_at=datetime.now(timezone.utc).isoformat()
 gasoline_data=[{'year':r['year'],'price_sek_per_liter':r['gasoline_price_sek_per_liter'],'share_percent':r['share_percent'],'share_percent_two_adults':r['share_percent_two_adults'],'trend':r['trend'],'trend_two_adults':r['trend_two_adults']} for r in rows if r['gasoline_price_sek_per_liter'] is not None or r['share_percent'] is not None]
-tv_data=[{'year':r['year'],'fee_sek':r['tv_license_fee_sek'],'fee_unit':r['tv_license_fee_unit'],'fee_regime':r['tv_license_regime'],'share_percent':r['tv_license_share_percent'],'share_percent_two_adults':r['tv_license_share_percent_two_adults'],'trend':r['tv_license_trend'],'trend_two_adults':r['tv_license_trend_two_adults'],'break_before':r['tv_license_break_before']} for r in rows if r['tv_license_fee_sek'] is not None or r['tv_license_share_percent'] is not None]
+tv_data=[{'year':r['year'],'fee_sek':r['tv_license_fee_sek'],'fee_unit':r['tv_license_fee_unit'],'fee_regime':r['tv_license_regime'],'share_percent':r['tv_license_share_percent'],'share_percent_two_adults':r['tv_license_share_percent_two_adults'],'trend':r['tv_license_trend'],'trend_two_adults':r['tv_license_trend_two_adults'],'break_before':r['year']==2019 or (i>0 and rows[i-1]['tv_license_regime']!=r['tv_license_regime'])} for i,r in enumerate(rows) if r['tv_license_fee_sek'] is not None or r['tv_license_share_percent'] is not None]
 def write_series(filename, series_id, series_data, source_ids):
     payload={'generated_at_utc':generated_at,'series_id':series_id,'wage_series_reference':'average_monthly_salaries.csv','sources':[s for s in all_sources['series'] if s['id'] in source_ids],'data':series_data}
     (ROOT/'static/data'/filename).write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
-write_series('gasoline_series.json','gasoline',gasoline_data,{'average_salary','gasoline_price_nominal','gasoline_price_2024_level','cpi_annual_average'})
+write_series('gasoline_series.json','gasoline',gasoline_data,{'average_salary','gasoline_price_nominal','gasoline_price_2024_level','cpi_annual_average','gasoline_historical_prewar_price_ranges'})
 write_series('tv_license_series.json','tv_license',tv_data,{'average_salary','tv_license_and_public_service_fee'})
 index={'generated_at_utc':generated_at,'sources':all_sources,'wage_series_reference':'average_monthly_salaries.csv','series':[{'id':'gasoline','file':'gasoline_series.json'},{'id':'tv_license','file':'tv_license_series.json'},{'id':'historical_manufacturing_hourly_wages_by_industry','file':'historical_manufacturing_hourly_wages.csv'}]}
 (ROOT/'static/data/series.json').write_text(json.dumps(index,ensure_ascii=False,indent=2)+'\n')
-for source_file in ['data/average_monthly_salaries.csv','data/historical_manufacturing_hourly_wages.csv','data/gasoline_prices.csv','data/gasoline_prices_2024_sek_per_liter.csv','data/cpi_annual_average.csv','data/tv_license_annual_fees.csv']:
+for source_file in ['data/average_monthly_salaries.csv','data/historical_manufacturing_hourly_wages.csv','data/gasoline_prices.csv','data/gasoline_prices_2024_sek_per_liter.csv','data/gasoline_historical_price_ranges.csv','data/cpi_annual_average.csv','data/tv_license_annual_fees.csv']:
     shutil.copyfile(ROOT/source_file, ROOT/'static/data'/Path(source_file).name)
-print(f"Validated {len(rows)} annual rows; gasoline {min(prices)}–{max(prices)}, TV fee {min(tv_fees)}–{max(tv_fees)}, salary {min(salaries)}–{max(salaries)}, historical wage-category observations {len(historical_wages)}.")
+print(f"Validated {len(rows)} annual rows; gasoline pump-price series {min(prices)}–{max(prices)}, historical ex-tax quotations {len(historical_gasoline)} years, radio/TV fee observations {min(tv_fees)}–{max(tv_fees)} with gaps, salary {min(salaries)}–{max(salaries)}, historical wage-category observations {len(historical_wages)}.")

@@ -8,12 +8,6 @@
 
 /* Scenario switch and shared comparison series */
 :root{--blue:#3974a8;--blue-dark:#285b88;--blue-pale:#e7f0f8}
-.scenario-control{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:-20px 0 38px;padding:12px 14px;background:#eceee7;border:1px solid var(--line);border-radius:5px}
-.scenario-title{margin-right:5px;color:var(--muted);font:500 9px var(--mono);letter-spacing:.08em}
-.scenario-button{padding:8px 12px;border:1px solid #cfd5cb;border-radius:3px;background:var(--white);color:var(--ink);font:600 11px var(--sans);cursor:pointer}
-.scenario-button.is-selected{border-color:var(--ink);background:var(--ink);color:var(--white)}
-.scenario-button:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
-.scenario-explanation{flex:1 1 100%;padding-left:1px;color:var(--muted);font-size:11px;line-height:1.5}
 .chart-key-multi{gap:16px}.chart-key-multi>span{display:inline-flex;align-items:center;gap:7px}
 .key-dot-blue{background:var(--blue)}.chart-line-blue{stroke:var(--blue)}.chart-point-blue{stroke:var(--blue)}.chart-point-blue.latest{fill:var(--blue)}
 .trend-blue{color:var(--blue-dark)!important}
@@ -22,4 +16,22 @@
 .comparison-data-table-blue td:nth-child(4){font-weight:700}
 .comparison-data-table-blue td.trend-blue.trend-up,.comparison-data-table-blue td.trend-blue.trend-down{color:var(--blue-dark)!important}
 .price-history:has(.chart-line-blue) .key-dot{background:var(--blue)}
-@media(max-width:760px){.scenario-control{margin-top:-9px;margin-bottom:30px}.scenario-explanation{flex-basis:100%}}
+
+/* Simultaneous adult and family series */
+.latest-scenarios{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0 17px}
+.latest-scenarios>div{padding:12px 13px;background:#ffffff0d;border:1px solid #ffffff24;border-radius:4px}
+.latest-scenarios>div>span{display:block;color:#bdc8c0;font:500 9px var(--mono);letter-spacing:.08em}
+.latest-scenarios strong{display:block;margin-top:8px;color:#fffefa;font:600 32px/.95 var(--display);letter-spacing:-.05em}
+.latest-scenarios strong i{margin-left:4px;color:#c5d0c4;font:500 12px var(--mono);letter-spacing:0}
+.latest-scenarios small{display:block;min-height:16px;margin-top:7px;color:#e1a38e;font:600 15px var(--sans)}
+.latest-scenarios>div:last-child small{color:#81b0d8}
+.chart-key-multi{gap:16px}.chart-key-multi>span{display:inline-flex;align-items:center;gap:7px}
+.chart-key-multi .key-dot-blue,.key-dot-blue{background:var(--blue)}
+.chart-line-blue{stroke:var(--blue);stroke-dasharray:7 4}.chart-point-blue{stroke:var(--blue)}.chart-point-blue.latest{fill:var(--blue)}
+.comparison-data-table th:nth-child(5),.comparison-data-table th:nth-child(6),.comparison-data-table th:nth-child(7){background:var(--blue-pale);color:var(--blue-dark)}
+.comparison-data-table td:nth-child(5),.comparison-data-table td:nth-child(6),.comparison-data-table td:nth-child(7){background:#f5f9fc;color:var(--blue-dark)}
+.comparison-data-table-tv th:nth-child(5),.comparison-data-table-tv td:nth-child(5){background:inherit;color:inherit}
+.comparison-data-table-tv th:nth-child(6),.comparison-data-table-tv th:nth-child(7){background:var(--blue-pale);color:var(--blue-dark)}
+.comparison-data-table-tv td:nth-child(6),.comparison-data-table-tv td:nth-child(7){background:#f5f9fc;color:var(--blue-dark)}
+.comparison-data-table td.trend-down{color:#47745a}
+@media(max-width:760px){.latest-scenarios{gap:8px}.latest-scenarios>div{padding:10px}.latest-scenarios strong{font-size:28px}}

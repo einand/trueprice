@@ -4,13 +4,13 @@ layout: comparison
 comparison:
   id: tv-license
   category: JÄMFÖRELSE 03 · AVGIFTER
-  intro: Den årliga avgiften för TV-mottagare fram till 2018 och den individuella public service-avgiften därefter, jämförd med genomsnittlig årslön.
+  intro: Radiolicensen från 1925, senare radio- och TV-avgifter och public service-avgiften, jämförda med genomsnittlig årslön där jämförbara löneuppgifter finns.
   available: true
   price_label: TV-avgift / public service-avgift
   price_unit: kr/år
-  period: 1991–2025
+  period: 1925–2025, med källuckor
   price_basis: Årsnivå per 31 december
   data_file: data/tv_license_annual_fees.csv
   series_json_file: data/tv_license_series.json
-  price_description: Årsbeloppet som gällde den 31 december. Till och med 2018 avsåg avgiften ett hushåll med TV-mottagare; från 2019 avser värdet maximibelopp per person. Avgiftsform och betalningsenhet ändrades då.
+  price_description: Observerade avgiftsnivåer som gällde den 31 december. Äldre avgifter avser radiolicens eller radio plus TV enligt dokumenterade regler; luckor visas där årsvärden inte har verifierats. Från 2019 avser värdet maximibelopp per person.
 ---
