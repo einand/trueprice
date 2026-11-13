@@ -20,7 +20,7 @@
   const rows = data.map((d) => ({
     year: d.year,
     amount: isTvPage ? d.fee_sek : d.price_sek_per_liter,
-    familyAmount: isTvPage ? d.fee_sek * (d.fee_unit === 'person_year_max' ? 2 : 1) : d.price_sek_per_liter,
+    familyAmount: isTvPage ? (d.fee_sek == null ? null : d.fee_sek * (d.fee_unit === 'person_year_max' ? 2 : 1)) : d.price_sek_per_liter,
     unit: isTvPage ? d.fee_unit : null,
     one: isTvPage ? d.share_percent : d.share_percent,
     family: d.share_percent_two_adults,

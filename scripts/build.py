@@ -59,7 +59,11 @@ for i in range(1,len(rows)):
 all_sources=json.loads((ROOT/'data/sources.json').read_text())
 generated_at=datetime.now(timezone.utc).isoformat()
 gasoline_data=[{'year':r['year'],'price_sek_per_liter':r['gasoline_price_sek_per_liter'],'share_percent':r['share_percent'],'share_percent_two_adults':r['share_percent_two_adults'],'trend':r['trend'],'trend_two_adults':r['trend_two_adults']} for r in rows if r['gasoline_price_sek_per_liter'] is not None or r['share_percent'] is not None]
-tv_data=[{'year':r['year'],'fee_sek':r['tv_license_fee_sek'],'fee_unit':r['tv_license_fee_unit'],'fee_regime':r['tv_license_regime'],'share_percent':r['tv_license_share_percent'],'share_percent_two_adults':r['tv_license_share_percent_two_adults'],'trend':r['tv_license_trend'],'trend_two_adults':r['tv_license_trend_two_adults'],'break_before':r['year']==2019 or (i>0 and rows[i-1]['tv_license_regime']!=r['tv_license_regime'])} for i,r in enumerate(rows) if r['tv_license_fee_sek'] is not None or r['tv_license_share_percent'] is not None]
+rows_by_year={r['year']:r for r in rows}
+tv_data=[]
+for year in range(min(tv_fees),max(tv_fees)+1):
+    r=rows_by_year.get(year)
+    tv_data.append({'year':year,'fee_sek':tv_fees.get(year),'fee_unit':tv_fee_meta.get(year,{}).get('unit'),'fee_regime':tv_fee_meta.get(year,{}).get('regime'),'share_percent':r['tv_license_share_percent'] if r else None,'share_percent_two_adults':r['tv_license_share_percent_two_adults'] if r else None,'trend':r['tv_license_trend'] if r else None,'trend_two_adults':r['tv_license_trend_two_adults'] if r else None,'break_before':year==2019 or (year-1 in tv_fee_meta and tv_fee_meta.get(year-1,{}).get('regime')!=tv_fee_meta.get(year,{}).get('regime'))})
 def write_series(filename, series_id, series_data, source_ids):
     payload={'generated_at_utc':generated_at,'series_id':series_id,'wage_series_reference':'average_monthly_salaries.csv','sources':[s for s in all_sources['series'] if s['id'] in source_ids],'data':series_data}
     (ROOT/'static/data'/filename).write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
