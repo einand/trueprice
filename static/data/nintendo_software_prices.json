@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-11-13T13:12:57.514034+00:00",
+  "generated_at_utc": "2026-11-13T13:16:27.967303+00:00",
   "series_id": "nintendo_software_prices",
-  "wage_series_reference": "average_monthly_salaries.csv",
+  "wage_series_reference": "average_monthly_salaries.csv; pre-1992 observations use historical_manufacturing_hourly_wages.csv where available",
   "sources": [
     {
       "id": "average_salary",
@@ -14,6 +14,18 @@
       "coverage": "Sweden, all sectors",
       "transformation": "Annual comparator is monthly average multiplied by 12; nominal values. Monthly source values retained in the separate salary file.",
       "coverage_years": "1992–2025"
+    },
+    {
+      "id": "historical_manufacturing_hourly_wages_by_industry",
+      "file": "data/historical_manufacturing_hourly_wages.csv",
+      "source": "Sveriges Riksbank, Historical Monetary and Financial Statistics for Sweden, Volume I, Svante Prado workbook, Tables I.A10.1 and I.A10.2.",
+      "url": "https://www.riksbank.se/sv/om-riksbanken/riksbankens-uppdrag/forskning/historisk-monetar-statistik-for-sverige/volume-i-exchange-rates-prices-and-wages-1277-2008/",
+      "data_url": "https://www.riksbank.se/globalassets/media/forskning/monetar-statistik/volym1/volumeich10wages1860_.xls",
+      "retrieved_at": "2026-11-12",
+      "unit": "SEK/hour",
+      "definition": "Hourly earnings by manufacturing industry category and sex, plus a separately identified source-provided weighted average. Source table categories are represented in Swedish in the CSV.",
+      "coverage": "Sweden; manufacturing workers. Coverage varies by industry and sex. Male categories are observed from 1860 or later depending on category; female coverage starts between 1865 and 1952 by category. Male weighted average 1871–2013; female weighted average 1921–2013.",
+      "transformation": "Transcribed source observations without annualization or interpolation. Missing cells are omitted. This sectoral hourly series is not directly equivalent to all-sector monthly salary; overlap does not imply equivalent population or method."
     },
     {
       "id": "nintendo_software_prices",
@@ -38,7 +50,7 @@
       "unit": "nominal SEK per Nintendo game",
       "definition": "Sparse dated source samples of nominal listed price per Nintendo game. The displayed value is the unweighted arithmetic mean of the games whose prices are documented in each source; this is not a market-wide or calendar-year mean. Platform scope and source/sample type are reported per row.",
       "coverage": "Seven retailer/catalogue observations across five years: 1987 NES (12 cassette prices in one Milu Handels AB flyer dated 1987 by the archive seller; image lists each at 289 SEK), 1991 NES (51 prices in Larkman Computer Center's Datormagazin 6/91 catalogue), 1992 NES (26 titles) and SNES (10 games) from Aintronic's Datormagazin 13/92 ad, plus 1992 SNES (44 titles) from Landsbergs Spel & Data's Datormagazin 17/92 ad; 1993 SNES (17 listed prices) and 1994 SNES (9 new games). No verified values found for 1988–1990 or 1995 onward. Official-distributor brochure scans reviewed for 1988–1993 are game lists, not price lists. The 1990 Datormagazin examples at 398 SEK are in a hypothetical reader letter, not a price advertisement, and are excluded.",
-      "transformation": "1987 mean is 12×289 SEK / 12 = 289 SEK; source is a surviving flyer image, and its year is attributed by the archive seller listing, so the date is less secure than a dated periodical. 1991: 51 prices total 19,125 SEK / 51 = 375.00 SEK; catalogue footer says prices include VAT and postage is extra. Aintronic 1992 sample: 26 NES prices total 9,354 / 26 = 359.77 SEK; 10 individually listed SNES games total 4,760 / 10 = 476 SEK; excludes a Super Scope 6-game pack. The Datormagazin 13/92 ad states 25% VAT is included, while postage/handling is extra. Landsbergs Spel & Data 1992 SNES sample: 44 listed titles all 499 SEK incl. VAT; some marked 'ute snart', and postage/payment fees extra. 1993: 11,133 / 17 = 654.88 SEK. 1994: 4,941 / 9 = 549.00 SEK. The sources differ by seller, platform, and sample design; no trend is inferred. Price points are nominal. Wage shares are calculated only when SCB all-sector monthly salaries exist (monthly salary × 12); no historical wage series is substituted for missing SCB years. No interpolation; missing years stay gaps."
+      "transformation": "1987 mean is 12×289 SEK / 12 = 289 SEK; source is a surviving flyer image, and its year is attributed by the archive seller listing, so the date is less secure than a dated periodical. 1991: 51 prices total 19,125 SEK / 51 = 375.00 SEK; catalogue footer says prices include VAT and postage is extra. Aintronic 1992 sample: 26 NES prices total 9,354 / 26 = 359.77 SEK; 10 individually listed SNES games total 4,760 / 10 = 476 SEK; excludes a Super Scope 6-game pack. The Datormagazin 13/92 ad states 25% VAT is included, while postage/handling is extra. Landsbergs Spel & Data 1992 SNES sample: 44 listed titles all 499 SEK incl. VAT; some marked 'ute snart', and postage/payment fees extra. 1993: 11,133 / 17 = 654.88 SEK. 1994: 4,941 / 9 = 549.00 SEK. The sources differ by seller, platform, and sample design; no trend is inferred. Price points are nominal. Wage shares use the Riksbank male weighted-average manufacturing hourly wage × 2,080 hours in 1987 and 1991; other years use SCB all-sector average monthly salary × 12. The different populations and methods are not directly comparable. No interpolation; missing price years stay gaps."
     }
   ],
   "data": [
@@ -49,9 +61,10 @@
       "platform_scope": "NES",
       "price_basis": "Arithmetic mean: 12 titles shown in a Milu Handels AB flyer dated 1987 by the archive seller; each cassette listed at 289 SEK. Dated single-retailer flyer, not a national or annual market mean",
       "source_url": "https://www.tradera.com/item/300809/760249700/milu-handels-ab-reklamblad-fran-1987-nintendo-nes-8-bit-",
-      "annual_wage_sek": null,
-      "wage_basis": null,
-      "share_percent": null,
+      "annual_wage_sek": 140954.1616496,
+      "wage_basis": "Riksbank historical male weighted-average manufacturing hourly wage × 2,080 hours (40 × 52); not comparable to SCB all-sector salary",
+      "wage_source_url": "https://www.riksbank.se/globalassets/media/forskning/monetar-statistik/volym1/volumeich10wages1860_.xls",
+      "share_percent": 0.20503119355810814,
       "share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null
@@ -63,9 +76,10 @@
       "platform_scope": "NES",
       "price_basis": "Arithmetic mean: 51 NES game prices in Larkman Computer Center catalogue/advertisement in Datormagazin issue 6/91; nominal listed SEK, issue dated 1991, not a market-wide annual mean",
       "source_url": "https://dmzarkivet.se/pdf/199106.pdf",
-      "annual_wage_sek": null,
-      "wage_basis": null,
-      "share_percent": null,
+      "annual_wage_sek": 193106.3259424,
+      "wage_basis": "Riksbank historical male weighted-average manufacturing hourly wage × 2,080 hours (40 × 52); not comparable to SCB all-sector salary",
+      "wage_source_url": "https://www.riksbank.se/globalassets/media/forskning/monetar-statistik/volym1/volumeich10wages1860_.xls",
+      "share_percent": 0.19419353466020345,
       "share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null
@@ -79,6 +93,7 @@
       "source_url": "https://www.stone-oakvalley-studios.com/uploads/000931052017174258/datormagazin_dmz_1992-13.pdf",
       "annual_wage_sek": 176400.0,
       "wage_basis": "SCB average monthly salary, all sectors, total gender × 12",
+      "wage_source_url": "https://www.scb.se/hitta-statistik/statistik-efter-amne/arbetsmarknad/loner-och-arbetskostnader/lonestrukturstatistik-hela-ekonomin/pong/tabell-och-diagram/genomsnittlig-manadslon-efter-sektor/",
       "share_percent": 0.20395124716553287,
       "share_percent_two_adults": null,
       "trend": null,
@@ -93,6 +108,7 @@
       "source_url": "https://www.stone-oakvalley-studios.com/uploads/000931052017174258/datormagazin_dmz_1992-13.pdf",
       "annual_wage_sek": 176400.0,
       "wage_basis": "SCB average monthly salary, all sectors, total gender × 12",
+      "wage_source_url": "https://www.scb.se/hitta-statistik/statistik-efter-amne/arbetsmarknad/loner-och-arbetskostnader/lonestrukturstatistik-hela-ekonomin/pong/tabell-och-diagram/genomsnittlig-manadslon-efter-sektor/",
       "share_percent": 0.2698412698412699,
       "share_percent_two_adults": null,
       "trend": null,
@@ -107,6 +123,7 @@
       "source_url": "https://www.stone-oakvalley-studios.com/uploads/000931052017175717/datormagazin_dmz_1992-17.pdf",
       "annual_wage_sek": 176400.0,
       "wage_basis": "SCB average monthly salary, all sectors, total gender × 12",
+      "wage_source_url": "https://www.scb.se/hitta-statistik/statistik-efter-amne/arbetsmarknad/loner-och-arbetskostnader/lonestrukturstatistik-hela-ekonomin/pong/tabell-och-diagram/genomsnittlig-manadslon-efter-sektor/",
       "share_percent": 0.28287981859410427,
       "share_percent_two_adults": null,
       "trend": null,
@@ -121,6 +138,7 @@
       "source_url": "https://dmzarkivet.se/pdf/HighScore-199318.pdf",
       "annual_wage_sek": 178800.0,
       "wage_basis": "SCB average monthly salary, all sectors, total gender × 12",
+      "wage_source_url": "https://www.scb.se/hitta-statistik/statistik-efter-amne/arbetsmarknad/loner-och-arbetskostnader/lonestrukturstatistik-hela-ekonomin/pong/tabell-och-diagram/genomsnittlig-manadslon-efter-sektor/",
       "share_percent": 0.3662639821029083,
       "share_percent_two_adults": null,
       "trend": null,
@@ -135,6 +153,7 @@
       "source_url": "https://dmzarkivet.se/pdf/199419.pdf",
       "annual_wage_sek": 187200.0,
       "wage_basis": "SCB average monthly salary, all sectors, total gender × 12",
+      "wage_source_url": "https://www.scb.se/hitta-statistik/statistik-efter-amne/arbetsmarknad/loner-och-arbetskostnader/lonestrukturstatistik-hela-ekonomin/pong/tabell-och-diagram/genomsnittlig-manadslon-efter-sektor/",
       "share_percent": 0.2932692307692308,
       "share_percent_two_adults": null,
       "trend": null,

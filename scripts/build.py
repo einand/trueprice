@@ -100,13 +100,22 @@ with (ROOT/'data/nintendo_software_prices.csv').open(newline='') as f:
     software_prices=list(csv.DictReader(f))
 software_data=[]
 for r in software_prices:
-    year=int(r['year']); price=float(r['average_game_price_sek']); count=int(r['sample_size']); annual_salary=salaries.get(year,0)*12
+    year=int(r['year']); price=float(r['average_game_price_sek']); count=int(r['sample_size']); salary=salaries.get(year)
     if price<=0 or count<=0 or not r.get('platform_scope') or not r.get('source_url'):
         raise ValueError('invalid Nintendo software price observation')
-    software_data.append({'year':year,'price_sek':price,'sample_size':count,'platform_scope':r['platform_scope'],'price_basis':r['price_basis'],'source_url':r['source_url'],'annual_wage_sek':annual_salary or None,'wage_basis':'SCB average monthly salary, all sectors, total gender × 12' if annual_salary else None,'share_percent':price/annual_salary*100 if annual_salary else None,'share_percent_two_adults':None,'trend':None,'trend_two_adults':None})
+    if salary:
+        annual_salary=salary*12
+        wage_basis='SCB average monthly salary, all sectors, total gender × 12'
+        wage_source_url=next(s['url'] for s in all_sources['series'] if s['id']=='average_salary')
+    else:
+        hourly_wage=historical_wages_by_key.get((year,'men','vägt genomsnitt'))
+        annual_salary=hourly_wage*2080 if hourly_wage else None
+        wage_basis='Riksbank historical male weighted-average manufacturing hourly wage × 2,080 hours (40 × 52); not comparable to SCB all-sector salary' if hourly_wage else None
+        wage_source_url=next(s['data_url'] for s in all_sources['series'] if s['id']=='historical_manufacturing_hourly_wages_by_industry') if hourly_wage else None
+    software_data.append({'year':year,'price_sek':price,'sample_size':count,'platform_scope':r['platform_scope'],'price_basis':r['price_basis'],'source_url':r['source_url'],'annual_wage_sek':annual_salary,'wage_basis':wage_basis,'wage_source_url':wage_source_url,'share_percent':price/annual_salary*100 if annual_salary else None,'share_percent_two_adults':None,'trend':None,'trend_two_adults':None})
 if len({(r['year'],r['platform_scope'],r['source_url']) for r in software_data}) != len(software_data):
     raise ValueError('duplicate Nintendo software source/platform observation')
-software_payload={'generated_at_utc':generated_at,'series_id':'nintendo_software_prices','wage_series_reference':'average_monthly_salaries.csv','sources':[s for s in all_sources['series'] if s['id'] in {'average_salary','nintendo_software_prices'}],'data':software_data}
+software_payload={'generated_at_utc':generated_at,'series_id':'nintendo_software_prices','wage_series_reference':'average_monthly_salaries.csv; pre-1992 observations use historical_manufacturing_hourly_wages.csv where available','sources':[s for s in all_sources['series'] if s['id'] in {'average_salary','historical_manufacturing_hourly_wages_by_industry','nintendo_software_prices'}],'data':software_data}
 (ROOT/'static/data/nintendo_software_prices.json').write_text(json.dumps(software_payload,ensure_ascii=False,indent=2)+'\n')
 index={'generated_at_utc':generated_at,'sources':all_sources,'wage_series_reference':'average_monthly_salaries.csv','series':[{'id':'gasoline','file':'gasoline_series.json'},{'id':'tv_license','file':'tv_license_series.json'},{'id':'nintendo_hardware_launch_prices','file':'nintendo_hardware_launch_prices.json'},{'id':'nintendo_software_prices','file':'nintendo_software_prices.json'},{'id':'historical_manufacturing_hourly_wages_by_industry','file':'historical_manufacturing_hourly_wages.csv'}]}
 (ROOT/'static/data/series.json').write_text(json.dumps(index,ensure_ascii=False,indent=2)+'\n')
