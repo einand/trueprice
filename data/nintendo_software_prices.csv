@@ -1,1 +1,3 @@
-year,average_game_price_sek,sample_size,price_basis,source_url
+year,average_game_price_sek,sample_size,platform_scope,price_basis,source_url
+1993,654.88,17,SNES,"Unweighted mean of 17 advertised SNES titles in a Swedish mail-order catalogue; listed selling prices, not a market-wide mean",https://dmzarkivet.se/pdf/HighScore-199318.pdf
+1994,549.00,9,SNES,"Unweighted mean of 9 SNES games explicitly listed as new in a Swedish mail-order advertisement; seller describes its prices as low mail-order prices, not a market-wide mean",https://dmzarkivet.se/pdf/199419.pdf

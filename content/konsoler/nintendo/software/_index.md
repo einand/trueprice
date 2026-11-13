@@ -5,12 +5,13 @@ comparison:
   id: nintendo-software
   console: true
   category: KONSOLER · SPEL
-  intro: Målet är att visa genomsnittspriset för ett Nintendo-spel i Sverige år för år från NES-lanseringen, jämfört med lönen. Varje års snitt måste bygga på daterade nypriser och en dokumenterad, jämförbar urvalsmetod.
-  available: false
-  price_label: Genomsnittligt pris per Nintendo-spel
+  intro: Två bevarade svenska postorderkataloger ger prisurval för SNES-spel 1993 och 1994. De visar vad utvalda spel annonserades för hos respektive säljare, inte ett genomsnitt för hela marknaden.
+  available: true
+  series_json_file: data/nintendo_software_prices.json
+  price_label: Annonserat SNES-spelpris i urval
   price_unit: kr/spel
-  period: Årsvisa snitt; inga priser verifierade ännu
-  price_basis: —
+  period: Prisurval 1993 och 1994; år däremellan/övriga år saknas
+  price_basis: Urval av annonserade spelpriser i daterade svenska postorderkataloger
   data_file: data/nintendo_software_prices.csv
-  price_description: Bergsala/Nintendo-broschyrer från 1988–1993 visar spelutbud men de undersökta sidorna saknar verifierbara priser. Årssnittet ska beräknas från ett redovisat urval svenska nypriser; begagnatpriser och enstaka lösryckta annonser räcker inte. CSV-filen innehåller ännu inga årsvärden.
+  price_description: 1993 är medelpriset av 17 SNES-priser i Spelhusets prislista. 1994 är medelpriset av 9 SNES-spel som Nordic Games uttryckligen annonserar som nya. Urvalen kommer från olika postorderförsäljare och 1994-annonsen beskriver sina priser som låga; de är därför inte marknadsgenomsnitt och ingen år-till-år-trendpil visas. Saknade år lämnas tomma.
 ---

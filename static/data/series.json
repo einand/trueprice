@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-13T12:19:41.808442+00:00",
+  "generated_at_utc": "2026-11-13T12:32:39.432063+00:00",
   "sources": {
     "retrieved_at": "2026-11-13",
     "series": [
@@ -141,17 +141,19 @@
       {
         "id": "nintendo_software_prices",
         "file": "data/nintendo_software_prices.csv",
-        "source": "Bergsala/Nintendo Sweden annual promotional brochures, preserved as scans by RL Vision; brochure years 1988–1993. The scans document Swedish game catalogues but the inspected catalogue pages do not show a verifiable price series.",
-        "url": "https://www.rlvision.com/blog/swedish-nintendo-brochure-scans-1988-1993/",
+        "source": "Swedish mail-order catalogues: Spelhuset/High Score Express 1993 issue 18, and Nordic Games advertisement in Datormagazin 1994 issue 19. Bergsala brochure scans were also reviewed but do not show verifiable prices.",
+        "url": "https://dmzarkivet.se/pdf/HighScore-199318.pdf",
         "additional_source_urls": [
+          "https://dmzarkivet.se/pdf/199419.pdf",
+          "https://www.rlvision.com/blog/swedish-nintendo-brochure-scans-1988-1993/",
           "https://www.rlvision.com/blog/wp-content/uploads/2019/04/Nintendo-Reklamblad-NES-1988.pdf",
           "https://www.rlvision.com/blog/wp-content/uploads/2019/04/Nintendo-Reklamblad-Super-NES-1992.pdf"
         ],
         "retrieved_at": "2026-11-13",
         "unit": "nominal SEK per Nintendo game",
         "definition": "Intended annual measure is the arithmetic mean of documented Swedish new-retail prices for Nintendo games in a dated source sample. Each published year must state the sample size and sampling basis; it must not be presented as a market-wide mean unless the source coverage supports that claim.",
-        "coverage": "NES entered Swedish retail 1 September 1986. Brochure scans inspected cover 1988–1993, but do not provide verifiable price observations. The CSV therefore intentionally contains headers only; no annual average game-price value is currently verified.",
-        "transformation": "No value until a reproducible annual sample of comparable Swedish new-game prices is transcribed. Average only observations within a documented source/sample definition; keep years with no evidence blank. Exclude second-hand prices and do not interpolate."
+        "coverage": "Two sparse SNES catalogue samples: 1993 issue 18 lists 17 SNES games for sale; 1994 issue 19 lists 9 SNES games explicitly under 'SUPER NINTENDO – NYA'. Both are Swedish mail-order seller prices, not a representative all-retailer market sample. 1994 advertises low mail-order prices. No observations are available for other years, and the catalogue series from 1988–1993 does not itself establish prices.",
+        "transformation": "CSV values are unweighted arithmetic means of the listed game prices (1993: 17 prices, 11,133 SEK total => 654.88 SEK; 1994: 9 prices, 4,941 SEK total => 549.00 SEK). Values describe each dated seller catalogue's selected SNES listings only, not a Swedish annual market average. They are nominal advertised prices incl. VAT; shipping excluded where stated. The 1993 and 1994 seller/sample methods differ, so no year-to-year price or wage-share trend is inferred. No interpolation; absent years remain gaps. Wage shares use SCB average monthly salary × 12 only to contextualize these dated observations."
       }
     ]
   },
@@ -171,7 +173,7 @@
     },
     {
       "id": "nintendo_software_prices",
-      "file": "nintendo_software_prices.csv"
+      "file": "nintendo_software_prices.json"
     },
     {
       "id": "historical_manufacturing_hourly_wages_by_industry",

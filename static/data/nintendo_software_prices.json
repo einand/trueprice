@@ -1,0 +1,66 @@
+{
+  "generated_at_utc": "2026-11-13T12:32:39.432063+00:00",
+  "series_id": "nintendo_software_prices",
+  "wage_series_reference": "average_monthly_salaries.csv",
+  "sources": [
+    {
+      "id": "average_salary",
+      "file": "data/average_monthly_salaries.csv",
+      "source": "Statistics Sweden (SCB), average monthly salary after sector, all sectors, total gender.",
+      "url": "https://www.scb.se/hitta-statistik/statistik-efter-amne/arbetsmarknad/loner-och-arbetskostnader/lonestrukturstatistik-hela-ekonomin/pong/tabell-och-diagram/genomsnittlig-manadslon-efter-sektor/",
+      "retrieved_at": "2026-11-12",
+      "unit": "SEK/month; annual comparator calculated as monthly × 12",
+      "definition": "SCB average monthly salary across all sectors, both sexes (total gender), for each year 1992–2025. Salary is not disposable income or actual annual earnings.",
+      "coverage": "Sweden, all sectors",
+      "transformation": "Annual comparator is monthly average multiplied by 12; nominal values. Monthly source values retained in the separate salary file.",
+      "coverage_years": "1992–2025"
+    },
+    {
+      "id": "nintendo_software_prices",
+      "file": "data/nintendo_software_prices.csv",
+      "source": "Swedish mail-order catalogues: Spelhuset/High Score Express 1993 issue 18, and Nordic Games advertisement in Datormagazin 1994 issue 19. Bergsala brochure scans were also reviewed but do not show verifiable prices.",
+      "url": "https://dmzarkivet.se/pdf/HighScore-199318.pdf",
+      "additional_source_urls": [
+        "https://dmzarkivet.se/pdf/199419.pdf",
+        "https://www.rlvision.com/blog/swedish-nintendo-brochure-scans-1988-1993/",
+        "https://www.rlvision.com/blog/wp-content/uploads/2019/04/Nintendo-Reklamblad-NES-1988.pdf",
+        "https://www.rlvision.com/blog/wp-content/uploads/2019/04/Nintendo-Reklamblad-Super-NES-1992.pdf"
+      ],
+      "retrieved_at": "2026-11-13",
+      "unit": "nominal SEK per Nintendo game",
+      "definition": "Intended annual measure is the arithmetic mean of documented Swedish new-retail prices for Nintendo games in a dated source sample. Each published year must state the sample size and sampling basis; it must not be presented as a market-wide mean unless the source coverage supports that claim.",
+      "coverage": "Two sparse SNES catalogue samples: 1993 issue 18 lists 17 SNES games for sale; 1994 issue 19 lists 9 SNES games explicitly under 'SUPER NINTENDO – NYA'. Both are Swedish mail-order seller prices, not a representative all-retailer market sample. 1994 advertises low mail-order prices. No observations are available for other years, and the catalogue series from 1988–1993 does not itself establish prices.",
+      "transformation": "CSV values are unweighted arithmetic means of the listed game prices (1993: 17 prices, 11,133 SEK total => 654.88 SEK; 1994: 9 prices, 4,941 SEK total => 549.00 SEK). Values describe each dated seller catalogue's selected SNES listings only, not a Swedish annual market average. They are nominal advertised prices incl. VAT; shipping excluded where stated. The 1993 and 1994 seller/sample methods differ, so no year-to-year price or wage-share trend is inferred. No interpolation; absent years remain gaps. Wage shares use SCB average monthly salary × 12 only to contextualize these dated observations."
+    }
+  ],
+  "data": [
+    {
+      "year": 1993,
+      "price_sek": 654.88,
+      "sample_size": 17,
+      "platform_scope": "SNES",
+      "price_basis": "Unweighted mean of 17 advertised SNES titles in a Swedish mail-order catalogue; listed selling prices, not a market-wide mean",
+      "source_url": "https://dmzarkivet.se/pdf/HighScore-199318.pdf",
+      "annual_wage_sek": 178800.0,
+      "wage_basis": "SCB average monthly salary, all sectors, total gender × 12",
+      "share_percent": 0.3662639821029083,
+      "share_percent_two_adults": null,
+      "trend": null,
+      "trend_two_adults": null
+    },
+    {
+      "year": 1994,
+      "price_sek": 549.0,
+      "sample_size": 9,
+      "platform_scope": "SNES",
+      "price_basis": "Unweighted mean of 9 SNES games explicitly listed as new in a Swedish mail-order advertisement; seller describes its prices as low mail-order prices, not a market-wide mean",
+      "source_url": "https://dmzarkivet.se/pdf/199419.pdf",
+      "annual_wage_sek": 187200.0,
+      "wage_basis": "SCB average monthly salary, all sectors, total gender × 12",
+      "share_percent": 0.2932692307692308,
+      "share_percent_two_adults": null,
+      "trend": null,
+      "trend_two_adults": null
+    }
+  ]
+}
