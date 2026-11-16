@@ -107,7 +107,8 @@
     const w = 900, h = 300, m = { top: 18, right: 24, bottom: 34, left: 70 }, iw = w-m.left-m.right, ih=h-m.top-m.bottom;
     const values = points.flatMap((d) => [d.one, d.family, d.disposableOne, d.disposableFamily]).filter((v) => v != null);
     const max = values.length ? (Math.ceil(Math.max(...values) * 200) / 200 || 1) : 1;
-    const x = (year) => m.left + (lastYear===firstYear ? iw/2 : (year-firstYear)*iw/(lastYear-firstYear));
+    const xEnd = isNintendoSoftware ? lastYear + 1 : lastYear;
+    const x = (year) => m.left + (xEnd===firstYear ? iw/2 : (year-firstYear)*iw/(xEnd-firstYear));
     const y = (v) => m.top + ih - v/max*ih;
     const grid = Array.from({length:6}, (_,i) => { const v=max*i/5, yy=y(v); return `<line class="grid-line" x1="${m.left}" x2="${w-m.right}" y1="${yy}" y2="${yy}"/><text class="axis-label" x="${m.left-12}" y="${yy+3}" text-anchor="end">${fmt(v,3)}%</text>`; }).join('');
     const series = (isConsolePage ? [['one',''],['disposableOne',' blue']] : [['one',''],['family',' blue'],['disposableOne',' gold'],['disposableFamily',' gold']]).map(([key, color]) => {
@@ -116,7 +117,7 @@
       const marks = ps.map((p) => `<circle class="chart-point${color.includes('blue') ? ' chart-point-blue' : color.includes('gold') ? ' chart-point-gold' : ''}" cx="${x(p.plotYear)}" cy="${y(p.value)}" r="3.5" tabindex="0" aria-label="${p.gameTitle ? `${p.gameTitle}, ` : ''}${p.observationDate || p.year}: ${fmt(p.value,4)} procent"><title>${p.gameTitle ? `${p.gameTitle}, ` : ''}${p.observationDate || p.year}: ${fmt(p.value,4)} %</title></circle>`).join('');
       return lines + marks;
     }).join('');
-    const yearStep = lastYear-firstYear > 60 ? 20 : lastYear-firstYear > 30 ? 10 : 5;
+    const yearStep = isNintendoSoftware ? 1 : lastYear-firstYear > 60 ? 20 : lastYear-firstYear > 30 ? 10 : 5;
     const labels = Array.from({length:Math.floor((lastYear-firstYear)/yearStep)+1},(_,i)=>firstYear+i*yearStep).concat(lastYear).filter((year,i,all)=>all.indexOf(year)===i).map((year) => `<text class="axis-label" x="${x(year)}" y="${h-8}" text-anchor="middle">${year}</text>`).join('');
     const firstObserved = points.find((d) => d.one != null || d.family != null || d.disposableOne != null || d.disposableFamily != null)?.year;
     const missing = firstObserved && firstObserved > firstYear ? `<rect class="chart-missing-region" x="${x(firstYear)}" y="${m.top}" width="${x(firstObserved)-x(firstYear)}" height="${ih}"/><text class="chart-missing-label" x="${(x(firstYear)+x(firstObserved))/2}" y="${m.top+ih/2}" text-anchor="middle">Löneunderlag saknas</text>` : '';
@@ -127,7 +128,8 @@
     const w=900,h=260,m={top:16,right:24,bottom:34,left:70},iw=w-m.left-m.right,ih=h-m.top-m.bottom;
     const maxV=Math.max(...points.map((d)=>d.familyAmount||d.amount||0)),step=isTvPage?500:(isNintendoHardware?500:5),max=Math.ceil(maxV/step)*step||1;
     const firstYear=points[0]?.year||0,lastYear=points.at(-1)?.year||firstYear;
-    const x=(year)=>m.left+(lastYear===firstYear?iw/2:(year-firstYear)*iw/(lastYear-firstYear)), y=(v)=>m.top+ih-v/max*ih;
+    const xEnd=isNintendoSoftware?lastYear+1:lastYear;
+    const x=(year)=>m.left+(xEnd===firstYear?iw/2:(year-firstYear)*iw/(xEnd-firstYear)), y=(v)=>m.top+ih-v/max*ih;
     const grid=Array.from({length:5},(_,i)=>{const v=max*i/4,yy=y(v);return `<line class="grid-line" x1="${m.left}" x2="${w-m.right}" y1="${yy}" y2="${yy}"/><text class="axis-label" x="${m.left-12}" y="${yy+3}" text-anchor="end">${fmt(v,0)} kr</text>`}).join('');
     const amountSeries=isTvPage?[['amount','En vuxen',''],['familyAmount','Familj',' blue']]:[['amount',itemName,'']];
     const series=amountSeries.map(([key,label,color])=>{
@@ -136,7 +138,7 @@
       const marks=ps.map(p=>`<circle class="chart-point${color?' chart-point-blue':''}" cx="${x(p.plotYear)}" cy="${y(p.value)}" r="2.8"><title>${p.gameTitle?`${p.gameTitle}, `:''}${p.observationDate||p.year}${p.console?`, ${p.console}`:''}${p.platformScope?`, ${p.platformScope}`:''}, ${label}: ${fmt(p.value,(isTvPage||isNintendoHardware)?0:2)} kr</title></circle>`).join('');
       return lines+marks;
     }).join('');
-    const labels=[...new Set(points.map(d=>d.year))].map(year=>({year})).map(d=>d.year%5===0||d.year===firstYear||d.year===lastYear?`<text class="axis-label" x="${x(d.year)}" y="${h-8}" text-anchor="middle">${d.year}</text>`:'').join('');
+    const labels=[...new Set(points.map(d=>d.year))].map(year=>({year})).map(d=>isNintendoSoftware||d.year%5===0||d.year===firstYear||d.year===lastYear?`<text class="axis-label" x="${x(d.year)}" y="${h-8}" text-anchor="middle">${d.year}</text>`:'').join('');
     el.innerHTML=`<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${itemName} per år${isTvPage?' för en vuxen och familj':''}" preserveAspectRatio="none">${grid}${series}${labels}</svg>`;
   }
   function renderTable(el, points) {
