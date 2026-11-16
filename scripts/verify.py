@@ -47,12 +47,8 @@ for filename,kind in [('gasoline_series.json','gas'),('tv_license_series.json','
         if kind=='hw': assert r['trend'] is None
         if kind=='sw' and r['reported_currency']=='SEK':
             close(price,round(r['reported_sales_value']/r['sample_size'],2))
-        if kind=='sw' and r.get('observation_type')=='review_price_sample':
-            sample=[x for x in csv_rows('nintendo_software_review_price_observations.csv') if int(x['observation_date'][:4])==year]
-            close(price,round(sum(float(x['sek_per_game']) for x in sample)/len(sample),2))
-            assert r['sample_size']==len(sample) and r['trend'] is None
-            assert len(r['observation_source_urls'])==len(sample)
         if kind=='sw':
+            assert r.get('observation_type')!='review_price_sample'
             comparable=previous is not None and r['reported_currency']=='SEK' and previous.get('reported_currency')=='SEK' and year==previous['year']+1 and expected is not None and previous['share_percent'] is not None
             assert r['trend']==(trend(previous['share_percent'],expected) if comparable else None)
         if kind=='sw' and r['reported_currency']=='EUR':
@@ -66,6 +62,11 @@ for filename,kind in [('gasoline_series.json','gas'),('tv_license_series.json','
         for key in ('source','url','unit','definition','coverage','retrieved_at','transformation'): assert s.get(key), (s['id'],key)
 for file in (ROOT/'data').glob('*.csv'):
     assert file.read_bytes()==(ROOT/'static/data'/file.name).read_bytes(),file
+review_archive=csv_rows('nintendo_software_review_price_observations.csv')
+software=payload('nintendo_software_prices.json')['data']
+assert len(review_archive)==61
+assert not any(r.get('observation_type')=='review_price_sample' or r.get('observation_file')=='nintendo_software_review_price_observations.csv' for r in software)
+assert not any(r['year']>=2017 and r.get('platform_scope','').endswith('recensionsurval') for r in software)
 # Regression against parliamentary source corrections, rate at 31 December.
 assert {y:int(fees[y]['annual_fee_sek']) for y in (1978,1979,1980,1984)}=={1978:480,1979:480,1980:572,1984:736}
 tv={r['year']:r for r in payload('tv_license_series.json')['data']}

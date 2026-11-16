@@ -101,10 +101,9 @@ hardware_payload={'generated_at_utc':generated_at,'series_id':'nintendo_hardware
 (ROOT/'static/data/nintendo_hardware_launch_prices.json').write_text(json.dumps(hardware_payload,ensure_ascii=False,indent=2,allow_nan=False)+'\n')
 with (ROOT/'data/nintendo_software_prices.csv').open(newline='') as f:
     software_prices=list(csv.DictReader(f))
-# Review quotations are retained individually; public item pages show only their yearly sample mean.
+# Recent review quotations are retained as research evidence, but are not a comparable annual price series.
 with (ROOT/'data/nintendo_software_review_price_observations.csv').open(newline='') as f:
     review_observations=list(csv.DictReader(f))
-review_groups={}
 review_keys=set()
 for observation in review_observations:
     date=datetime.strptime(observation['observation_date'], '%Y-%m-%d').date()
@@ -114,10 +113,6 @@ for observation in review_observations:
     if key in review_keys or not math.isfinite(amount) or amount<=0 or date.year!=published.year or not 0<=(published-date).days<=45 or observation['platform'] not in {'Switch','Switch 2'}:
         raise ValueError('invalid or duplicate Nintendo review price quotation')
     review_keys.add(key)
-    review_groups.setdefault(date.year, []).append(observation)
-for year, observations in sorted(review_groups.items()):
-    platforms=' / '.join(sorted({r['platform'] for r in observations}))
-    software_prices.append({'year':year,'average_game_price_sek':f"{sum(float(r['sek_per_game']) for r in observations)/len(observations):.2f}",'sample_size':len(observations),'platform_scope':platforms+' · recensionsurval','price_basis':'Oviktat medel av daterade lägstaprisnoteringar i Nördlivs recensioner av Switch-versioner. Urval av både fysiska och digitala nyspel; varierande titlar och avläsningsdatum, ingen nationell årsmedelstatistik. Individuella källor och datum finns i separat observationsfil.','source_url':observations[0]['source_url'],'observation_source_urls':list(dict.fromkeys(r['source_url'] for r in observations)),'observation_dates':[r['observation_date'] for r in observations]})
 software_prices.sort(key=lambda r: int(r['year']))
 software_data=[]
 for r in software_prices:
@@ -139,8 +134,6 @@ for r in software_prices:
         wage_source_url=next(s['data_url'] for s in all_sources['series'] if s['id']=='historical_manufacturing_hourly_wages_by_industry') if hourly_wage else None
     d=disposable_income.get(year)
     software_data.append({'year':year,'price_sek':price,'price_eur':eur_mean,'reported_sales_value':float(r['reported_sales_value']) if r.get('reported_sales_value') else None,'reported_currency':r.get('reported_currency') or None,'sample_size':count,'platform_scope':r['platform_scope'],'price_basis':r['price_basis'],'source_url':r['source_url'],'annual_wage_sek':annual_salary,'wage_basis':wage_basis,'wage_source_url':wage_source_url,'share_percent':price/annual_salary*100 if price is not None and annual_salary else None,'disposable_income_2024_sek':d,'disposable_share_percent':price/d*100 if price is not None and d else None,'share_percent_two_adults':None,'disposable_share_percent_two_adults':None,'trend':None,'trend_two_adults':None})
-    if r.get('observation_source_urls'):
-        software_data[-1].update({'observation_source_urls':r['observation_source_urls'],'observation_dates':r['observation_dates'],'observation_file':'nintendo_software_review_price_observations.csv','observation_type':'review_price_sample'})
 for previous, current in zip(software_data, software_data[1:]):
     if 'vägt snitt' not in current['platform_scope'] or 'vägt snitt' not in previous['platform_scope']:
         continue

@@ -1,35 +1,18 @@
-# Nintendo-spel: nya prisurval 2017–2026
+# Nintendo-spel: recensionsnoteringar sparade, inte publicerade som årsmedel
 
-Hämtat 2026-11-16. 61 daterade prisnoteringar ger tio årsvisa snitt. Alla nya priser avser spel på Switch eller Switch 2; även tredjepartsutgivare ingår. Sidan visar snitt per urval och år. Individuella titlar sparas endast som granskningsunderlag.
+Hämtat 2026-11-16. Granskningen samlade 61 daterade prisnoteringar för Switch/Switch 2 från Nördliv, 2–10 per kalenderår 2017–2026. Noteringarna är en blandning av olika spel, däribland lågpris/indie och fullpristitlar, samt fysiska lägstapriser och digitala priser. De är inte ett slumpmässigt urval av spel, försäljningsvägda priser eller en konsekvent serie av nya Nintendo-publicerade fullprisspel.
 
-| År | Antal noteringar | Oviktat snitt, kr/spel |
-|---|---:|---:|
-| 2017 | 2 | 398.00 |
-| 2018 | 3 | 366.33 |
-| 2019 | 8 | 395.25 |
-| 2020 | 10 | 365.40 |
-| 2021 | 5 | 400.60 |
-| 2022 | 6 | 303.17 |
-| 2023 | 5 | 538.20 |
-| 2024 | 7 | 392.71 |
-| 2025 | 10 | 478.10 |
-| 2026 | 5 | 327.00 |
+Snitten som tidigare visades på webbplatsen underskattade lätt det pris en besökare förväntar sig när hen frågar vad ett Nintendo-spel kostar. Urvalets storlek, titlar och pris-kanal varierar mellan år. Vi har därför tagit bort årsmedlen från diagram, tabell och jämförelseberäkning. De 61 observationerna finns kvar enbart som revisionsunderlag; inga årsvärden har ersatts med antagna listpriser.
 
-## Vad värdena betyder
+För att skapa en framtida jämförbar serie behöver samma urvalsregel användas varje år, exempelvis svenska rekommenderade/listade nypriser för Nintendo-publicerade fullprisspel, med en fast hantering av fysiska/digitala utgåvor och konsolgeneration. Daterade enskilda källor behövs för varje observerat belopp. Fram tills sådan serie kan beläggas, lämnas perioden efter 2015 utan årsmedel.
 
-Noteringarna är Nördlivs uttryckligen daterade lägstaprisuppgifter, med Prisjakt, Nintendo/eShop eller DekuDeals angivet som ursprung. Det är redaktionellt rapporterade prisobservationer, inte myndighetsstatistik eller en självständigt verifierad köptransaktion. Den angivna recensionsplattformen måste vara Switch eller Switch 2. Den oberoende pipelinekontrollen räknar om varje snitt från den sparade observationsfilen.
+## Urval och källbegränsningar
 
-Urvalet hittades genom tolv sidor i Nördlivs offentliga WordPress-API (sökord Nintendo, poster efter 2016-01-01) och granskning av prisavsnitten. Vi behöll exakta SEK-belopp med explicit källa och datum, i publiceringsåret och högst 45 dagar före publicering. Utländsk valuta, ungefärliga priser, motstridiga datum och explicit andra prisplattformar uteslöts. Urvalet är avgränsat och innehåller inte alla recensioner eller spel. Olika år har olika titlar, butikskanaler och datum. De årsvisa snitten är därför inte representativa nationella årsmedel eller en jämförbar prisindexserie. De får ingen trendpil.
-
-2016 saknar ännu en kvalificerad svensk prisnotering i detta urval. De äldre luckorna kvarstår. 2026 avser endast observerade datum t.o.m. hämtningen; året är inte avslutat. SCB-årslön för 2026 saknas i projektet, så priset visas utan löneandel och 2025 är senaste jämförbara år. Lön för andra år återanvänds inte som ersättning.
-
-Källornas generella skattevillkor är inte särredovisade per recension. Beloppen används som rapporterade konsumentnoteringar i SEK utan momsjustering eller valutaomräkning. Både digitala priser och butikernas lägstapriser förekommer, vilket ska beaktas vid jämförelse.
+Urvalet hittades genom tolv sidor i Nördlivs offentliga WordPress-API (sökord Nintendo, poster efter 2016-01-01) och granskning av prisavsnitten. Vi behöll exakta SEK-belopp med explicit källa och datum, i publiceringsåret och högst 45 dagar före publicering. Utländsk valuta, ungefärliga priser, motstridiga datum och priser explicit för en annan plattform uteslöts. Nördlivs uppgifter hänvisar till Prisjakt, Nintendo/eShop och DekuDeals. De är redaktionellt rapporterade priser, inte verifierade transaktioner; skattevillkor är inte särredovisade per notering.
 
 ## Filer
 
-- `data/nintendo_software_review_price_observations.csv`: samtliga 61 belopp med datum, plattform, källa, hämtningstid och källans prisformulering.
-- `data/sources.json`: definition, urval, täckning, samtliga URL:er och omräkningsmetod.
-- `scripts/build.py`: räknar snitten, kopplar lön på år och skriver prisdata med källmetadata.
-- `scripts/verify.py`: oberoende omräkning av alla nya snitt och löneandelar.
-
-Fullständiga källformuleringar finns i observationsfilen; inga löpande recensionstexter återpubliceras.
+- `data/nintendo_software_review_price_observations.csv`: 61 enskilda belopp med datum, plattform, källa och prisformulering; inte inlästa i webbplatsens årsserie.
+- `data/sources.json`: källa, urvalsdefinition, täckning, URL:er och uttrycklig notering om att arkivet inte aggregeras.
+- `scripts/build.py`: kontrollerar observationernas format och kopierar datafilerna, men exkluderar dem från publicerade årsdata.
+- `scripts/verify.py`: kontrollerar att arkiverade observationer inte förekommer i det genererade jämförelsedata.

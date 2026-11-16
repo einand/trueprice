@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-16T08:46:49.343138+00:00",
+  "generated_at_utc": "2026-11-16T11:56:51.847752+00:00",
   "sources": {
     "retrieved_at": "2026-11-13",
     "series": [
@@ -209,9 +209,9 @@
         "api_url": "https://www.nordlivpodcast.se/wp-json/wp/v2/posts?search=Nintendo&per_page=100&after=2016-01-01T00%3A00%3A00",
         "retrieved_at": "2026-11-16",
         "unit": "nominal SEK/game; reported lowest price per title at the source-stated date",
-        "definition": "Unweighted arithmetic mean per observation year of retained exact SEK lowest-price quotations for Nintendo Switch/Switch 2 games in Swedish reviews. Both Nintendo and third-party games, physical retail and digital eShop quotations. The sources do not separately document VAT per quote; no tax adjustment or foreign currency conversion is applied. Excludes hardware, accessories, subscriptions and add-ons.",
-        "coverage": "Swedish review sample, each year 2017–2026 through retrieval date 2026-11-16; 61 retained title-price observations, 2–10 per year. No eligible observation found for 2016. This is neither a complete annual catalogue nor a sales-weighted or representative national annual price average. 2026 is incomplete and has no annual salary comparison.",
-        "transformation": "Sum exact observed SEK amounts within year / count of titles, rounded to öre; computed by the pipeline from the individual observation CSV. Retain source URL, source-stated observation date, publication date, platform and exact price statement for every title. Inclusion: explicit tested Switch version; exact SEK amount; named price source; source-stated price date in publication year and no later than publication, at most 45 days before publication. Exclude approximate amounts, foreign currency, contradictory years/dates and prices explicitly for another platform. Yearly selection and channel mix vary, so no year-to-year trend is calculated. 2026 salary is missing, preserved as null; no extrapolation.",
+        "definition": "A research archive of individual exact SEK lowest-price quotations for Nintendo Switch/Switch 2 games in Swedish reviews. It mixes Nintendo and third-party games, physical retail and digital eShop quotations. The changing sample is not an annual average and is excluded from the published annual price series. The sources do not separately document VAT per quote; no tax adjustment or foreign currency conversion is applied. Excludes hardware, accessories, subscriptions and add-ons.",
+        "coverage": "Swedish review sample, each year 2017–2026 through retrieval date 2026-11-16; 61 retained title-price observations, 2–10 per year. No eligible observation found for 2016. This is neither a complete annual catalogue nor a sales-weighted or representative national annual price average. 2026 is incomplete. These observations are preserved for audit only and are not used in the displayed series, chart, or table.",
+        "transformation": "No annual mean or other aggregate is published from this archive. Retain source URL, source-stated observation date, publication date, platform and exact price statement for every title. Inclusion: explicit tested Switch version; exact SEK amount; named price source; source-stated price date in publication year and no later than publication, at most 45 days before publication. Exclude approximate amounts, foreign currency, contradictory years/dates and prices explicitly for another platform. The archive is copied for inspection but not included in displayed series values.",
         "additional_source_urls": [
           "https://www.nordlivpodcast.se/sonic-forces/",
           "https://www.nordlivpodcast.se/l-a-noire-nintendo-switch/",
