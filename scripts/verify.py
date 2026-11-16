@@ -61,12 +61,16 @@ for filename,kind in [('gasoline_series.json','gas'),('tv_license_series.json','
     for s in p['sources']:
         for key in ('source','url','unit','definition','coverage','retrieved_at','transformation'): assert s.get(key), (s['id'],key)
 for file in (ROOT/'data').glob('*.csv'):
+    if file.name=='nintendo_software_prices_mixed_publishers_archive.csv':
+        continue
     assert file.read_bytes()==(ROOT/'static/data'/file.name).read_bytes(),file
 review_archive=csv_rows('nintendo_software_review_price_observations.csv')
 software=payload('nintendo_software_prices.json')['data']
-assert len(review_archive)==61
+assert len(review_archive)==14
+assert all(r['publisher']=='Nintendo' and r['publisher_source_url'].startswith('https://www.nintendo.com/') for r in review_archive)
+assert not any(r['game_key'] in {'sonic-forces','l-a-noire-nintendo-switch','wolfenstein-ii-the-new-colossus-switch','cities-skylines-nintendo-switch-edition'} for r in review_archive)
+assert software==[]
 assert not any(r.get('observation_type')=='review_price_sample' or r.get('observation_file')=='nintendo_software_review_price_observations.csv' for r in software)
-assert not any(r['year']>=2017 and r.get('platform_scope','').endswith('recensionsurval') for r in software)
 # Regression against parliamentary source corrections, rate at 31 December.
 assert {y:int(fees[y]['annual_fee_sek']) for y in (1978,1979,1980,1984)}=={1978:480,1979:480,1980:572,1984:736}
 tv={r['year']:r for r in payload('tv_license_series.json')['data']}

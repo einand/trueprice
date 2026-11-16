@@ -110,7 +110,8 @@ for observation in review_observations:
     published=datetime.strptime(observation['publication_date'], '%Y-%m-%d').date()
     amount=float(observation['sek_per_game'])
     key=(date.year, observation['game_key'], observation['platform'])
-    if key in review_keys or not math.isfinite(amount) or amount<=0 or date.year!=published.year or not 0<=(published-date).days<=45 or observation['platform'] not in {'Switch','Switch 2'}:
+    publisher_url=observation.get('publisher_source_url','')
+    if key in review_keys or observation.get('publisher')!='Nintendo' or not publisher_url.startswith('https://www.nintendo.com/') or not math.isfinite(amount) or amount<=0 or date.year!=published.year or not 0<=(published-date).days<=45 or observation['platform'] not in {'Switch','Switch 2'}:
         raise ValueError('invalid or duplicate Nintendo review price quotation')
     review_keys.add(key)
 software_prices.sort(key=lambda r: int(r['year']))

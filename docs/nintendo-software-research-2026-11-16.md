@@ -1,18 +1,21 @@
-# Nintendo-spel: recensionsnoteringar sparade, inte publicerade som årsmedel
+# Nintendo-utgivna spel: publisherfilter och prisbegränsningar
 
-Hämtat 2026-11-16. Granskningen samlade 61 daterade prisnoteringar för Switch/Switch 2 från Nördliv, 2–10 per kalenderår 2017–2026. Noteringarna är en blandning av olika spel, däribland lågpris/indie och fullpristitlar, samt fysiska lägstapriser och digitala priser. De är inte ett slumpmässigt urval av spel, försäljningsvägda priser eller en konsekvent serie av nya Nintendo-publicerade fullprisspel.
+Uppdaterad 2026-11-16. Nintendo-spelserien avgränsas nu till spel vars Nintendo-sida anger Nintendo som utgivare. Tredjepartsutgivna spel på Nintendo-konsoler räknas inte som Nintendo-spel.
 
-Snitten som tidigare visades på webbplatsen underskattade lätt det pris en besökare förväntar sig när hen frågar vad ett Nintendo-spel kostar. Urvalets storlek, titlar och pris-kanal varierar mellan år. Vi har därför tagit bort årsmedlen från diagram, tabell och jämförelseberäkning. De 61 observationerna finns kvar enbart som revisionsunderlag; inga årsvärden har ersatts med antagna listpriser.
+## Vad som har tagits bort
 
-För att skapa en framtida jämförbar serie behöver samma urvalsregel användas varje år, exempelvis svenska rekommenderade/listade nypriser för Nintendo-publicerade fullprisspel, med en fast hantering av fysiska/digitala utgåvor och konsolgeneration. Daterade enskilda källor behövs för varje observerat belopp. Fram tills sådan serie kan beläggas, lämnas perioden efter 2015 utan årsmedel.
+Äldre katalogpriserna för 1987, 1991–1994 saknade fullständigt titelunderlag för att kontrollera spelens utgivare. Branschserierna 1998–2015 redovisade försäljning av mjukvara på Nintendo-format, inte bara Nintendo-utgivna spel. Därför går dessa värden inte att använda i en serie för Nintendo-spel. De ursprungliga raderna ligger kvar i `data/nintendo_software_prices_mixed_publishers_archive.csv` som arkiv och läses inte längre av pipelinen.
 
-## Urval och källbegränsningar
+## Kvarvarande prisnoteringar
 
-Urvalet hittades genom tolv sidor i Nördlivs offentliga WordPress-API (sökord Nintendo, poster efter 2016-01-01) och granskning av prisavsnitten. Vi behöll exakta SEK-belopp med explicit källa och datum, i publiceringsåret och högst 45 dagar före publicering. Utländsk valuta, ungefärliga priser, motstridiga datum och priser explicit för en annan plattform uteslöts. Nördlivs uppgifter hänvisar till Prisjakt, Nintendo/eShop och DekuDeals. De är redaktionellt rapporterade priser, inte verifierade transaktioner; skattevillkor är inte särredovisade per notering.
+Av de 61 recensionsnoteringarna från blandade utgivare återstår 14 noterade priser för Nintendo-utgivna titlar, från 2019–2025. Varje rad har Nördlivs exakta prisuppgift och datum samt en officiell Nintendo-sida där Nintendo står som utgivare. De är lägsta priser vid recensionstillfället; kanaler och spel varierar. De mäter inte lanseringspris eller ett representativt årsgenomsnitt och publiceras därför inte som årsvärden, trendpilar eller löneandelar.
 
-## Filer
+Inga Nintendo-utgivna noteringar återstår i det här urvalet för 2017–2018 eller 2026. Frånvaron betyder inte att Nintendo saknade spel då, bara att den här prisinsamlingen saknar kvalificerad notering.
 
-- `data/nintendo_software_review_price_observations.csv`: 61 enskilda belopp med datum, plattform, källa och prisformulering; inte inlästa i webbplatsens årsserie.
-- `data/sources.json`: källa, urvalsdefinition, täckning, URL:er och uttrycklig notering om att arkivet inte aggregeras.
-- `scripts/build.py`: kontrollerar observationernas format och kopierar datafilerna, men exkluderar dem från publicerade årsdata.
-- `scripts/verify.py`: kontrollerar att arkiverade observationer inte förekommer i det genererade jämförelsedata.
+## Filer och verifiering
+
+- `data/nintendo_software_review_price_observations.csv`: endast de 14 Nintendo-utgivna recensionsnoteringarna, med utgivare och officiell evidens-URL.
+- `data/sources.json`: URL, definition, täckning, hämtningstid och begränsningar för källserierna.
+- `data/nintendo_software_prices.csv`: tom årsprisserie tills jämförbara Nintendo-only årsvärden kan beläggas.
+- `scripts/build.py`: avvisar prisnoteringar utan utgivarvärdet Nintendo och en officiell Nintendo-URL; recensionspriser aggregeras inte.
+- `scripts/verify.py`: kontrollerar att bara Nintendo-utgivna rader finns kvar och att publicerade årsvärden är tomma.
