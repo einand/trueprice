@@ -1,0 +1,457 @@
+[
+  {
+    "url": "https://api.scb.se/OV0104/v1/doris/sv/ssd/START/PR/PR0101/PR0101A/KPI2020M1980",
+    "status": 200,
+    "type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "6dd57261776ef53d5a1abce2480055a396fbc7a931dec5a8cd1065125bf96c9e"
+  },
+  {
+    "url": "https://data.riksdagen.se/dokument/FU0973",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "2396b0a64dc48d674b9be9683ddeb03219521d79fd81a0cf07e19a04819ff782"
+  },
+  {
+    "url": "https://data.riksdagen.se/dokument/H901KrU3.html",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "a1f43916074cb911482f2af116a481099f6e98977ee70af209a0db6aeabb634c"
+  },
+  {
+    "url": "https://data.riksdagen.se/fil/187AEC92-0D78-48AF-8002-0BFCDE7708A7",
+    "status": 200,
+    "type": "application/pdf",
+    "retrieved_at": "2026-11-16",
+    "sha256": "955eef5141bdf0e36d8e73714cea50610c56e8db8b3f9819d09c6300a94b4332"
+  },
+  {
+    "url": "https://data.riksdagen.se/fil/72E61E6B-D55A-4B5D-811F-9A4EC6B60FA9",
+    "status": 200,
+    "type": "application/pdf",
+    "retrieved_at": "2026-11-16",
+    "sha256": "824d846e92fae08a3c0d07d7bee6998a31dc7580d7494b7b2e2e0570dd1a3031"
+  },
+  {
+    "url": "https://data.riksdagen.se/fil/E07387F8-EB57-483C-ACE1-04CAC0FC6233",
+    "status": 200,
+    "type": "application/pdf",
+    "retrieved_at": "2026-11-16",
+    "sha256": "104a2504db50e37aa7a041dc81841bcff6351104c7a44c04737026d47efa6eed"
+  },
+  {
+    "url": "https://dataspelsbranschen.squarespace.com/s/nordic-game-sales-2010-screen.pdf",
+    "status": 200,
+    "type": "application/pdf",
+    "retrieved_at": "2026-11-16",
+    "sha256": "d50cf020d0d8e8e5a415e1dc5bda382d6e96f6d676f8ba43d79bfeff38182632"
+  },
+  {
+    "url": "https://dmzarkivet.se/pdf/199106.pdf",
+    "status": 200,
+    "type": "application/pdf",
+    "retrieved_at": "2026-11-16",
+    "sha256": "dc26630c419600cdeb879fb0d13649e44dd568e228a36d27c502e9a07933c5a7"
+  },
+  {
+    "url": "https://dmzarkivet.se/pdf/199419.pdf",
+    "status": 200,
+    "type": "application/pdf",
+    "retrieved_at": "2026-11-16",
+    "sha256": "51f9368b87e0f3c4983ed8bb9ff55e542e9be7c8a081813845c01770c038f42c"
+  },
+  {
+    "url": "https://lagen.nu/forarbeten/sou/1948-43",
+    "status": 404,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "2b8598e673eb3ef20d57b9bf2b960a1994f6a802803afecd427141d106560ade"
+  },
+  {
+    "url": "https://lagen.nu/prop/1980/81:101",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "ddc16247cf9ad93bb375f6a5a9ab370f389ebd2de8586476082111e17a400c48"
+  },
+  {
+    "url": "https://lagen.nu/prop/1988/89:18",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "b3dd586c64ee9ff225e08da553b950a03a63ca86a2707fd2f700afcfbc2f1b30"
+  },
+  {
+    "url": "https://lagen.nu/sou/1973:8",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "4aefc265863ab64adb5b690d9ca8db461a5346254f337173b2d9dfe75113dc75"
+  },
+  {
+    "url": "https://lagen.nu/sou/1977:19",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "93f8953712c38cdea801ba0a08f8289c094f754faa8d3c7fec2ae3809b849c1b"
+  },
+  {
+    "url": "https://lagen.nu/sou/1984:65",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "4602b929bf292c9ad72697cce6d38f6e3810c0ddfa6f30dd5e431c057b305329"
+  },
+  {
+    "url": "https://static1.squarespace.com/static/5a61edb7a803bb7a65252b2d/t/5ab107e870a6ad041278f575/1521551339403/dsb-rapport-2009%2B%28screenview%29.pdf",
+    "status": 200,
+    "type": "application/pdf",
+    "retrieved_at": "2026-11-16",
+    "sha256": "c48bd3d76e94e7e2eea73bbf0f6d8b43716715049ecf26347edfe672961f9f4f"
+  },
+  {
+    "url": "https://www.dataspelsbranschen.se/wp-content/uploads/2025/09/eng.nordicgamesales2011.pdf",
+    "status": 200,
+    "type": "application/pdf",
+    "retrieved_at": "2026-11-16",
+    "sha256": "28c08fc131a1523986692df5546c0dd243082208cfd3aa9b1f35bc0084a2aa9d"
+  },
+  {
+    "url": "https://www.dataspelsbranschen.se/wp-content/uploads/2025/09/nordic-game-sales-2015.pdf",
+    "status": 200,
+    "type": "application/pdf",
+    "retrieved_at": "2026-11-16",
+    "sha256": "259284505b973adda3df43d7db6dea08fb1655769f63565dda665aba8c3a1def"
+  },
+  {
+    "url": "https://www.dataspelsbranschen.se/wp-content/uploads/2025/09/nordic_game_sales_2012.pdf",
+    "status": 200,
+    "type": "application/pdf",
+    "retrieved_at": "2026-11-16",
+    "sha256": "0ceed5a1793e1d5ed54a645fa65142233445bb9d77f1766df32127bfe1684b2c"
+  },
+  {
+    "url": "https://www.dataspelsbranschen.se/wp-content/uploads/2025/09/nordic_game_sales_2013.pdf",
+    "status": 200,
+    "type": "application/pdf",
+    "retrieved_at": "2026-11-16",
+    "sha256": "8f94ba42e03b3b5c2d7e89652bde27fb9f7d28b5ebf1450cb7d77ec67d587c2b"
+  },
+  {
+    "url": "https://www.dataspelsbranschen.se/wp-content/uploads/2025/09/nordic_game_sales_2014.pdf",
+    "status": 200,
+    "type": "application/pdf",
+    "retrieved_at": "2026-11-16",
+    "sha256": "7941938c9a4688f95d5aec340c884c9662f9a4031609b4710bde838e6de6b4d1"
+  },
+  {
+    "url": "https://www.energimyndigheten.se/4a076b/globalassets/statistik/energilaget/energilaget-i-siffror-2026-excel.xlsx",
+    "status": 200,
+    "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "retrieved_at": "2026-11-16",
+    "sha256": "cb541a843c7840c4c6182ec10b409162a6a429e8ad0b428e0081e4979bdd9f3f"
+  },
+  {
+    "url": "https://www.energimyndigheten.se/energisystem-och-analys/sveriges-energilage-just-nu/energilaget/",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "1cb8355761fd6eb3bf9674a6238f020b7c2179641ef770f90f003efc8ba3c6d1"
+  },
+  {
+    "url": "https://www.fz.se/nyhet/12686-nintendos-tv-spelskonsol-wii-slappt-i-sverige",
+    "status": 403,
+    "type": "text/html; charset=UTF-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "2aa08551500355e55389eb434f3b5bd8b6a44f34d90416f60f77608094a3a992"
+  },
+  {
+    "url": "https://www.fz.se/nyhet/261767-hipp-hipp-nes-fyller-30-ar-i-sverige",
+    "status": 403,
+    "type": "text/html; charset=UTF-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "a23dc5312729252b31e4abb1303bdcd1d1fa912bfcc2e823339c953138448379"
+  },
+  {
+    "url": "https://www.fz.se/nyhet/270044-sa-har-konsolpriserna-andrats-under-30-ar",
+    "status": 403,
+    "type": "text/html; charset=UTF-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "ee1f0f76c059a9989e2742b2ef6b728ca5ef9b66a1c9e769747c5853d458c93e"
+  },
+  {
+    "url": "https://www.fz.se/nyhet/4964-wii-sjunker-i-pris",
+    "status": 403,
+    "type": "text/html; charset=UTF-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "a65a8d283afade29091cc6d85cc2b163a5809ddcd2f5c066e7320ef39dbca761"
+  },
+  {
+    "url": "https://www.konkurrensverket.se/diarium/sok-i-Konkurrensverkets-diarium/arendedata/file?pdf=25-0387.pdf",
+    "status": 403,
+    "type": "text/html; charset=UTF-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "5086e4e69de93d681a3db1dfa1538abf7b2bc4400d33b9af9ec6c7616e2789bc"
+  },
+  {
+    "url": "https://www.retrospel.nu/nes",
+    "status": 200,
+    "type": "text/html; charset=UTF-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "5cd1973584f0de3c16c1af8ecef8652e1243fcc30915cb98ae0bf7b78530cedf"
+  },
+  {
+    "url": "https://www.riksbank.se/globalassets/media/forskning/monetar-statistik/volym1/volumeich10wages1860_.xls",
+    "status": 200,
+    "type": "application/vnd.ms-excel",
+    "retrieved_at": "2026-11-16",
+    "sha256": "c890b70ca8cebccf4ad6c782fb5e831108cc7e3df30bdce2bd3397764eb41cb1"
+  },
+  {
+    "url": "https://www.riksbank.se/sv/om-riksbanken/riksbankens-uppdrag/forskning/historisk-monetar-statistik-for-sverige/volume-i-exchange-rates-prices-and-wages-1277-2008/",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "0e864acc98be41cf57b4d6ad62ad0fb65e40b2197f7805a48e3759035e025ff4"
+  },
+  {
+    "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/2016-17kru1-utskottets-overvaganden_8f16d3b8-45d2-46ea-b8bb-264ec7e77971/",
+    "status": 404,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "b2cb98716008a4afeb7b2ac3bae073fe5a876da232e2eeb08a69d27f61cc8608"
+  },
+  {
+    "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/om-radio-och-television-prop-198384100-bil-10_g701kru17/html/",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "578333bc0ca9849d1bf4b7ddbbf76c7bbaf87d9e72298f537629e78e7bbb661e"
+  },
+  {
+    "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/om-sveriges-radios-verksamhet-m-m-prop_g901kru21/html/",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "2e471ea6754fcc4e0b396cdd5440f4097a827ccb711dd5c81e4d7935fab1e35a"
+  },
+  {
+    "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/utgiftsomrade-17-kultur-medier-trossamfund-och_gw01kru1/html/",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "1c6085229a7c62c267077a2bf7a6bf35747847f56d90e15a3f9a43969a7a09de"
+  },
+  {
+    "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/motioner-i-andra-kammaren-nr-183-ar-1962_en2o183/",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "3e91c009f5d4dbde8aebe3f79c0a4213ec8967ca3787f53df1671e5c0b4b80ac"
+  },
+  {
+    "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/kungi-maj-ts-proposition-nr-112_ef30112/html/",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "de4a9e0854d3502e4d13eab4074844a615c20b3a871478f9a35cf0f2a40e50a4"
+  },
+  {
+    "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/kungl-majts-proposition-nr-146-ar-1955_eg30146/",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "d0b13f12a0346712a8790c853e2fe77995ca02fb041a5637a9a02768014c7947"
+  },
+  {
+    "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/kungl-majts-proposition-nr-50-ar-1968_et3050/",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "3dcc897b80e26b8a947860d2e8336d50ea5e6c97115fec4f8feb6fdcd7fb1f1b"
+  },
+  {
+    "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/om-tv-avgiften_gc0318/html/",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "10984b408d909add7d751768a21d6e4e43a566215c3b0c35528b3d0b4b1b83ef"
+  },
+  {
+    "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/vissa-forandringar-i-tv-avgiftssystemet_gk03165/html/",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "838967f897ebba46e78c024515212287341598dc73e02b43fb0c171feb4bc1fd"
+  },
+  {
+    "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/protokoll/riksdagens-protokoll-19767772-onsdagen-den-16_g00972/html/",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "bd1549d604e482888d2e518b511477b5ec11c608e017854382be07d3150c39f7"
+  },
+  {
+    "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/protokoll/riksdagens-protokoll-198283119-torsdagen-den-14_g609119/html/",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "504037080839be895e22124380d5607874f70f37c4cac6966c9e12221fd27420"
+  },
+  {
+    "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/statens-offentliga-utredningar/radio-och-tv-i-allmanhetens-tjanst-finansiering_gtb32/html/",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "a4cc1283116148b896d574a45e28a6d132d5699be7a44a7a4343a6de69a42d37"
+  },
+  {
+    "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/utlatande/forsta-kammarens-andra-tillfalliga-utskotts_e61ctfua14/html/",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "e23d5e70bb42f90b77e96aa61d57206c9e1ed53b2182a2cf971fd5f5591eef25"
+  },
+  {
+    "url": "https://www.riksdagen.se/sv/webb-tv/video/interpellationsdebatt/betalningsfrekvens-for-tv-avgifter_gw1012/",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "f74b206b3c8f5db2523dc5d67ce0fde9e0fbbe9302aa0a1f344e0bbbdcde1a9e"
+  },
+  {
+    "url": "https://www.rlvision.com/blog/swedish-nintendo-brochure-scans-1988-1993/",
+    "status": 200,
+    "type": "text/html; charset=UTF-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "e1c4c9d491130f48533bbea3f7073e1e3f357a249e4ead39d038c477fed6dbdb"
+  },
+  {
+    "url": "https://www.rlvision.com/blog/wp-content/uploads/2019/04/Nintendo-Reklamblad-NES-1988.pdf",
+    "status": 200,
+    "type": "application/pdf",
+    "retrieved_at": "2026-11-16",
+    "sha256": "52f39e7eda78a39f4eb24b1e34cb67981b89de4b00f886c11ab91ec4f86a6a3e"
+  },
+  {
+    "url": "https://www.rlvision.com/blog/wp-content/uploads/2019/04/Nintendo-Reklamblad-NES-1989.pdf",
+    "status": 200,
+    "type": "application/pdf",
+    "retrieved_at": "2026-11-16",
+    "sha256": "9ba37b4e36fa461d53f7b5197cfae96da2b22f5e0efb093aa3d68784612fcf0d"
+  },
+  {
+    "url": "https://www.rlvision.com/blog/wp-content/uploads/2019/04/Nintendo-Reklamblad-NES-1990.pdf",
+    "status": 200,
+    "type": "application/pdf",
+    "retrieved_at": "2026-11-16",
+    "sha256": "b96a698dc07737d673ea08b0963a0ff136bc5b0ded4e6b8cf6ad1bb3f1f5c0a6"
+  },
+  {
+    "url": "https://www.rlvision.com/blog/wp-content/uploads/2019/04/Nintendo-Reklamblad-NES-1991.pdf",
+    "status": 200,
+    "type": "application/pdf",
+    "retrieved_at": "2026-11-16",
+    "sha256": "0a0b4ddbb6873a52cae19b2e47785e0dcf31650d22fa3d8b1335171bd72337b2"
+  },
+  {
+    "url": "https://www.rlvision.com/blog/wp-content/uploads/2019/04/Nintendo-Reklamblad-NES-1992.pdf",
+    "status": 200,
+    "type": "application/pdf",
+    "retrieved_at": "2026-11-16",
+    "sha256": "ac43d6c498e41bb842fc4012b327200b4053045fa47ecc6b6823f87c71dbe288"
+  },
+  {
+    "url": "https://www.rlvision.com/blog/wp-content/uploads/2019/04/Nintendo-Reklamblad-NES-1993.pdf",
+    "status": 200,
+    "type": "application/pdf",
+    "retrieved_at": "2026-11-16",
+    "sha256": "e31b4d1576aae93ef48f78e4d4b2e60c2314e22255c7ecd3eca652e04a39d6d1"
+  },
+  {
+    "url": "https://www.rlvision.com/blog/wp-content/uploads/2019/04/Nintendo-Reklamblad-Super-NES-1992.pdf",
+    "status": 200,
+    "type": "application/pdf",
+    "retrieved_at": "2026-11-16",
+    "sha256": "a167c5de640f8b6a89cf3f40c0d560104723a73fa265554f08a742265b72db9b"
+  },
+  {
+    "url": "https://www.scb.se/en/finding-statistics/statistics-by-subject-area/other/general-statistics/sveriges-ekonomi/pong/tables-and-graphs/exchange-rates-annual-averages/",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "8f7a670192f792056f1cf7fa613b2c61a01b6802f612233dece6aded3cf68ae7"
+  },
+  {
+    "url": "https://www.scb.se/hitta-statistik/statistik-efter-amne/arbetsmarknad/loner-och-arbetskostnader/lonestrukturstatistik-hela-ekonomin/pong/tabell-och-diagram/genomsnittlig-manadslon-efter-sektor/",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "c49bdf53d9efa8cbc98e96f06f01ca8d9fd33f8f74782c6d253089ee02b23c2c"
+  },
+  {
+    "url": "https://www.senses.se/nintendo-switch-2-lanseras-5-juni-och-spelen-far-hogre-prislapp/",
+    "status": 200,
+    "type": "text/html; charset=UTF-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "035c0234269066e37b27966f1cebc5ae98a6758d9a7d7776a12b5ff17713e094"
+  },
+  {
+    "url": "https://www.senses.se/senses-se-testar-nintendo-startar-morgondagens-spelande-med-wii-u/",
+    "status": 200,
+    "type": "text/html; charset=UTF-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "13f0a5b85090b491ec39efba755ab424fbdd24fe48327a29d862e7270f7d8c9a"
+  },
+  {
+    "url": "https://www.skatteverket.se/foretag/skatterochavdrag/beloppochprocent/2024.106.7da1d2e118be03f8e4f4b65.html",
+    "status": 200,
+    "type": "text/html;charset=UTF-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "f61ed630506fa7b4b181aeb8e3dd11551f91dba6f34563e53853fb7e512c1182"
+  },
+  {
+    "url": "https://www.skatteverket.se/privat/skatter/arbeteochinkomst/askattsedelochskattetabeller/publicserviceavgift.4.22501d9e166a8cb399f31dd.html",
+    "status": 200,
+    "type": "text/html;charset=UTF-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "23e9be2891e63511f0baf7e1b219875d18bbf2b29762751c5146efba9471bd66"
+  },
+  {
+    "url": "https://www.skatteverket.se/privat/skatter/beloppochprocent/2023.4.1997e70d1848dabbac91bc9.html",
+    "status": 200,
+    "type": "text/html;charset=UTF-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "d4b0f377853a208fa3ae5afd2346c9134b9cd15124923a02301a99e506208e38"
+  },
+  {
+    "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__PR__PR0101__PR0101A/KPI2020M1980/",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "d8da768cd1143dbec42bf8f37c00ec6c585de79928a87490fa0e1bba7d2712b1"
+  },
+  {
+    "url": "https://www.stone-oakvalley-studios.com/uploads/000931052017174258/datormagazin_dmz_1992-13.pdf",
+    "status": 404,
+    "type": "text/html; charset=iso-8859-1",
+    "retrieved_at": "2026-11-16",
+    "sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880"
+  },
+  {
+    "url": "https://www.stone-oakvalley-studios.com/uploads/000931052017175717/datormagazin_dmz_1992-17.pdf",
+    "status": 200,
+    "type": "application/pdf",
+    "retrieved_at": "2026-11-16",
+    "sha256": "b8f41f20a205804ae85dcd0f4e8b3615fd1dc357ae5fd80323183212dbd79484"
+  },
+  {
+    "url": "https://www.tradera.com/item/300809/760249700/milu-handels-ab-reklamblad-fran-1987-nintendo-nes-8-bit-",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-16",
+    "sha256": "60855f4121d60ea538948f20fe9fbb48853cdba67b243e01f7c78f7e11aff6a0"
+  }
+]

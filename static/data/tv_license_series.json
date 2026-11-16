@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-13T12:32:39.432063+00:00",
+  "generated_at_utc": "2026-11-16T08:25:58.206044+00:00",
   "series_id": "tv_license",
   "wage_series_reference": "average_monthly_salaries.csv",
   "sources": [
@@ -13,7 +13,9 @@
       "definition": "SCB average monthly salary across all sectors, both sexes (total gender), for each year 1992–2025. Salary is not disposable income or actual annual earnings.",
       "coverage": "Sweden, all sectors",
       "transformation": "Annual comparator is monthly average multiplied by 12; nominal values. Monthly source values retained in the separate salary file.",
-      "coverage_years": "1992–2025"
+      "coverage_years": "1992–2025",
+      "verified_at": "2026-11-16",
+      "additional_source_urls": []
     },
     {
       "id": "tv_license_and_public_service_fee",
@@ -35,26 +37,26 @@
         "https://data.riksdagen.se/fil/72E61E6B-D55A-4B5D-811F-9A4EC6B60FA9",
         "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/om-tv-avgiften_gc0318/html/",
         "https://lagen.nu/sou/1984:65",
-        "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/om-tv-avgiften_gc0318/html/",
         "https://data.riksdagen.se/dokument/FU0973",
         "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/utgiftsomrade-17-kultur-medier-trossamfund-och_gw01kru1/html/",
-        "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/2016-17kru1-utskottets-overvaganden_8f16d3b8-45d2-46ea-b8bb-264ec7e77971/",
+        "https://data.riksdagen.se/fil/8F16D3B8-45D2-46EA-B8BB-264EC7E77971",
         "https://data.riksdagen.se/dokument/H901KrU3.html",
         "https://www.riksdagen.se/sv/webb-tv/video/interpellationsdebatt/betalningsfrekvens-for-tv-avgifter_gw1012/",
         "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/vissa-forandringar-i-tv-avgiftssystemet_gk03165/html/",
         "https://data.riksdagen.se/fil/E07387F8-EB57-483C-ACE1-04CAC0FC6233",
-        "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/utgiftsomrade-17-kultur-medier-trossamfund-och_gw01kru1/html/",
-        "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/2016-17kru1-utskottets-overvaganden_8f16d3b8-45d2-46ea-b8bb-264ec7e77971/",
         "https://data.riksdagen.se/fil/187AEC92-0D78-48AF-8002-0BFCDE7708A7",
         "https://www.skatteverket.se/privat/skatter/beloppochprocent/2023.4.1997e70d1848dabbac91bc9.html",
         "https://www.skatteverket.se/foretag/skatterochavdrag/beloppochprocent/2024.106.7da1d2e118be03f8e4f4b65.html",
-        "https://www.skatteverket.se/privat/skatter/arbeteochinkomst/askattsedelochskattetabeller/publicserviceavgift.4.22501d9e166a8cb399f31dd.html"
+        "https://www.skatteverket.se/privat/skatter/arbeteochinkomst/askattsedelochskattetabeller/publicserviceavgift.4.22501d9e166a8cb399f31dd.html",
+        "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/med-anledning-av-propositionerna-19777891-om_g101kru24/html/",
+        "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/med-anledning-av-propositionen-197980100-savitt_g301kru24/html/"
       ],
       "retrieved_at": "2026-11-13",
       "unit": "SEK per year in force at 31 December; household (1991–2018), maximum per person (2019–2025)",
       "definition": "Annual radio and TV fee payable by one household with a TV receiver through 2018. From 2019, maximum individual public service fee, levied through income tax at 1 percent of taxable earned income up to a yearly cap. The fee type and liable unit changed on 2019-01-01.",
       "coverage": "Sweden, annual rates where the sources document a rate or a period at a fixed rate: radio licence from 1925; selected dated radio/TV fee rates through 1990; continuous annual rate series 1991–2025. Remaining gap in this dataset: 1967–1968. Newly documented coverage fills 1972–1987. Salary comparison is available for 1992–2025; historical hourly manufacturing wages are a separate population and unit. The series starts in 1925, when the public broadcast receiver licence began; earlier radio transmitter permits are a different fee and are not represented.",
-      "transformation": "Records rate in force on 31 December where a dated transition is documented, not the amount actually paid during that calendar year. Annual values 1926–1950 and 1951–1955 use source statements that the rate was unchanged over those spans. 1956–1958 includes explicitly marked limited TV rollout/national coverage and radio-plus-TV fee; 1969 onward represents the household receiver fee, with color-TV supplement included where the source gives it. The 1972–1976 combined TV/radio receiver amount is 220 SEK general fee plus 100 SEK colour-TV surcharge; from 1977–1980 it is 280 + 120 SEK; 1981–1982 it is 508 + 160 SEK; 1983–1984 it is 548 + 160 SEK; 1985 is 648 + 160 SEK; and 1986–1987 is 708 + 160 SEK. These yearly values follow the effective dates and unchanged periods documented in parliamentary/government materials. 1991–2018 is the household TV rate; 2019–2025 is the statutory individual maximum. Relative share is amount ÷ SCB average annual gross salary × 100 for En vuxen. Familj assumes two adults each earning SCB average: household rates counted once; individual maximum fees counted twice; denominator doubled. Trends are only calculated for adjacent years in the same documented regime; missing years remain gaps. No values are interpolated."
+      "transformation": "Records rate in force on 31 December where a dated transition is documented, not the amount actually paid during that calendar year. Annual values 1926–1950 and 1951–1955 use source statements that the rate was unchanged over those spans. 1956–1958 includes explicitly marked limited TV rollout/national coverage and radio-plus-TV fee; 1969 onward represents the household receiver fee, with color-TV supplement included where the source gives it. The 1972–1976 combined TV/radio receiver amount is 220 SEK general fee plus 100 SEK colour-TV surcharge; 1977 is 280 + 120 SEK, 1978–1979 is 340 + 140 SEK, and 1980 is 412 + 160 SEK; 1981–1982 it is 508 + 160 SEK; 1983 is 548 + 160 SEK and 1984 is 576 + 160 SEK; 1985 is 648 + 160 SEK; and 1986–1987 is 708 + 160 SEK. These yearly values follow the effective dates and unchanged periods documented in parliamentary/government materials. 1991–2018 is the household TV rate; 2019–2025 is the statutory individual maximum. Relative share is amount ÷ SCB average annual gross salary × 100 for En vuxen. Familj assumes two adults each earning SCB average: household rates counted once; individual maximum fees counted twice; denominator doubled. Trends are only calculated for adjacent years in the same documented regime; missing years remain gaps. No values are interpolated.",
+      "reviewed_at": "2026-11-16"
     }
   ],
   "data": [
@@ -643,7 +645,7 @@
     },
     {
       "year": 1978,
-      "fee_sek": 400.0,
+      "fee_sek": 480.0,
       "fee_unit": "household_year",
       "fee_regime": "receiver_fee_color_tv",
       "share_percent": null,
@@ -654,7 +656,7 @@
     },
     {
       "year": 1979,
-      "fee_sek": 400.0,
+      "fee_sek": 480.0,
       "fee_unit": "household_year",
       "fee_regime": "receiver_fee_color_tv",
       "share_percent": null,
@@ -665,7 +667,7 @@
     },
     {
       "year": 1980,
-      "fee_sek": 400.0,
+      "fee_sek": 572.0,
       "fee_unit": "household_year",
       "fee_regime": "receiver_fee_color_tv",
       "share_percent": null,
@@ -709,7 +711,7 @@
     },
     {
       "year": 1984,
-      "fee_sek": 708.0,
+      "fee_sek": 736.0,
       "fee_unit": "household_year",
       "fee_regime": "receiver_fee_color_tv",
       "share_percent": null,

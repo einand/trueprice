@@ -26,6 +26,9 @@
     familyAmount: isTvPage ? (d.fee_sek == null ? null : d.fee_sek * (d.fee_unit === 'person_year_max' ? 2 : 1)) : ((isNintendoHardware || isNintendoSoftware) ? d.price_sek : d.price_sek_per_liter),
     console: d.console || null,
     priceBasis: d.price_basis || null,
+    priceEur: d.price_eur ?? null,
+    observationSourceUrls: d.observation_source_urls || [],
+    observationDates: d.observation_dates || [],
     sourceUrl: d.source_url || null,
     wageBasis: d.wage_basis || null,
     wageSourceUrl: d.wage_source_url || null,
@@ -61,7 +64,7 @@
   renderAmount(document.getElementById('price-chart'), rows);
   renderTable(document.getElementById('table'), rows);
   document.getElementById('chart-takeaway').textContent = isNintendoSoftware
-    ? 'Punkterna visar både äldre katalogurval och, 1998–2015, viktat försäljningsvärde per sålt Nintendo-spel. Källtyp och metod skiljer sig, så punkterna binds inte ihop och ingen trendpil visas. Luckor lämnas tomma.'
+    ? 'Punkterna visar äldre prisunderlag och daterade recensionsurval 2017–2026. Källtyp och metod skiljer sig, så punkterna binds inte ihop och trendpil visas bara för angränsande jämförbara kronvärden. För 2010–2015 finns belagda eurovärden i tabellen, men kronpris och löneandel saknas. För 2026 finns ett prisurval men ingen årslön; därför visas ingen löneandel.'
     : isNintendoHardware
     ? 'Punkterna visar olika konsolers rapporterade svenska lanseringspris. Modellerna lanserades olika år; linjer och år-till-år-pilar används därför inte. NES-andelen använder en separat historisk industrilön och är inte direkt jämförbar med SCB:s allsektorslön från 1992.'
     : isTvPage
@@ -96,13 +99,13 @@
   function renderRelative(el, points, firstYear, lastYear) {
     const w = 900, h = 300, m = { top: 18, right: 24, bottom: 34, left: 70 }, iw = w-m.left-m.right, ih=h-m.top-m.bottom;
     const values = points.flatMap((d) => [d.one, d.family]).filter((v) => v != null);
-    const max = Math.ceil(Math.max(...values) * 200) / 200 || 1;
+    const max = values.length ? (Math.ceil(Math.max(...values) * 200) / 200 || 1) : 1;
     const x = (year) => m.left + (lastYear===firstYear ? iw/2 : (year-firstYear)*iw/(lastYear-firstYear));
     const y = (v) => m.top + ih - v/max*ih;
     const grid = Array.from({length:6}, (_,i) => { const v=max*i/5, yy=y(v); return `<line class="grid-line" x1="${m.left}" x2="${w-m.right}" y1="${yy}" y2="${yy}"/><text class="axis-label" x="${m.left-12}" y="${yy+3}" text-anchor="end">${fmt(v,3)}%</text>`; }).join('');
     const series = (isConsolePage ? [['one','']] : [['one',''],['family',' blue']]).map(([key, color]) => {
       const ps = points.map((d,i) => ({...d,index:i,value:d[key]})).filter((d) => d.value != null);
-      const lines = isNintendoHardware ? '' : segments(ps).map((g) => g.length > 1 ? `<polyline class="chart-line${color ? ' chart-line-blue' : ''}" points="${g.map((p)=>`${x(p.year)},${y(p.value)}`).join(' ')}"/>` : '').join('');
+      const lines = (isNintendoHardware || isNintendoSoftware) ? '' : segments(ps).map((g) => g.length > 1 ? `<polyline class="chart-line${color ? ' chart-line-blue' : ''}" points="${g.map((p)=>`${x(p.year)},${y(p.value)}`).join(' ')}"/>` : '').join('');
       const marks = ps.map((p) => `<circle class="chart-point${color ? ' chart-point-blue' : ''}" cx="${x(p.year)}" cy="${y(p.value)}" r="3.5" tabindex="0" aria-label="${p.year}: ${fmt(p.value,4)} procent"><title>${p.year}: ${fmt(p.value,4)} %</title></circle>`).join('');
       return lines + marks;
     }).join('');
@@ -126,7 +129,7 @@
       const marks=ps.map(p=>`<circle class="chart-point${color?' chart-point-blue':''}" cx="${x(p.year)}" cy="${y(p.value)}" r="2.8"><title>${p.year}${p.console?`, ${p.console}`:''}${p.platformScope?`, ${p.platformScope}`:''}, ${label}: ${fmt(p.value,(isTvPage||isNintendoHardware)?0:2)} kr</title></circle>`).join('');
       return lines+marks;
     }).join('');
-    const labels=points.map(d=>d.year%5===0||d.year===firstYear||d.year===lastYear?`<text class="axis-label" x="${x(d.year)}" y="${h-8}" text-anchor="middle">${d.year}</text>`:'').join('');
+    const labels=[...new Set(points.map(d=>d.year))].map(year=>({year})).map(d=>d.year%5===0||d.year===firstYear||d.year===lastYear?`<text class="axis-label" x="${x(d.year)}" y="${h-8}" text-anchor="middle">${d.year}</text>`:'').join('');
     el.innerHTML=`<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${itemName} per år${isTvPage?' för en vuxen och familj':''}" preserveAspectRatio="none">${grid}${series}${labels}</svg>`;
   }
   function renderTable(el, points) {
@@ -135,7 +138,7 @@
       const mark=(t)=>`<td class="trend-cell ${arrow(t)==='↑'?'trend-up':arrow(t)==='↓'?'trend-down':''}" aria-label="${trendLabel(t)}">${arrow(t)}</td>`;
       const share=(v)=>`<td class="share">${val(v,4)}${v==null?'':' %'}</td>`;
       if (isNintendoHardware) return `<tr><td>${d.year}</td><td>${d.console}</td><td>${val(d.amount,0)} kr${d.console==='Nintendo Wii'?' ≈':''}</td>${share(d.one)}<td>${d.priceBasis || '—'}${d.sourceUrl?` <a href="${d.sourceUrl}">Priskälla ↗</a>`:''}<br><small>${d.wageBasis || 'Löneunderlag saknas'}${d.wageSourceUrl?` <a href="${d.wageSourceUrl}">Lönekälla ↗</a>`:''}</small></td></tr>`;
-      if (isNintendoSoftware) { const salesAverage=(d.platformScope || '').includes('vägt snitt'); return `<tr><td>${d.year}</td><td>${d.platformScope || '—'}</td><td>${val(d.amount,2)} kr/spel</td><td>${val(d.annualWage,0)} kr${d.wageSourceUrl?` <a href="${d.wageSourceUrl}">Lönekälla ↗</a>`:''}<br><small>${d.wageBasis || 'Löneunderlag saknas'}</small></td>${share(d.one)}${mark(d.trend)}<td>${Number(d.sampleSize).toLocaleString('sv-SE')} ${salesAverage?'sålda spel':'spel i prisurval'}</td><td>${d.priceBasis || '—'}${d.sourceUrl?` <a href="${d.sourceUrl}">Källa ↗</a>`:''}</td></tr>`; }
+      if (isNintendoSoftware) { const salesAverage=(d.platformScope || '').includes('vägt snitt'); return `<tr><td>${d.year}</td><td>${d.platformScope || '—'}</td><td>${d.amount == null ? '— (SEK saknas)' : `${val(d.amount,2)} kr/spel`}${d.priceEur == null ? '' : `<br>${val(d.priceEur,2)} EUR/spel`}</td><td>${val(d.annualWage,0)} kr${d.wageSourceUrl?` <a href="${d.wageSourceUrl}">Lönekälla ↗</a>`:''}<br><small>${d.wageBasis || 'Löneunderlag saknas'}</small></td>${share(d.one)}${mark(d.trend)}<td>${Number(d.sampleSize).toLocaleString('sv-SE')} ${salesAverage?'sålda spel':'spel i prisurval'}</td><td>${d.priceBasis || '—'}${d.sourceUrl?` <a href="${d.sourceUrl}">Källa ↗</a>`:''}${d.observationSourceUrls.length?`<details><summary>${d.observationSourceUrls.length} daterade prisnoteringar</summary><ul>${d.observationSourceUrls.map((url,i)=>`<li><a href="${url}">${d.observationDates[i]} · notering ${i+1} ↗</a></li>`).join('')}</ul></details>`:''}</td></tr>`; }
       if (isConsolePage) return `<tr><td>${d.year}</td><td>${val(d.amount,2)} ${page.dataset.priceUnit || 'kr'}</td>${share(d.one)}${mark(d.trend)}</tr>`;
       if (!isTvPage) return `<tr><td>${d.year}</td><td>${val(d.amount,2)} kr/l</td>${share(d.one)}${mark(d.trend)}${share(d.family)}${mark(d.familyTrend)}</tr>`;
       const adultUnit=d.unit==='household_year'?'kr/hushåll':d.unit==='receiver_year'?'kr/mottagare':'kr/person, max';
@@ -143,7 +146,7 @@
       return `<tr><td>${d.year}</td><td>${val(d.amount,0)} ${adultUnit}</td><td>${val(d.familyAmount,0)} ${familyUnit}</td>${share(d.one)}${mark(d.trend)}${share(d.family)}${mark(d.familyTrend)}</tr>`;
     }).join('');
     const headers=isNintendoHardware?'<tr><th>Lanseringsår enl. källa</th><th>Konsol</th><th>Lanseringspris</th><th>Andel av årslön</th><th>Källanmärkning</th></tr>':isNintendoSoftware?'<tr><th>År</th><th>Plattform</th><th>Pris per spel</th><th>Jämförelselön</th><th>Andel av årslön</th><th>Trend</th><th>Underlagets storlek</th><th>Prisunderlag</th></tr>':isConsolePage?'<tr><th>År</th><th>Pris</th><th>Andel av årslön</th><th>Trend</th></tr>':isTvPage?'<tr><th>År</th><th>En vuxen, avgift</th><th>Familj, avgift</th><th>En vuxen, andel</th><th>Trend</th><th>Familj, andel</th><th>Trend</th></tr>':'<tr><th>År</th><th>Bensinpris</th><th>En vuxen, andel</th><th>Trend</th><th>Familj, andel</th><th>Trend</th></tr>';
-    const note=isNintendoSoftware?'1987 och 1991–1994: medel av prissatta spel i angivna katalogurval (inte års- eller marknadsgenomsnitt). 1998–2009: rapporterade konsumentvärden och antal sålda spel summerade över Nintendo-format; den historiska rapporten varnar för metodskillnad mot senare retaildata. 2010–2015: GfK-rapporterad fysisk detaljhandel, omräknad EUR till SEK med SCB/Riksbank årsgenomsnitt; digital försäljning ingår inte. Urvalsstorleken avser katalogtitlar respektive rapporterade sålda exemplar. Pilar jämför andel av lön med föregående år endast inom sammanhängande årsdata med samma rapportmetod; därför visas inget trendsteg 2009–2010 eller över årsluckor. Källor och fullständig omräkning finns i källdatan. Uppgifterna mellan dessa perioder och efter 2015 saknas. Priser är nominella. Löneandel för 1992 och framåt använder SCB:s genomsnittliga månadslön × 12; 1987 och 1991 använder separat Riksbanksserie för tillverkningsindustrins manliga timlön × 2 080 timmar. Löneunderlagen är inte direkt jämförbara.':isNintendoHardware?'NES-andelen (1,06 %) beräknas med mäns viktade genomsnittliga timlön i tillverkningsindustrin 1987, omräknad med 2 080 timmar/år. Övriga löneandelar använder SCB:s genomsnittslön för samtliga sektorer från 1992. Löneunderlagen har olika populationer och är inte direkt jämförbara. Switch 2-priset är en rapporterad återförsäljarprislapp; enligt Konkurrensverket satte återförsäljarna sina priser självständigt och Bergsala lämnade inget rekommenderat pris.':isConsolePage?'Andel beräknad mot en genomsnittlig årslön.':'Familj avser två vuxna med varsin genomsnittlig lön. Andelarna använder samma pris.';
+    const note=isNintendoSoftware?'1987 och 1991–1994: medel av prissatta spel i angivna katalogurval (inte års- eller marknadsgenomsnitt). 1998–2009: rapporterade konsumentvärden och antal sålda spel summerade över Nintendo-format; den historiska rapporten varnar för metodskillnad mot senare retaildata. 2010–2015: GfK-rapporterad fysisk detaljhandel i EUR. Kronpriser och löneandelar saknas eftersom rapporternas valutaomräkning inte kan återställas med ett årsgenomsnitt. Digital försäljning ingår inte. Urvalsstorleken avser katalogtitlar respektive rapporterade sålda exemplar. Pilar jämför andel av lön med föregående år endast inom sammanhängande årsdata med samma rapportmetod; därför visas inget trendsteg 2009–2010 eller över årsluckor. Källor och fullständig omräkning finns i källdatan. För 2017–2026 finns separata recensionsurval av rapporterade lägstapriser, med varierande spel, butiker och avläsningsdatum. De saknar trendpil och är inte nationella årsmedel. För 2026 visas endast pris eftersom årslön saknas. 2016 är fortfarande en lucka. Priser är nominella. Löneandel för 1992 och framåt använder SCB:s genomsnittliga månadslön × 12; 1987 och 1991 använder separat Riksbanksserie för tillverkningsindustrins manliga timlön × 2 080 timmar. Löneunderlagen är inte direkt jämförbara.':isNintendoHardware?'NES-andelen beräknas med mäns viktade genomsnittliga timlön i tillverkningsindustrin 1987, omräknad med 2 080 timmar/år. Övriga löneandelar använder SCB:s genomsnittslön för samtliga sektorer från 1992. Löneunderlagen har olika populationer och är inte direkt jämförbara. Switch 2-priset är en rapporterad återförsäljarprislapp; enligt Konkurrensverket satte återförsäljarna sina priser självständigt och Bergsala lämnade inget rekommenderat pris.':isConsolePage?'Andel beräknad mot en genomsnittlig årslön.':(isTvPage?'Familj avser två vuxna med varsin genomsnittlig bruttolön och en delad mottagare. Till och med 2018 räknas avgiften en gång, från 2019 räknas två individuella maxavgifter. Summan delas med två årslöner.':'Familj avser två vuxna med varsin genomsnittlig bruttolön. Samma liter bensin delas med två årslöner; detta är inte familjens totala bränsleförbrukning.');
     el.innerHTML=`<table class="comparison-data-table${isTvPage?' comparison-data-table-tv':''}"><thead>${headers}</thead><tbody>${body}</tbody></table><p class="table-note">${note}</p>`;
   }
 })();

@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-13T12:32:39.432063+00:00",
+  "generated_at_utc": "2026-11-16T08:25:58.206044+00:00",
   "series_id": "nintendo_hardware_launch_prices",
   "wage_series_reference": "average_monthly_salaries.csv; NES exception: historical_manufacturing_hourly_wages.csv",
   "sources": [
@@ -13,7 +13,9 @@
       "definition": "SCB average monthly salary across all sectors, both sexes (total gender), for each year 1992–2025. Salary is not disposable income or actual annual earnings.",
       "coverage": "Sweden, all sectors",
       "transformation": "Annual comparator is monthly average multiplied by 12; nominal values. Monthly source values retained in the separate salary file.",
-      "coverage_years": "1992–2025"
+      "coverage_years": "1992–2025",
+      "verified_at": "2026-11-16",
+      "additional_source_urls": []
     },
     {
       "id": "historical_manufacturing_hourly_wages_by_industry",
@@ -25,7 +27,9 @@
       "unit": "SEK/hour",
       "definition": "Hourly earnings by manufacturing industry category and sex, plus a separately identified source-provided weighted average. Source table categories are represented in Swedish in the CSV.",
       "coverage": "Sweden; manufacturing workers. Coverage varies by industry and sex. Male categories are observed from 1860 or later depending on category; female coverage starts between 1865 and 1952 by category. Male weighted average 1871–2013; female weighted average 1921–2013.",
-      "transformation": "Transcribed source observations without annualization or interpolation. Missing cells are omitted. This sectoral hourly series is not directly equivalent to all-sector monthly salary; overlap does not imply equivalent population or method."
+      "transformation": "Transcribed source observations without annualization or interpolation. Missing cells are omitted. This sectoral hourly series is not directly equivalent to all-sector monthly salary; overlap does not imply equivalent population or method.",
+      "verified_at": "2026-11-16",
+      "additional_source_urls": []
     },
     {
       "id": "nintendo_hardware_launch_prices",

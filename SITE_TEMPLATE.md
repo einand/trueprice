@@ -41,3 +41,5 @@ comparison:
 ## Adding a route
 
 Create `content/<slug>/_index.md` with the front matter above, add it to the shared navigation in `layouts/_default/baseof.html`, and add a directory card to `content/_index.md`. Console brands use the Konsoller dropdown with separate Mjukvara and Hårdvara routes. Keep page-specific styling and markup out of comparison content; shared presentation belongs in the comparison layout and site stylesheet.
+
+Optional `comparison.observation_data_file` links to the individual source observations behind an aggregate. Keep annual aggregation in the pipeline; expose source dates, sample size, selection and limitations. A dated sample is not a national annual average, and must not receive trend arrows when its composition changes.
