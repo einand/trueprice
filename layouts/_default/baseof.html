@@ -8,7 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
+  {{ $siteCSS := resources.Get "css/site.css" | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $siteCSS.RelPermalink }}" integrity="{{ $siteCSS.Data.Integrity }}" crossorigin="anonymous">
 </head>
 <body>
   <header class="topbar wrap">
@@ -31,6 +32,7 @@
   </header>
   {{ block "main" . }}{{ end }}
   <footer class="footer wrap"><a class="brand footer-brand" href="{{ "/" | relURL }}"><span class="brand-mark" aria-hidden="true">T</span><span>TRUEPRICE<span class="brand-dot">.</span></span></a><p>Jämför priser med vad människor tjänar.</p><span class="footer-year">SVERIGE · DATA MED KÄLLOR</span></footer>
-  <script src="{{ "js/price-chart.js" | relURL }}" defer></script>
+  {{ $priceChartJS := resources.Get "js/price-chart.js" | resources.Fingerprint }}
+  <script src="{{ $priceChartJS.RelPermalink }}" integrity="{{ $priceChartJS.Data.Integrity }}" crossorigin="anonymous" defer></script>
 </body>
 </html>
