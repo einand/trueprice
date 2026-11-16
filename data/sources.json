@@ -16,6 +16,24 @@
       "additional_source_urls": []
     },
     {
+      "id": "disposable_household_income",
+      "file": "data/disposable_household_income_median_2024_prices.csv",
+      "source": "Statistics Sweden (SCB), Disponibel inkomst för hushåll efter hushållstyp och ålder, tabell 1a, totalräknade Inkomster och skatter (IoS) values where available.",
+      "url": "https://www.scb.se/he0110/",
+      "data_url": "https://www.scb.se/contentassets/aaeb80382eab45a0aaa9c60adf7afcd1/disponibel-inkomst-for-hushall-efter-hushallstyp-och-alder-1991-2024-sv.xlsx",
+      "retrieved_at": "2026-11-16",
+      "unit": "SEK per household and year, median, fixed 2024 prices",
+      "definition": "Median disposable income for all households (Samtliga hushåll 18+), not per person or consumption unit. Disposable income is after tax and transfers and includes realized capital gains/losses. The source table joins the sample-based Household Finance Survey (HEK, 1991–2013) with the register-based Income and Taxes survey (IoS, 2011–2024).",
+      "coverage": "Sweden; observed years 1991, 1995–2024. Missing years 1992–1994. This is median household income in 2024 prices, not individual annual earnings, and is not a like-for-like replacement for gross average monthly salary.",
+      "transformation": "Transcribed the all-households row, median column, from the SCB workbook. For 1991–2010 use the HEK series; for 2011–2024 use the IoS series, taking IoS-revised overlapping values for 2011–2013. Converted source units from thousands of SEK to SEK by multiplying by 1,000. No extra CPI adjustment, annualization, interpolation, or income-per-capita conversion.",
+      "coverage_years": "1991; 1995–2024",
+      "verified_at": "2026-11-16",
+      "additional_source_urls": [
+        "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__HE__HE0110__HE0110G/TabVX4bDispInkN/",
+        "https://www.scb.se/contentassets/894d4afa900f4123aece341cd10e59e2/he0110_kd2_2024_jl_260120.pdf"
+      ]
+    },
+    {
       "id": "historical_manufacturing_hourly_wages_by_industry",
       "file": "data/historical_manufacturing_hourly_wages.csv",
       "source": "Sveriges Riksbank, Historical Monetary and Financial Statistics for Sweden, Volume I, Svante Prado workbook, Tables I.A10.1 and I.A10.2.",

@@ -1,7 +1,8 @@
 {
-  "generated_at_utc": "2026-11-16T08:25:58.206044+00:00",
+  "generated_at_utc": "2026-11-16T08:46:49.343138+00:00",
   "series_id": "gasoline",
   "wage_series_reference": "average_monthly_salaries.csv",
+  "disposable_income_series_reference": "disposable_household_income_median_2024_prices.csv",
   "sources": [
     {
       "id": "average_salary",
@@ -16,6 +17,24 @@
       "coverage_years": "1992–2025",
       "verified_at": "2026-11-16",
       "additional_source_urls": []
+    },
+    {
+      "id": "disposable_household_income",
+      "file": "data/disposable_household_income_median_2024_prices.csv",
+      "source": "Statistics Sweden (SCB), Disponibel inkomst för hushåll efter hushållstyp och ålder, tabell 1a, totalräknade Inkomster och skatter (IoS) values where available.",
+      "url": "https://www.scb.se/he0110/",
+      "data_url": "https://www.scb.se/contentassets/aaeb80382eab45a0aaa9c60adf7afcd1/disponibel-inkomst-for-hushall-efter-hushallstyp-och-alder-1991-2024-sv.xlsx",
+      "retrieved_at": "2026-11-16",
+      "unit": "SEK per household and year, median, fixed 2024 prices",
+      "definition": "Median disposable income for all households (Samtliga hushåll 18+), not per person or consumption unit. Disposable income is after tax and transfers and includes realized capital gains/losses. The source table joins the sample-based Household Finance Survey (HEK, 1991–2013) with the register-based Income and Taxes survey (IoS, 2011–2024).",
+      "coverage": "Sweden; observed years 1991, 1995–2024. Missing years 1992–1994. This is median household income in 2024 prices, not individual annual earnings, and is not a like-for-like replacement for gross average monthly salary.",
+      "transformation": "Transcribed the all-households row, median column, from the SCB workbook. For 1991–2010 use the HEK series; for 2011–2024 use the IoS series, taking IoS-revised overlapping values for 2011–2013. Converted source units from thousands of SEK to SEK by multiplying by 1,000. No extra CPI adjustment, annualization, interpolation, or income-per-capita conversion.",
+      "coverage_years": "1991; 1995–2024",
+      "verified_at": "2026-11-16",
+      "additional_source_urls": [
+        "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__HE__HE0110__HE0110G/TabVX4bDispInkN/",
+        "https://www.scb.se/contentassets/894d4afa900f4123aece341cd10e59e2/he0110_kd2_2024_jl_260120.pdf"
+      ]
     },
     {
       "id": "gasoline_price_nominal",
@@ -80,6 +99,9 @@
       "price_sek_per_liter": 2.88,
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null
     },
@@ -88,6 +110,9 @@
       "price_sek_per_liter": 3.48,
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null
     },
@@ -96,6 +121,9 @@
       "price_sek_per_liter": 3.86,
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null
     },
@@ -104,6 +132,9 @@
       "price_sek_per_liter": 4.07,
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null
     },
@@ -112,6 +143,9 @@
       "price_sek_per_liter": 4.14,
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null
     },
@@ -120,6 +154,9 @@
       "price_sek_per_liter": 4.57,
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null
     },
@@ -128,6 +165,9 @@
       "price_sek_per_liter": 4.01,
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null
     },
@@ -136,6 +176,9 @@
       "price_sek_per_liter": 4.02,
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null
     },
@@ -144,6 +187,9 @@
       "price_sek_per_liter": 4.28,
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null
     },
@@ -152,6 +198,9 @@
       "price_sek_per_liter": 4.59,
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null
     },
@@ -160,6 +209,9 @@
       "price_sek_per_liter": 6.29,
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null
     },
@@ -168,6 +220,9 @@
       "price_sek_per_liter": 6.45,
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": 278400.0,
+      "disposable_share_percent": 0.0023168103448275865,
+      "disposable_share_percent_two_adults": 0.0023168103448275865,
       "trend": null,
       "trend_two_adults": null
     },
@@ -176,6 +231,9 @@
       "price_sek_per_liter": 6.26,
       "share_percent": 0.0035487528344671205,
       "share_percent_two_adults": 0.0017743764172335602,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null
     },
@@ -184,6 +242,9 @@
       "price_sek_per_liter": 7.67,
       "share_percent": 0.004289709172259508,
       "share_percent_two_adults": 0.002144854586129754,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": "dyrare relativt lön",
       "trend_two_adults": "dyrare relativt lön"
     },
@@ -192,6 +253,9 @@
       "price_sek_per_liter": 7.52,
       "share_percent": 0.004017094017094017,
       "share_percent_two_adults": 0.0020085470085470084,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön"
     },
@@ -200,6 +264,9 @@
       "price_sek_per_liter": 7.57,
       "share_percent": 0.003942708333333334,
       "share_percent_two_adults": 0.001971354166666667,
+      "disposable_income_2024_sek": 256000.0,
+      "disposable_share_percent": 0.00295703125,
+      "disposable_share_percent_two_adults": 0.00295703125,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön"
     },
@@ -208,6 +275,9 @@
       "price_sek_per_liter": 7.87,
       "share_percent": 0.003857843137254902,
       "share_percent_two_adults": 0.001928921568627451,
+      "disposable_income_2024_sek": 261500.0,
+      "disposable_share_percent": 0.003009560229445507,
+      "disposable_share_percent_two_adults": 0.003009560229445507,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön"
     },
@@ -216,6 +286,9 @@
       "price_sek_per_liter": 8.27,
       "share_percent": 0.003850093109869646,
       "share_percent_two_adults": 0.001925046554934823,
+      "disposable_income_2024_sek": 263500.0,
+      "disposable_share_percent": 0.003138519924098672,
+      "disposable_share_percent_two_adults": 0.003138519924098672,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön"
     },
@@ -224,6 +297,9 @@
       "price_sek_per_liter": 8.1,
       "share_percent": 0.003629032258064516,
       "share_percent_two_adults": 0.001814516129032258,
+      "disposable_income_2024_sek": 264800.0,
+      "disposable_share_percent": 0.003058912386706948,
+      "disposable_share_percent_two_adults": 0.003058912386706948,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön"
     },
@@ -232,6 +308,9 @@
       "price_sek_per_liter": 8.4,
       "share_percent": 0.0036082474226804126,
       "share_percent_two_adults": 0.0018041237113402063,
+      "disposable_income_2024_sek": 275800.0,
+      "disposable_share_percent": 0.0030456852791878176,
+      "disposable_share_percent_two_adults": 0.0030456852791878176,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön"
     },
@@ -240,6 +319,9 @@
       "price_sek_per_liter": 9.59,
       "share_percent": 0.003936781609195402,
       "share_percent_two_adults": 0.001968390804597701,
+      "disposable_income_2024_sek": 288500.0,
+      "disposable_share_percent": 0.0033240901213171573,
+      "disposable_share_percent_two_adults": 0.0033240901213171573,
       "trend": "dyrare relativt lön",
       "trend_two_adults": "dyrare relativt lön"
     },
@@ -248,6 +330,9 @@
       "price_sek_per_liter": 9.52,
       "share_percent": 0.0037245696400625976,
       "share_percent_two_adults": 0.0018622848200312988,
+      "disposable_income_2024_sek": 297800.0,
+      "disposable_share_percent": 0.003196776359973136,
+      "disposable_share_percent_two_adults": 0.003196776359973136,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön"
     },
@@ -256,6 +341,9 @@
       "price_sek_per_liter": 9.37,
       "share_percent": 0.003533182503770739,
       "share_percent_two_adults": 0.0017665912518853694,
+      "disposable_income_2024_sek": 296500.0,
+      "disposable_share_percent": 0.0031602023608768965,
+      "disposable_share_percent_two_adults": 0.0031602023608768965,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön"
     },
@@ -264,6 +352,9 @@
       "price_sek_per_liter": 9.46,
       "share_percent": 0.003457602339181287,
       "share_percent_two_adults": 0.0017288011695906435,
+      "disposable_income_2024_sek": 305900.0,
+      "disposable_share_percent": 0.0030925138934292254,
+      "disposable_share_percent_two_adults": 0.0030925138934292254,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön"
     },
@@ -272,6 +363,9 @@
       "price_sek_per_liter": 10.05,
       "share_percent": 0.0035487288135593225,
       "share_percent_two_adults": 0.0017743644067796612,
+      "disposable_income_2024_sek": 316600.0,
+      "disposable_share_percent": 0.0031743524952621604,
+      "disposable_share_percent_two_adults": 0.0031743524952621604,
       "trend": "dyrare relativt lön",
       "trend_two_adults": "dyrare relativt lön"
     },
@@ -280,6 +374,9 @@
       "price_sek_per_liter": 11.14,
       "share_percent": 0.003820301783264746,
       "share_percent_two_adults": 0.001910150891632373,
+      "disposable_income_2024_sek": 322100.0,
+      "disposable_share_percent": 0.003458553244334058,
+      "disposable_share_percent_two_adults": 0.003458553244334058,
       "trend": "dyrare relativt lön",
       "trend_two_adults": "dyrare relativt lön"
     },
@@ -288,6 +385,9 @@
       "price_sek_per_liter": 11.55,
       "share_percent": 0.00385,
       "share_percent_two_adults": 0.001925,
+      "disposable_income_2024_sek": 338000.0,
+      "disposable_share_percent": 0.0034171597633136097,
+      "disposable_share_percent_two_adults": 0.0034171597633136097,
       "trend": "dyrare relativt lön",
       "trend_two_adults": "dyrare relativt lön"
     },
@@ -296,6 +396,9 @@
       "price_sek_per_liter": 11.72,
       "share_percent": 0.0037855297157622743,
       "share_percent_two_adults": 0.0018927648578811371,
+      "disposable_income_2024_sek": 355500.0,
+      "disposable_share_percent": 0.0032967651195499295,
+      "disposable_share_percent_two_adults": 0.0032967651195499295,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön"
     },
@@ -304,6 +407,9 @@
       "price_sek_per_liter": 12.63,
       "share_percent": 0.0038837638376383763,
       "share_percent_two_adults": 0.0019418819188191882,
+      "disposable_income_2024_sek": 349200.0,
+      "disposable_share_percent": 0.0036168384879725086,
+      "disposable_share_percent_two_adults": 0.0036168384879725086,
       "trend": "dyrare relativt lön",
       "trend_two_adults": "dyrare relativt lön"
     },
@@ -312,6 +418,9 @@
       "price_sek_per_liter": 12.16,
       "share_percent": 0.0036320191158900833,
       "share_percent_two_adults": 0.0018160095579450417,
+      "disposable_income_2024_sek": 354100.0,
+      "disposable_share_percent": 0.003434058175656594,
+      "disposable_share_percent_two_adults": 0.003434058175656594,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön"
     },
@@ -320,6 +429,9 @@
       "price_sek_per_liter": 13.07,
       "share_percent": 0.003835093896713615,
       "share_percent_two_adults": 0.0019175469483568076,
+      "disposable_income_2024_sek": 358300.0,
+      "disposable_share_percent": 0.003647781188947809,
+      "disposable_share_percent_two_adults": 0.003647781188947809,
       "trend": "dyrare relativt lön",
       "trend_two_adults": "dyrare relativt lön"
     },
@@ -328,6 +440,9 @@
       "price_sek_per_liter": 14.19,
       "share_percent": 0.004077586206896551,
       "share_percent_two_adults": 0.0020387931034482757,
+      "disposable_income_2024_sek": 410700.0,
+      "disposable_share_percent": 0.003455076698319942,
+      "disposable_share_percent_two_adults": 0.003455076698319942,
       "trend": "dyrare relativt lön",
       "trend_two_adults": "dyrare relativt lön"
     },
@@ -336,6 +451,9 @@
       "price_sek_per_liter": 15.03,
       "share_percent": 0.004203020134228188,
       "share_percent_two_adults": 0.002101510067114094,
+      "disposable_income_2024_sek": 423500.0,
+      "disposable_share_percent": 0.003548996458087367,
+      "disposable_share_percent_two_adults": 0.003548996458087367,
       "trend": "dyrare relativt lön",
       "trend_two_adults": "dyrare relativt lön"
     },
@@ -344,6 +462,9 @@
       "price_sek_per_liter": 14.54,
       "share_percent": 0.003959694989106754,
       "share_percent_two_adults": 0.001979847494553377,
+      "disposable_income_2024_sek": 433700.0,
+      "disposable_share_percent": 0.003352547844131888,
+      "disposable_share_percent_two_adults": 0.003352547844131888,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön"
     },
@@ -352,6 +473,9 @@
       "price_sek_per_liter": 14.32,
       "share_percent": 0.0038004246284501064,
       "share_percent_two_adults": 0.0019002123142250532,
+      "disposable_income_2024_sek": 447100.0,
+      "disposable_share_percent": 0.0032028628942071123,
+      "disposable_share_percent_two_adults": 0.0032028628942071123,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön"
     },
@@ -360,6 +484,9 @@
       "price_sek_per_liter": 13.36,
       "share_percent": 0.003479166666666667,
       "share_percent_two_adults": 0.0017395833333333334,
+      "disposable_income_2024_sek": 462400.0,
+      "disposable_share_percent": 0.002889273356401384,
+      "disposable_share_percent_two_adults": 0.002889273356401384,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön"
     },
@@ -368,6 +495,9 @@
       "price_sek_per_liter": 13.2,
       "share_percent": 0.0033536585365853654,
       "share_percent_two_adults": 0.0016768292682926827,
+      "disposable_income_2024_sek": 467200.0,
+      "disposable_share_percent": 0.0028253424657534243,
+      "disposable_share_percent_two_adults": 0.0028253424657534243,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön"
     },
@@ -376,6 +506,9 @@
       "price_sek_per_liter": 14.12,
       "share_percent": 0.003491592482690405,
       "share_percent_two_adults": 0.0017457962413452025,
+      "disposable_income_2024_sek": 470000.0,
+      "disposable_share_percent": 0.003004255319148936,
+      "disposable_share_percent_two_adults": 0.003004255319148936,
       "trend": "dyrare relativt lön",
       "trend_two_adults": "dyrare relativt lön"
     },
@@ -384,6 +517,9 @@
       "price_sek_per_liter": 15.39,
       "share_percent": 0.0037066473988439305,
       "share_percent_two_adults": 0.0018533236994219653,
+      "disposable_income_2024_sek": 472800.0,
+      "disposable_share_percent": 0.0032550761421319798,
+      "disposable_share_percent_two_adults": 0.0032550761421319798,
       "trend": "dyrare relativt lön",
       "trend_two_adults": "dyrare relativt lön"
     },
@@ -392,6 +528,9 @@
       "price_sek_per_liter": 15.77,
       "share_percent": 0.003722851746931067,
       "share_percent_two_adults": 0.0018614258734655335,
+      "disposable_income_2024_sek": 475400.0,
+      "disposable_share_percent": 0.0033172065628944043,
+      "disposable_share_percent_two_adults": 0.0033172065628944043,
       "trend": "dyrare relativt lön",
       "trend_two_adults": "dyrare relativt lön"
     },
@@ -400,6 +539,9 @@
       "price_sek_per_liter": 14.16,
       "share_percent": 0.0032686980609418284,
       "share_percent_two_adults": 0.0016343490304709142,
+      "disposable_income_2024_sek": 477200.0,
+      "disposable_share_percent": 0.0029673093042749373,
+      "disposable_share_percent_two_adults": 0.0029673093042749373,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön"
     },
@@ -408,6 +550,9 @@
       "price_sek_per_liter": 16.38,
       "share_percent": 0.003679245283018868,
       "share_percent_two_adults": 0.001839622641509434,
+      "disposable_income_2024_sek": 488500.0,
+      "disposable_share_percent": 0.003353121801432958,
+      "disposable_share_percent_two_adults": 0.003353121801432958,
       "trend": "dyrare relativt lön",
       "trend_two_adults": "dyrare relativt lön"
     },
@@ -416,6 +561,9 @@
       "price_sek_per_liter": 20.54,
       "share_percent": 0.004469103568320278,
       "share_percent_two_adults": 0.002234551784160139,
+      "disposable_income_2024_sek": 472200.0,
+      "disposable_share_percent": 0.004349851757729776,
+      "disposable_share_percent_two_adults": 0.004349851757729776,
       "trend": "dyrare relativt lön",
       "trend_two_adults": "dyrare relativt lön"
     },
@@ -424,6 +572,9 @@
       "price_sek_per_liter": 19.99,
       "share_percent": 0.004175020885547201,
       "share_percent_two_adults": 0.0020875104427736007,
+      "disposable_income_2024_sek": 463600.0,
+      "disposable_share_percent": 0.00431190681622088,
+      "disposable_share_percent_two_adults": 0.00431190681622088,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön"
     },
@@ -432,6 +583,9 @@
       "price_sek_per_liter": 18.09,
       "share_percent": 0.003623798076923077,
       "share_percent_two_adults": 0.0018118990384615385,
+      "disposable_income_2024_sek": 472600.0,
+      "disposable_share_percent": 0.00382776132035548,
+      "disposable_share_percent_two_adults": 0.00382776132035548,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön"
     },
@@ -440,6 +594,9 @@
       "price_sek_per_liter": 15.97,
       "share_percent": 0.0031021756021756023,
       "share_percent_two_adults": 0.0015510878010878012,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön"
     }

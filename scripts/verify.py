@@ -11,6 +11,7 @@ def close(a,b):
     assert (a is None and b is None) or (a is not None and b is not None and math.isfinite(a) and math.isclose(a,b,rel_tol=1e-10,abs_tol=1e-12)), (a,b)
 def trend(a,b): return 'dyrare relativt lön' if b>a else 'billigare relativt lön' if b<a else 'oförändrat'
 wages=values('average_monthly_salaries.csv','sek_per_month')
+disposable=values('disposable_household_income_median_2024_prices.csv','median_disposable_income_all_households_2024_sek')
 fees={int(r['year']):r for r in csv_rows('tv_license_annual_fees.csv')}
 real=values('gasoline_prices_2024_sek_per_liter.csv','sek_per_liter_2024_prices')
 cpi=values('cpi_annual_average.csv','cpi_2020_100_annual_average')
@@ -31,6 +32,14 @@ for filename,kind in [('gasoline_series.json','gas'),('tv_license_series.json','
             close(r['annual_wage_sek'],annual or None)
         expected=price/annual*100 if price is not None and annual else None
         close(r['share_percent'],expected)
+        disposable_expected=price/disposable[year]*100 if price is not None and year in disposable else None
+        close(r['disposable_income_2024_sek'],disposable.get(year))
+        close(r['disposable_share_percent'],disposable_expected)
+        if kind in ('gas','tv'):
+            if kind=='tv': disposable_family=disposable_expected* (2 if r.get('fee_unit')=='person_year_max' else 1) if disposable_expected is not None else None
+            else: disposable_family=disposable_expected if disposable_expected is not None else None
+            close(r['disposable_share_percent_two_adults'],disposable_family)
+        else: assert r['disposable_share_percent_two_adults'] is None
         if kind in ('gas','tv'):
             multiplier=2 if kind=='tv' and r['fee_unit']=='person_year_max' else 1
             close(r['share_percent_two_adults'],expected*multiplier/2 if expected is not None else None)
@@ -62,4 +71,5 @@ assert {y:int(fees[y]['annual_fee_sek']) for y in (1978,1979,1980,1984)}=={1978:
 tv={r['year']:r for r in payload('tv_license_series.json')['data']}
 assert tv[1967]['fee_sek'] is None and tv[1968]['fee_sek'] is None
 assert tv[2019]['break_before'] and tv[2019]['trend'] is None
+assert set(disposable)=={1991,*range(1995,2025)}
 print(f'Independent arithmetic and metadata checks passed for {count} generated rows.')

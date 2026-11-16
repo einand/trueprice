@@ -1,7 +1,8 @@
 {
-  "generated_at_utc": "2026-11-16T08:25:58.206044+00:00",
+  "generated_at_utc": "2026-11-16T08:46:49.343138+00:00",
   "series_id": "tv_license",
   "wage_series_reference": "average_monthly_salaries.csv",
+  "disposable_income_series_reference": "disposable_household_income_median_2024_prices.csv",
   "sources": [
     {
       "id": "average_salary",
@@ -16,6 +17,24 @@
       "coverage_years": "1992–2025",
       "verified_at": "2026-11-16",
       "additional_source_urls": []
+    },
+    {
+      "id": "disposable_household_income",
+      "file": "data/disposable_household_income_median_2024_prices.csv",
+      "source": "Statistics Sweden (SCB), Disponibel inkomst för hushåll efter hushållstyp och ålder, tabell 1a, totalräknade Inkomster och skatter (IoS) values where available.",
+      "url": "https://www.scb.se/he0110/",
+      "data_url": "https://www.scb.se/contentassets/aaeb80382eab45a0aaa9c60adf7afcd1/disponibel-inkomst-for-hushall-efter-hushallstyp-och-alder-1991-2024-sv.xlsx",
+      "retrieved_at": "2026-11-16",
+      "unit": "SEK per household and year, median, fixed 2024 prices",
+      "definition": "Median disposable income for all households (Samtliga hushåll 18+), not per person or consumption unit. Disposable income is after tax and transfers and includes realized capital gains/losses. The source table joins the sample-based Household Finance Survey (HEK, 1991–2013) with the register-based Income and Taxes survey (IoS, 2011–2024).",
+      "coverage": "Sweden; observed years 1991, 1995–2024. Missing years 1992–1994. This is median household income in 2024 prices, not individual annual earnings, and is not a like-for-like replacement for gross average monthly salary.",
+      "transformation": "Transcribed the all-households row, median column, from the SCB workbook. For 1991–2010 use the HEK series; for 2011–2024 use the IoS series, taking IoS-revised overlapping values for 2011–2013. Converted source units from thousands of SEK to SEK by multiplying by 1,000. No extra CPI adjustment, annualization, interpolation, or income-per-capita conversion.",
+      "coverage_years": "1991; 1995–2024",
+      "verified_at": "2026-11-16",
+      "additional_source_urls": [
+        "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__HE__HE0110__HE0110G/TabVX4bDispInkN/",
+        "https://www.scb.se/contentassets/894d4afa900f4123aece341cd10e59e2/he0110_kd2_2024_jl_260120.pdf"
+      ]
     },
     {
       "id": "tv_license_and_public_service_fee",
@@ -67,6 +86,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -78,6 +100,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -89,6 +114,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -100,6 +128,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -111,6 +142,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -122,6 +156,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -133,6 +170,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -144,6 +184,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -155,6 +198,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -166,6 +212,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -177,6 +226,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -188,6 +240,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -199,6 +254,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -210,6 +268,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -221,6 +282,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -232,6 +296,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -243,6 +310,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -254,6 +324,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -265,6 +338,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -276,6 +352,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -287,6 +366,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -298,6 +380,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -309,6 +394,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -320,6 +408,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -331,6 +422,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -342,6 +436,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -353,6 +450,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -364,6 +464,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -375,6 +478,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -386,6 +492,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -397,6 +506,9 @@
       "fee_regime": "radio_license",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -408,6 +520,9 @@
       "fee_regime": "radio_plus_tv_regional",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": true
@@ -419,6 +534,9 @@
       "fee_regime": "radio_plus_tv_regional",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -430,6 +548,9 @@
       "fee_regime": "radio_plus_tv_national",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": true
@@ -441,6 +562,9 @@
       "fee_regime": "radio_plus_tv_national",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -452,6 +576,9 @@
       "fee_regime": "radio_plus_tv_national",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -463,6 +590,9 @@
       "fee_regime": "radio_plus_tv_national",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -474,6 +604,9 @@
       "fee_regime": "radio_plus_tv_national",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -485,6 +618,9 @@
       "fee_regime": "radio_plus_tv_national",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -496,6 +632,9 @@
       "fee_regime": "radio_plus_tv_national",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -507,6 +646,9 @@
       "fee_regime": "radio_plus_tv_national",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -518,6 +660,9 @@
       "fee_regime": "radio_plus_tv_national",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -529,6 +674,9 @@
       "fee_regime": null,
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": true
@@ -540,6 +688,9 @@
       "fee_regime": null,
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -551,6 +702,9 @@
       "fee_regime": "combined_receiver_fee",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -562,6 +716,9 @@
       "fee_regime": "receiver_fee_color_tv",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": true
@@ -573,6 +730,9 @@
       "fee_regime": "receiver_fee_color_tv",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -584,6 +744,9 @@
       "fee_regime": "receiver_fee_color_tv",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -595,6 +758,9 @@
       "fee_regime": "receiver_fee_color_tv",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -606,6 +772,9 @@
       "fee_regime": "receiver_fee_color_tv",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -617,6 +786,9 @@
       "fee_regime": "receiver_fee_color_tv",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -628,6 +800,9 @@
       "fee_regime": "receiver_fee_color_tv",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -639,6 +814,9 @@
       "fee_regime": "receiver_fee_color_tv",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -650,6 +828,9 @@
       "fee_regime": "receiver_fee_color_tv",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -661,6 +842,9 @@
       "fee_regime": "receiver_fee_color_tv",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -672,6 +856,9 @@
       "fee_regime": "receiver_fee_color_tv",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -683,6 +870,9 @@
       "fee_regime": "receiver_fee_color_tv",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -694,6 +884,9 @@
       "fee_regime": "receiver_fee_color_tv",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -705,6 +898,9 @@
       "fee_regime": "receiver_fee_color_tv",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -716,6 +912,9 @@
       "fee_regime": "receiver_fee_color_tv",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -727,6 +926,9 @@
       "fee_regime": "receiver_fee_color_tv",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -738,6 +940,9 @@
       "fee_regime": "receiver_fee_color_tv",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -749,6 +954,9 @@
       "fee_regime": "receiver_fee_color_tv",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -760,6 +968,9 @@
       "fee_regime": "receiver_fee_color_tv",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -771,6 +982,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": true
@@ -782,6 +996,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -793,6 +1010,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": null,
       "share_percent_two_adults": null,
+      "disposable_income_2024_sek": 278400.0,
+      "disposable_share_percent": 0.44396551724137934,
+      "disposable_share_percent_two_adults": 0.44396551724137934,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -804,6 +1024,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.7482993197278911,
       "share_percent_two_adults": 0.37414965986394555,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": null,
       "trend_two_adults": null,
       "break_before": false
@@ -815,6 +1038,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.785234899328859,
       "share_percent_two_adults": 0.3926174496644295,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": "dyrare relativt lön",
       "trend_two_adults": "dyrare relativt lön",
       "break_before": false
@@ -826,6 +1052,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.7692307692307693,
       "share_percent_two_adults": 0.38461538461538464,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön",
       "break_before": false
@@ -837,6 +1066,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.75,
       "share_percent_two_adults": 0.375,
+      "disposable_income_2024_sek": 256000.0,
+      "disposable_share_percent": 0.5625,
+      "disposable_share_percent_two_adults": 0.5625,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön",
       "break_before": false
@@ -848,6 +1080,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.7235294117647059,
       "share_percent_two_adults": 0.36176470588235293,
+      "disposable_income_2024_sek": 261500.0,
+      "disposable_share_percent": 0.5644359464627151,
+      "disposable_share_percent_two_adults": 0.5644359464627151,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön",
       "break_before": false
@@ -859,6 +1094,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.7150837988826816,
       "share_percent_two_adults": 0.3575418994413408,
+      "disposable_income_2024_sek": 263500.0,
+      "disposable_share_percent": 0.5829222011385199,
+      "disposable_share_percent_two_adults": 0.5829222011385199,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön",
       "break_before": false
@@ -870,6 +1108,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.7043010752688172,
       "share_percent_two_adults": 0.3521505376344086,
+      "disposable_income_2024_sek": 264800.0,
+      "disposable_share_percent": 0.5936555891238671,
+      "disposable_share_percent_two_adults": 0.5936555891238671,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön",
       "break_before": false
@@ -881,6 +1122,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.6907216494845361,
       "share_percent_two_adults": 0.34536082474226804,
+      "disposable_income_2024_sek": 275800.0,
+      "disposable_share_percent": 0.5830311820159536,
+      "disposable_share_percent_two_adults": 0.5830311820159536,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön",
       "break_before": false
@@ -892,6 +1136,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.6748768472906403,
       "share_percent_two_adults": 0.3374384236453202,
+      "disposable_income_2024_sek": 288500.0,
+      "disposable_share_percent": 0.5698440207972271,
+      "disposable_share_percent_two_adults": 0.5698440207972271,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön",
       "break_before": false
@@ -903,6 +1150,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.6525821596244131,
       "share_percent_two_adults": 0.32629107981220656,
+      "disposable_income_2024_sek": 297800.0,
+      "disposable_share_percent": 0.5601074546675622,
+      "disposable_share_percent_two_adults": 0.5601074546675622,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön",
       "break_before": false
@@ -914,6 +1164,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.6561085972850679,
       "share_percent_two_adults": 0.32805429864253394,
+      "disposable_income_2024_sek": 296500.0,
+      "disposable_share_percent": 0.5868465430016863,
+      "disposable_share_percent_two_adults": 0.5868465430016863,
       "trend": "dyrare relativt lön",
       "trend_two_adults": "dyrare relativt lön",
       "break_before": false
@@ -925,6 +1178,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.6622807017543859,
       "share_percent_two_adults": 0.33114035087719296,
+      "disposable_income_2024_sek": 305900.0,
+      "disposable_share_percent": 0.592350441320693,
+      "disposable_share_percent_two_adults": 0.592350441320693,
       "trend": "dyrare relativt lön",
       "trend_two_adults": "dyrare relativt lön",
       "break_before": false
@@ -936,6 +1192,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.6610169491525424,
       "share_percent_two_adults": 0.3305084745762712,
+      "disposable_income_2024_sek": 316600.0,
+      "disposable_share_percent": 0.591282375236892,
+      "disposable_share_percent_two_adults": 0.591282375236892,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön",
       "break_before": false
@@ -947,6 +1206,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.6584362139917695,
       "share_percent_two_adults": 0.3292181069958848,
+      "disposable_income_2024_sek": 322100.0,
+      "disposable_share_percent": 0.5960881713753492,
+      "disposable_share_percent_two_adults": 0.5960881713753492,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön",
       "break_before": false
@@ -958,6 +1220,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.656,
       "share_percent_two_adults": 0.328,
+      "disposable_income_2024_sek": 338000.0,
+      "disposable_share_percent": 0.5822485207100592,
+      "disposable_share_percent_two_adults": 0.5822485207100592,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön",
       "break_before": false
@@ -969,6 +1234,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.6447028423772609,
       "share_percent_two_adults": 0.32235142118863047,
+      "disposable_income_2024_sek": 355500.0,
+      "disposable_share_percent": 0.5614627285513362,
+      "disposable_share_percent_two_adults": 0.5614627285513362,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön",
       "break_before": false
@@ -980,6 +1248,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.6248462484624846,
       "share_percent_two_adults": 0.3124231242312423,
+      "disposable_income_2024_sek": 349200.0,
+      "disposable_share_percent": 0.581901489117984,
+      "disposable_share_percent_two_adults": 0.581901489117984,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön",
       "break_before": false
@@ -991,6 +1262,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.6200716845878136,
       "share_percent_two_adults": 0.3100358422939068,
+      "disposable_income_2024_sek": 354100.0,
+      "disposable_share_percent": 0.5862750635413725,
+      "disposable_share_percent_two_adults": 0.5862750635413725,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön",
       "break_before": false
@@ -1002,6 +1276,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.6091549295774648,
       "share_percent_two_adults": 0.3045774647887324,
+      "disposable_income_2024_sek": 358300.0,
+      "disposable_share_percent": 0.5794027351381524,
+      "disposable_share_percent_two_adults": 0.5794027351381524,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön",
       "break_before": false
@@ -1013,6 +1290,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.5965517241379311,
       "share_percent_two_adults": 0.29827586206896556,
+      "disposable_income_2024_sek": 410700.0,
+      "disposable_share_percent": 0.5054784514243973,
+      "disposable_share_percent_two_adults": 0.5054784514243973,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön",
       "break_before": false
@@ -1024,6 +1304,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.5805369127516778,
       "share_percent_two_adults": 0.2902684563758389,
+      "disposable_income_2024_sek": 423500.0,
+      "disposable_share_percent": 0.4902007083825266,
+      "disposable_share_percent_two_adults": 0.4902007083825266,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön",
       "break_before": false
@@ -1035,6 +1318,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.565359477124183,
       "share_percent_two_adults": 0.2826797385620915,
+      "disposable_income_2024_sek": 433700.0,
+      "disposable_share_percent": 0.4786718930136039,
+      "disposable_share_percent_two_adults": 0.4786718930136039,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön",
       "break_before": false
@@ -1046,6 +1332,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.5509554140127388,
       "share_percent_two_adults": 0.2754777070063694,
+      "disposable_income_2024_sek": 447100.0,
+      "disposable_share_percent": 0.4643256542160591,
+      "disposable_share_percent_two_adults": 0.4643256542160591,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön",
       "break_before": false
@@ -1057,6 +1346,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.5770833333333334,
       "share_percent_two_adults": 0.2885416666666667,
+      "disposable_income_2024_sek": 462400.0,
+      "disposable_share_percent": 0.47923875432525953,
+      "disposable_share_percent_two_adults": 0.47923875432525953,
       "trend": "dyrare relativt lön",
       "trend_two_adults": "dyrare relativt lön",
       "break_before": false
@@ -1068,6 +1360,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.5630081300813008,
       "share_percent_two_adults": 0.2815040650406504,
+      "disposable_income_2024_sek": 467200.0,
+      "disposable_share_percent": 0.4743150684931507,
+      "disposable_share_percent_two_adults": 0.4743150684931507,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön",
       "break_before": false
@@ -1079,6 +1374,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.5786350148367952,
       "share_percent_two_adults": 0.2893175074183976,
+      "disposable_income_2024_sek": 470000.0,
+      "disposable_share_percent": 0.4978723404255319,
+      "disposable_share_percent_two_adults": 0.4978723404255319,
       "trend": "dyrare relativt lön",
       "trend_two_adults": "dyrare relativt lön",
       "break_before": false
@@ -1090,6 +1388,9 @@
       "fee_regime": "tv_receiver_fee",
       "share_percent": 0.5780346820809248,
       "share_percent_two_adults": 0.2890173410404624,
+      "disposable_income_2024_sek": 472800.0,
+      "disposable_share_percent": 0.5076142131979695,
+      "disposable_share_percent_two_adults": 0.5076142131979695,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön",
       "break_before": false
@@ -1101,6 +1402,9 @@
       "fee_regime": "public_service_fee",
       "share_percent": 0.3179886685552408,
       "share_percent_two_adults": 0.3179886685552408,
+      "disposable_income_2024_sek": 475400.0,
+      "disposable_share_percent": 0.2833403449726546,
+      "disposable_share_percent_two_adults": 0.5666806899453092,
       "trend": null,
       "trend_two_adults": null,
       "break_before": true
@@ -1112,6 +1416,9 @@
       "fee_regime": "public_service_fee",
       "share_percent": 0.32248384118190215,
       "share_percent_two_adults": 0.32248384118190215,
+      "disposable_income_2024_sek": 477200.0,
+      "disposable_share_percent": 0.2927493713327745,
+      "disposable_share_percent_two_adults": 0.585498742665549,
       "trend": "dyrare relativt lön",
       "trend_two_adults": "dyrare relativt lön",
       "break_before": false
@@ -1123,6 +1430,9 @@
       "fee_regime": "public_service_fee",
       "share_percent": 0.29851752021563344,
       "share_percent_two_adults": 0.29851752021563344,
+      "disposable_income_2024_sek": 488500.0,
+      "disposable_share_percent": 0.272057318321392,
+      "disposable_share_percent_two_adults": 0.544114636642784,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön",
       "break_before": false
@@ -1134,6 +1444,9 @@
       "fee_regime": "public_service_fee",
       "share_percent": 0.28872932985204525,
       "share_percent_two_adults": 0.28872932985204525,
+      "disposable_income_2024_sek": 472200.0,
+      "disposable_share_percent": 0.2810249894112664,
+      "disposable_share_percent_two_adults": 0.5620499788225328,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön",
       "break_before": false
@@ -1145,6 +1458,9 @@
       "fee_regime": "public_service_fee",
       "share_percent": 0.27151211361737676,
       "share_percent_two_adults": 0.27151211361737676,
+      "disposable_income_2024_sek": 463600.0,
+      "disposable_share_percent": 0.28041415012942195,
+      "disposable_share_percent_two_adults": 0.5608283002588439,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön",
       "break_before": false
@@ -1156,6 +1472,9 @@
       "fee_regime": "public_service_fee",
       "share_percent": 0.24419070512820512,
       "share_percent_two_adults": 0.24419070512820512,
+      "disposable_income_2024_sek": 472600.0,
+      "disposable_share_percent": 0.25793482860770206,
+      "disposable_share_percent_two_adults": 0.5158696572154041,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön",
       "break_before": false
@@ -1167,6 +1486,9 @@
       "fee_regime": "public_service_fee",
       "share_percent": 0.2426184926184926,
       "share_percent_two_adults": 0.2426184926184926,
+      "disposable_income_2024_sek": null,
+      "disposable_share_percent": null,
+      "disposable_share_percent_two_adults": null,
       "trend": "billigare relativt lön",
       "trend_two_adults": "billigare relativt lön",
       "break_before": false
