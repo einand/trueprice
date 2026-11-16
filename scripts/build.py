@@ -135,6 +135,20 @@ for r in software_prices:
         wage_source_url=next(s['data_url'] for s in all_sources['series'] if s['id']=='historical_manufacturing_hourly_wages_by_industry') if hourly_wage else None
     d=disposable_income.get(year)
     software_data.append({'year':year,'price_sek':price,'price_eur':eur_mean,'reported_sales_value':float(r['reported_sales_value']) if r.get('reported_sales_value') else None,'reported_currency':r.get('reported_currency') or None,'sample_size':count,'platform_scope':r['platform_scope'],'price_basis':r['price_basis'],'source_url':r['source_url'],'annual_wage_sek':annual_salary,'wage_basis':wage_basis,'wage_source_url':wage_source_url,'share_percent':price/annual_salary*100 if price is not None and annual_salary else None,'disposable_income_2024_sek':d,'disposable_share_percent':price/d*100 if price is not None and d else None,'share_percent_two_adults':None,'disposable_share_percent_two_adults':None,'trend':None,'trend_two_adults':None})
+for observation in review_observations:
+    year=int(observation['observation_date'][:4]); price=float(observation['sek_per_game']); salary=salaries.get(year)
+    if salary:
+        annual_salary=salary*12
+        wage_basis='SCB average monthly salary, all sectors, total gender × 12'
+        wage_source_url=next(s['url'] for s in all_sources['series'] if s['id']=='average_salary')
+    else:
+        hourly_wage=historical_wages_by_key.get((year,'men','vägt genomsnitt'))
+        annual_salary=hourly_wage*2080 if hourly_wage else None
+        wage_basis='Riksbank historical male weighted-average manufacturing hourly wage × 2,080 hours' if hourly_wage else None
+        wage_source_url=next(s['data_url'] for s in all_sources['series'] if s['id']=='historical_manufacturing_hourly_wages_by_industry') if hourly_wage else None
+    d=disposable_income.get(year)
+    software_data.append({'year':year,'plot_year':year+(datetime.strptime(observation['observation_date'],'%Y-%m-%d').timetuple().tm_yday-1)/(366 if (year%4==0 and (year%100!=0 or year%400==0)) else 365),'game_title':observation['game_title'],'price_sek':price,'price_eur':None,'reported_sales_value':None,'reported_currency':None,'sample_size':1,'platform_scope':observation['platform'],'price_basis':f"Lägsta pris enligt recensionens notering: {observation['source_price_statement']}",'source_url':observation['source_url'],'observation_date':observation['observation_date'],'publisher':'Nintendo','publisher_source_url':observation['publisher_source_url'],'annual_wage_sek':annual_salary,'wage_basis':wage_basis,'wage_source_url':wage_source_url,'share_percent':price/annual_salary*100 if annual_salary else None,'disposable_income_2024_sek':d,'disposable_share_percent':price/d*100 if d else None,'share_percent_two_adults':None,'disposable_share_percent_two_adults':None,'trend':None,'trend_two_adults':None})
+software_data.sort(key=lambda r:(r['year'],r.get('plot_year',r['year']),r.get('game_title','')))
 for previous, current in zip(software_data, software_data[1:]):
     if 'vägt snitt' not in current['platform_scope'] or 'vägt snitt' not in previous['platform_scope']:
         continue
